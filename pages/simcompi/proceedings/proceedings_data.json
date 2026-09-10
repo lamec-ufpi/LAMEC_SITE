@@ -1,0 +1,361 @@
+{
+  "volumes": [
+    {
+      "id": "vol_1_2019",
+      "title": "SIMCOMPI - Vol. 1 (2019)",
+      "year": 2019,
+      "cover_img": "https://via.placeholder.com/248x350/154c6b/ffffff?text=SIMCOMPI+Vol.+1",
+      "full_pdf_link": "#",
+      "categories": [
+        {
+          "name": "Desenvolvimento de ferramentas computacionais",
+          "articles": [
+            {
+              "title": "Android Aplicativo para verificação de Steel Elements under Axial Force",
+              "authors": "Rodrigo Diniz Filgueiras, Prof. Dr. Eduardo Martins Fontes do Rêgo",
+              "doi": "10.xxxx/simcompi.2019.001",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Dimensionamento de redes de distribuição de água com AutoCAD e EPANET",
+              "authors": "José Paulo da Silveira Neto, Alessandro de Araújo Bezerra, Renata Shirley de Andrade Araújo, Jordana Madeira Alaggio Ribeiro",
+              "doi": "10.xxxx/simcompi.2019.002",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Ferramenta computacional para dimensionamento de Wooden Roofs",
+              "authors": "João Pedro Silva Soares, Prof. Dr. Eduardo Martins Fontes do Rêgo",
+              "doi": "10.xxxx/simcompi.2019.003",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem computacional de Pumping Systems",
+              "authors": "Natanael Basilio Pires, Profª. Dra. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro de Araújo Bezerra",
+              "doi": "10.xxxx/simcompi.2019.004",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Programação aplicada à inserção de elementos gráficos no AutoCAD Environment",
+              "authors": "Paulo Roberto Queiroz de Almeida, Profª. Drª. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro De Araújo Bezerra",
+              "doi": "10.xxxx/simcompi.2019.005",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Aeronautical Engineering",
+          "articles": [
+            {
+              "title": "CFD Análise de a Nozzle Throat Geometry",
+              "authors": "Kassio Felipe da Costa Serra, João Manoel Torres Lobato",
+              "doi": "10.xxxx/simcompi.2019.006",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Estudo prospectivo sobre o uso de materiais poliméricos na engenharia aeroespacial",
+              "authors": "Millena de Cassia Sousa e Silva, Yvo Borges da Silva, Valdivânia Albuquerque do Nascimento",
+              "doi": "10.xxxx/simcompi.2019.007",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Nitretação por plasma em gaiola catódica do aço AISI 444: investigação e análise dos parâmetros de tratamento",
+              "authors": "Renan Matos Monção, Bruno Barbosa de Aquino, Prof. Dr. Rômulo Ribeiro Magalhães",
+              "doi": "10.xxxx/simcompi.2019.008",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Energy Efficiency",
+          "articles": [
+            {
+              "title": "Análise de eficiência energética em uma rede de distribuição de ar comprimido para uma fábrica de bicicletas",
+              "authors": "Luiz Henrique Portela de Abreu, Renan Matos Monção, Wênio Fhará Alencar Borges",
+              "doi": "10.xxxx/simcompi.2019.009",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Avaliação de monitoramento de sistema fotovoltaico conectado à rede e seus impactos na qualidade da energia na UFPI",
+              "authors": "Tatyane Mityko Dias Fussuma, Prof. Dr. Fábio Rocha Barbosa",
+              "doi": "10.xxxx/simcompi.2019.010",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Uso de materiais supercondutores de alta temperatura em sistemas de energia: uma prospecção tecnológica",
+              "authors": "Laura Almeida Pereira dos Santos, Valdivânia Albuquerque do Nascimento, Felipe Pereira Siqueira e Silva",
+              "doi": "10.xxxx/simcompi.2019.011",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Uso de nanocompósitos metálicos para eficiência energética na produção industrial: uma prospecção tecnológica",
+              "authors": "Yvo Borges da Silva, Millena de Cássia Sousa e Silva, Valdivânia Albuquerque do Nascimento",
+              "doi": "10.xxxx/simcompi.2019.012",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Boundary Element Method",
+          "articles": [
+            {
+              "title": "Formulação pelo método dos elementos de contorno para modelagem do fenômeno de cone de gás em poços de petróleo",
+              "authors": "Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus",
+              "doi": "10.xxxx/simcompi.2019.013",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Finite Element Method",
+          "articles": [
+            {
+              "title": "Análise de vibração livre de uma viga cônica rotativa",
+              "authors": "Juan Gabriel Queiroz Blanche, Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2019.014",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Vibração livre de uma viga-coluna sobre fundação elástica de dois parâmetros",
+              "authors": "Lucas Oliveira Siqueira, Rômulo Luz Cortez, Profa. Dra. Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2019.015",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem numérica de Contact Problem",
+              "authors": "Vinicius da Silva Costa, Prof. Dr. Eduardo Martins Fontes do Rêgo",
+              "doi": "10.xxxx/simcompi.2019.016",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Nonlocal Finite Element Análise de Euler-Bernoulli Nanobeams",
+              "authors": "Aldemar Pontes de Siqueira Neto, Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2019.017",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Simulação numérica para análise estrutural de estruturas de suporte de basculador ferroviário pelo método dos elementos finitos",
+              "authors": "Rodrigo da Silva Melo, Leonardo Vinícius Lisboa da Cruz, Anaximandro Souza",
+              "doi": "10.xxxx/simcompi.2019.018",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Resposta vibratória de a Beam-Column on Pasternack Foundation",
+              "authors": "Rômulo Luz Cortez, Lucas Oliveira Siqueira, Prof. Dra. Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2019.019",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Modelagem e identificação de sistemas",
+          "articles": [
+            {
+              "title": "Estudo e aplicação de sensor LIDAR em carros autônomos",
+              "authors": "Darieldon de Brito Medeiros, Denilson Alves de Sousa, José Maria Pires de Menezes Júnior",
+              "doi": "10.xxxx/simcompi.2019.020",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem baseada em agentes para Oil Spills on the Maranhão Coast",
+              "authors": "Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus",
+              "doi": "10.xxxx/simcompi.2019.021",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem de um modelo didático para a Servomotor",
+              "authors": "Luan da Silva Bezerra, Prof. Dr. José Medeiros de Araújo Júnior",
+              "doi": "10.xxxx/simcompi.2019.022",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem da atitude de a Quadrotor Drone",
+              "authors": "Pedro Iago Carvalho Martins, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "10.xxxx/simcompi.2019.023",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Nanotechnology",
+          "articles": [
+            {
+              "title": "Avanços em Pharmaceutical Nanotechnology aplicado ao the Desenvolvimento de Controlled-Release Drugs: A Technological Foresight",
+              "authors": "Nayara de Oliveira Sobrinho, Moisés das Virgens Santana, Hitalo de Jesus Bezerra da Silva",
+              "doi": "10.xxxx/simcompi.2019.024",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Propriedades eletrônicas de Nitrogen Doped Graphene Nanowiggles",
+              "authors": "Anderson Soares da Costa Azevêdo, Eduardo Costa Girão",
+              "doi": "10.xxxx/simcompi.2019.025",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Estrutura eletrônica de Carbon Nanocage with Bipartite Structure: A DFT study",
+              "authors": "Fábio Nascimento de Sousa, Eduardo Costa Girão",
+              "doi": "10.xxxx/simcompi.2019.026",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Estados magnéticos em Graphene Nanoflakes",
+              "authors": "Caio Vitor Teixeira Costa, Eduardo Costa Girão",
+              "doi": "10.xxxx/simcompi.2019.027",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Estados magnéticos em Graphene Nanoflakes Containing Anti-dots",
+              "authors": "Herus Teixeira Lopes, Prof. Dr. Eduardo Girão Costa",
+              "doi": "10.xxxx/simcompi.2019.028",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Intelligent Systems",
+          "articles": [
+            {
+              "title": "Classificação de High-Speed Steel Metallographic Samples Using Machine Learning Models",
+              "authors": "Marcus Patrick Acioli da Silva, Dr. José Maria Pires de Menezes Júnior, Dr. Francisco Riccelly Pereira Feitosa",
+              "doi": "10.xxxx/simcompi.2019.029",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Identificação do fenômeno de transferência grafêmica-fônica-fonológica BP-EFL usando redes neurais artificiais",
+              "authors": "Atos Apollo Silva Borges, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa",
+              "doi": "10.xxxx/simcompi.2019.030",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Identificação e classificação do fenômeno de transferência de apagamento (HD) BP-EFL usando redes neurais artificiais MLP",
+              "authors": "Washington Luís Pinho Rodrigues Filho, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa",
+              "doi": "10.xxxx/simcompi.2019.031",
+              "pdf_link": "#"
+            }
+          ]
+        },
+        {
+          "name": "Teoria de controle e aplicações",
+          "articles": [
+            {
+              "title": "Controladores com estrutura PID fuzzy aplicada à malha de temperatura de uma incubadora neonatal",
+              "authors": "José Borges do Carmo Neto, Luno Gomes de Oliveira, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "10.xxxx/simcompi.2019.032",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Fuzzy Control aplicado ao a Didactic Level Tank",
+              "authors": "Francisco Leão de Oliveira, Prof. Dr. José Medeiros de Araújo Júnior",
+              "doi": "10.xxxx/simcompi.2019.033",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Desenvolvimento de hardware didático para ensino de controle digital",
+              "authors": "Gabryel Figueiredo Soares, José B. do Carmo Neto, Luno Gomes de Oliveira, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "10.xxxx/simcompi.2019.034",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Desenvolvimento de a SCARA-Type Manipulator Robot",
+              "authors": "Victor Eduardo Alves da Silva Carvalho, Nádia Raquel Matos Oliveira, José Maria Pires Menezes Junior",
+              "doi": "10.xxxx/simcompi.2019.035",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Projeto de um controlador PID aplicado a um tanque didático de nível",
+              "authors": "Vanessa dos Santos Conceição, Prof. Dr. José Medeiros de Araújo Júnior",
+              "doi": "10.xxxx/simcompi.2019.036",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Sistema de acionamento para incubadora neonatal",
+              "authors": "Raimundo da Silva Nunes Neto, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "10.xxxx/simcompi.2019.037",
+              "pdf_link": "#"
+            }
+          ]
+        }
+        
+      ]
+    },
+    {
+      "id": "vol_2_2025",
+      "title": "II SIMCOMPI - Vol. 2 (2025)",
+      "year": 2025,
+      "cover_img": "https://via.placeholder.com/248x350/267c94/ffffff?text=SIMCOMPI+Vol.+2",
+      "full_pdf_link": "#",
+      "categories": [
+        {
+          "name": "Technical Papers",
+          "articles": [
+            {
+              "title": "Desenvolvimento de do sistema de monitoramento de grandezas elétricas em máquinas eletromecânicas",
+              "authors": "João Ferreira Borges Filho, Otacílio da Mota Almeida, Raphael Lima de Paiva",
+              "doi": "10.xxxx/simcompi.2025.001",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Identificação e controle dos dos motores de um robô micromouse diferencial",
+              "authors": "Händel Mateus Carvalho Sarmento, Otacilio da Mota Almeida",
+              "doi": "10.xxxx/simcompi.2025.002",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem computacional de um sistema de minigeração agrivoltaica em uma granja no estado do Piauí",
+              "authors": "Atos A. S. Borges, Juan de A. Gonçalves, Thiago M. S. Rocha, Ítalo F. e Silva",
+              "doi": "10.xxxx/simcompi.2025.003",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Modelagem numérica de Partially Submerged Beam-column",
+              "authors": "Davi Kauê de Sousa Gomes, Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2025.004",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Mitigação passiva de frequências de vibração em estruturas offshore",
+              "authors": "Thierry Miqueias Melo Madeira, Dário Carvalho Viveiros, Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2025.005",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Estruturas periódicas para atenuação de vibrações em trilhos",
+              "authors": "Iasmin Brandão Leal, Jenário Souza dos Reis Júnior, Profa. Dra. Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2025.006",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Paredes superficiais periódicas para atenuação de vibrações no solo",
+              "authors": "Jenario Souza dos Reis Júnior, Profa. Dra. Simone dos Santos Hoefel, Prof. Dr. Josué Labaki",
+              "doi": "10.xxxx/simcompi.2025.007",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Propriedades eletrônicas de Nitrogen-Doped Rectangular Tripentaphenes",
+              "authors": "Lourdes Maria de Oliveira Santos, Eduardo Costa Girão",
+              "doi": "10.xxxx/simcompi.2025.008",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Iris-Diaphragm Flow Regulator para aplicação em uma planta didática de levitação pneumática",
+              "authors": "João Marcos V. A. M. Silva, Douglas de Araújo França, Otacílio da Mota Almeida",
+              "doi": "10.xxxx/simcompi.2025.009",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Simulação MATLAB de controle psicrométrico aplicado a sistemas de refrigeração",
+              "authors": "Álvaro Barreto da Silva, Lucas Rodrigues Soares da Silva",
+              "doi": "10.xxxx/simcompi.2025.010",
+              "pdf_link": "#"
+            },
+            {
+              "title": "Propagação de ondas em trilhos ferroviários periódicos: análise de flexão lateral e vertical",
+              "authors": "Isadora Rodrigues de Souza, Simone dos Santos Hoefel",
+              "doi": "10.xxxx/simcompi.2025.011",
+              "pdf_link": "#"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

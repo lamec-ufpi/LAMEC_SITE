@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - Publications</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo"><a href="../index.html" class="logo-text">LAME<span class="logo-highlight">C</span></a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="publications.html">PUBLICATIONS</a></li>
+                <li class="dropdown"><a href="research_team.html">PEOPLE <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="research_team.html">RESEARCH TEAM</a></li><li><a href="alumni.html">ALUMNI</a></li></ul></li>
+                <li><a href="simcompi/simcompi.html">SIMCOMPI</a></li>
+                <li class="dropdown"><a href="extension/faisca.html">EXTENSION <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="extension/bull_racing.html">BULL RACING</a></li><li><a href="extension/faisca.html">FAÍSCA</a></li></ul></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">Publications</h1>
+        <p class="page-subtitle">Academic and scientific production of the laboratory</p>
+        
+        <h2 class="section-title">Journal Papers</h2>
+        <div class="article-list" id="journal-list">
+            <div class="loading-state" id="loading-journals">
+                <i class="fa-solid fa-circle-notch fa-spin"></i> Carregando Journal Papers...
+            </div>
+        </div>
+
+        <h2 class="section-title">Conference Papers</h2>
+        <div class="article-list" id="conference-list">
+            <div class="loading-state" id="loading-conferences">
+                <i class="fa-solid fa-circle-notch fa-spin"></i> Carregando Conference Papers...
+            </div>
+        </div>
+    </main>
+
+    <!-- Script para carregar o JSON e gerar a lista -->
+    
+    <script src="../main.js"></script>
+</body>
+</html>

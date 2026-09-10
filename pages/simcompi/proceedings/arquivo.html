@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - SIMCOMPI Arquivo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+<body>
+
+    <!-- Navegação Principal -->
+            <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo"><a href="../simcompi.html" class="logo-text"><span class="logo-highlight">SIM</span>COMPI</a></div>
+        <ul class="nav-links">
+          <li><a href="../simcompi.html">SIMCOMPI</a></li>
+          <li><a href="../submissions.html">SUBMISSÕES</a></li>
+          <li><a href="../proceedings.html">ANAIS DO EVENTO</a></li>
+          <li class="dropdown"><a href="../prev_edition/i_simcompi.html">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../prev_edition/i_simcompi.html">I SIMCOMPI</a></li><li><a href="../prev_edition/ii_simcompi.html">II SIMCOMPI</a></li></ul></li>
+          <li><a href="../committees.html">COMISSÕES</a></li>
+          <li><a href="../contact-us.html">CONTATO</a></li>
+          <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <h1>Arquivo de Anais</h1>
+    </header>
+
+    <!-- Sub-Navbar -->
+<!-- Layout Principal -->
+    <main class="container proceedings-layout">
+        
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Buscar</div>
+                <div class="sidebar-content">
+                    <form id="searchForm">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Buscar artigos, autores..." required>
+                        <button type="submit" class="search-btn">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Navegação</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="apresentacao.html">Apresentação</a></li>
+                        <li><a href="expediente.html">Expediente</a></li>
+                        <li><a href="../submissions.html#author-guidelines">Normas para Publicação</a></li>
+                        <li><a href="../contact-us.html">Contato</a></li>
+                        <li><a href="../proceedings.html" data-action="current">Edição Atual</a></li>
+                        <li><a href="previous/vol1.html">Edições Anteriores</a></li>
+                        <li><a href="arquivo.html" class="active" data-action="archive">Arquivo (Todos os Volumes)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Explorar</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="arquivo.html" data-action="author">Por Autor</a></li>
+                        <li><a href="arquivo.html" data-action="title">Por Título</a></li>
+                        <li><a href="arquivo.html" data-action="category">Por Categoria</a></li>
+                        <li><a href="arquivo.html" data-action="archive">Por Edição</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <section class="main-content" id="data-container">
+            <div class="loading-state">
+                <i class="fa-solid fa-circle-notch fa-spin"></i> Carregando artigos...
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </footer>
+
+    <!-- SCRIPT MÁGICO: LÊ O JSON E GERA O HTML AUTOMATICAMENTE -->
+    <script src="../../../proceedings.js"></script>
+    <script src="../../../main.js"></script>
+</body>
+</html>
+
+
