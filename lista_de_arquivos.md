@@ -1,0 +1,177 @@
+﻿# Estrutura de Arquivos do Projeto
+
+- `./index.html`
+- `./main.js`
+- `./script.js`
+- `./style.css`
+- `./z_join_text_files.ps1`
+- `./z_list_all_files.ps1`
+- `./images/backgrounds/about-home-horizontal-banner-lamec-foto.jpeg`
+- `./images/backgrounds/bull-banner-horizontal.jpg`
+- `./images/backgrounds/faisca-banner-horizontal.jpg`
+- `./images/backgrounds/home-horizontal-banner-1.jpg`
+- `./images/backgrounds/home-horizontal-banner-2-lamec-foto.jpeg`
+- `./images/backgrounds/home1.jpg`
+- `./images/backgrounds/home2.jpg`
+- `./images/backgrounds/home3.jpg`
+- `./images/brand/acontece-logo.png`
+- `./images/brand/bullracing-logo.png`
+- `./images/brand/cine-queer-logo.png`
+- `./images/brand/cinect-logo.png`
+- `./images/brand/crea-logo.jpg`
+- `./images/brand/even3-logo.png`
+- `./images/brand/even3-white-logo.png`
+- `./images/brand/faisca-logo.png`
+- `./images/brand/fapepi-logo.png`
+- `./images/brand/giraminds-logo.png`
+- `./images/brand/lame-logo.png`
+- `./images/brand/prh-59-logo.jpg`
+- `./images/brand/ufpi-logo.png`
+- `./images/brand/ufpi-white-logo.png`
+- `./images/brand/vida-verde-logo.png`
+- `./images/extension/bull/autosuprir-logo.jpg`
+- `./images/extension/bull/bosch-logo.png`
+- `./images/extension/bull/dremell-logo.png`
+- `./images/extension/bull/oig-logo.jpg`
+- `./images/extension/bull/povo_bull.jpg`
+- `./images/extension/bull/sia-logo.svg`
+- `./images/extension/bull/vmachado-logo.png`
+- `./images/extension/bull/fotos/bandeira bull em piracicaba.webp`
+- `./images/extension/bull/fotos/bandeira indo para competição.webp`
+- `./images/extension/bull/fotos/bastidores 2.png`
+- `./images/extension/bull/fotos/bastidores da competição bull.webp`
+- `./images/extension/bull/fotos/com outra equipe.webp`
+- `./images/extension/bull/fotos/freios do carro.jpg`
+- `./images/extension/bull/fotos/mexendo no carro competicao.webp`
+- `./images/extension/bull/fotos/motor do carro.jpg`
+- `./images/extension/bull/fotos/no onibus.webp`
+- `./images/extension/bull/fotos/palestra sae 2023.png`
+- `./images/extension/bull/fotos/pista sae 2023 bull.webp`
+- `./images/extension/bull/fotos/pos competicao.webp`
+- `./images/extension/bull/fotos/revista sae bull racin.webp`
+- `./images/extension/bull/fotos/selfie da equipe.webp`
+- `./images/extension/bull/fotos/suspensao x power train.webp`
+- `./images/extension/bull/fotos/teste de motor carro .jpg`
+- `./images/extension/bull/fotos/thaine no carro.webp`
+- `./images/extension/bull/fotos/time bull com carro e bandeira.jpg`
+- `./images/extension/bull/fotos/time bull com o carro.jpg`
+- `./images/simcompi/simcompi 1/boi bumba.jpg`
+- `./images/simcompi/simcompi 1/frente-do-auditorio do i simcompi.jpg`
+- `./images/simcompi/simcompi 1/i-simcompi-banner.png`
+- `./images/simcompi/simcompi 1/i-simcompi-horizontal-banner.jpg`
+- `./images/simcompi/simcompi 1/janta com profs no i simcompi.jpg`
+- `./images/simcompi/simcompi 1/janta nordestisna i simcompi.jpg`
+- `./images/simcompi/simcompi 1/juan award.jpg`
+- `./images/simcompi/simcompi 1/kurka palestra no i simcompi.jpg`
+- `./images/simcompi/simcompi 1/mesa de honra do i simcompi.jpg`
+- `./images/simcompi/simcompi 1/musica na abertura do i simcompi.jpg`
+- `./images/simcompi/simcompi 1/palestrantes e organizadores do i simcompi no encerramento.jpg`
+- `./images/simcompi/simcompi 1/poster-presentation no i simcompi foto 2.jpg`
+- `./images/simcompi/simcompi 1/poster-presentation no i simcompi.jpg`
+- `./images/simcompi/simcompi 2/banner-horizontal.png`
+- `./images/simcompi/simcompi 2/banner-ii-simcompi.png`
+- `./images/simcompi/simcompi 2/ii-simcompi-horizontal-logo.png`
+- `./images/simcompi/simcompi 2/ii-simcompi-vertical-logo.png`
+- `./images/simcompi/simcompi 2/palestrantes.png`
+- `./images/simcompi/simcompi 3/banner-horizontal-iii-simcompi.png`
+- `./images/simcompi/simcompi 3/logo-horizonta-liii-simcompi.png`
+- `./images/simcompi/simcompi 3/logo-vertical-liii-simcompi.png`
+- `./images/simcompi/simcompi 3/rio-poty-fundo-banner-liii-simcompi.png.jpg`
+- `./images/team/camille-ximenes.jpeg`
+- `./images/team/clenilson-willams.jpeg`
+- `./images/team/gabriel-garrett.jpeg`
+- `./images/team/henrique-ezequiel.jpg`
+- `./images/team/jose-fernando.jpg`
+- `./images/team/luiz-gustavo.jpeg`
+- `./images/team/natan-pereira.jpg`
+- `./images/team/simone_dona.JPG`
+- `./images/team/thierry-miqueias.jpeg`
+- `./images/team/alumni/aldemar-siqueira.png`
+- `./images/team/alumni/ana_azevedo.jpg`
+- `./images/team/alumni/anderson-soares.jpg`
+- `./images/team/alumni/brendon-abreu.jpg`
+- `./images/team/alumni/bruno_cavalcante.jpg`
+- `./images/team/alumni/dario-viveiros.jpg`
+- `./images/team/alumni/davi-kaue.JPG`
+- `./images/team/alumni/david-carneiro.jpg`
+- `./images/team/alumni/iago-cavalcante.jpg`
+- `./images/team/alumni/isadora-rodrigues.jpeg`
+- `./images/team/alumni/jenario-junior.jpeg`
+- `./images/team/alumni/jose_pereira.jpeg`
+- `./images/team/alumni/juan-blanches.jpg`
+- `./images/team/alumni/kaelana-moura.jpg`
+- `./images/team/alumni/lhaua-barbosa.jpg`
+- `./images/team/alumni/lucas-siqueira.jpeg`
+- `./images/team/alumni/romulo-cortez.jpg`
+- `./pages/about.html`
+- `./pages/alumni.html`
+- `./pages/publications.html`
+- `./pages/publications.json`
+- `./pages/research_team.html`
+- `./pages/extension/bull_racing.html`
+- `./pages/extension/faisca.html`
+- `./pages/simcompi/committees.html`
+- `./pages/simcompi/contact-us.html`
+- `./pages/simcompi/proceedings.html`
+- `./pages/simcompi/simcompi.html`
+- `./pages/simcompi/submissions.html`
+- `./pages/simcompi/prev_edition/ii_simcompi.html`
+- `./pages/simcompi/prev_edition/i_simcompi.html`
+- `./pages/simcompi/proceedings/apresentacao.html`
+- `./pages/simcompi/proceedings/arquivo.html`
+- `./pages/simcompi/proceedings/expediente.html`
+- `./pages/simcompi/proceedings/proceedings_data.json`
+- `./pages/simcompi/proceedings/previous/vol1.html`
+- `./pages/simcompi/proceedings/previous/vol_2.html`
+- `./proceedings/proceedings.js`
+- `./proceedings/z_rename_articles.ps1`
+- `./proceedings/vol1/abreu-mocao-borges-2019-analise-da-eficiencia-energetica-em-rede-de-distribuicao-de-ar-comprimido-para-uma-fabrica-de-bicicletas.pdf`
+- `./proceedings/vol1/acioli-pires-feitosa-2019-classificacao-de-amostras-metalograficas-de-acos-rapidos.pdf`
+- `./proceedings/vol1/almeida-albuquerque-siqueira-2019-utilizacao-de-materiais-supercondutores-de-alta-temperatura-em-sistemas-de-energia_uma-prospeccao-tecnologica.pdf`
+- `./proceedings/vol1/azevedo-girao-2019-electronic-properties-of-nitrogen-doped-graphene-nanowiggles.pdf`
+- `./proceedings/vol1/basilio-araujo-bezerra-2019-modelagem-computacional-de-sistemas-elevatorios.pdf`
+- `./proceedings/vol1/bezerra-araujo-2019-modelagem-de-um-modelo-didatico-para-um-servomotor.pdf`
+- `./proceedings/vol1/blanche-hoefel-2019-free-vibration-of-a-rotating-tapered-beam.pdf`
+- `./proceedings/vol1/borges-aratuza-barbosa-2019-identificacao-de-fenomeno-de-transferencia-grafo-fonico-fonologica-pb-ile.pdf`
+- `./proceedings/vol1/borges-cassia-albuquerque-2019-utilizacao-de-nanocompositos-metalicos-para-eficiencia-energetica-na-producao-industrial-uma-prospeccao-tecnologica.pdf`
+- `./proceedings/vol1/brito-alves-pires-2019-estudo-e-aplicacao-de-sensor-lidar-em-carros-autonomos.pdf`
+- `./proceedings/vol1/carmo-gomes-figueiredo-mota-2019-controladores-com-estrutura-fuzzy-pid-aplicados-a-malha-de-temperatura-de-uma-incubadora-neonatal.pdf`
+- `./proceedings/vol1/carvalho-mota-2019-modelando-a-atitude-de-um-drone-quadrotor.pdf`
+- `./proceedings/vol1/carvalho-oliveira-pires-2019-desenvolvimento-de-um-robo-manipulador-do-tipo-scara.pdf`
+- `./proceedings/vol1/cassia-borges-albuquerque-2019-estudo-prospectivo-sobre-a-utilizacao-de-materiais-polimericos-na-engenharia-aeroespacial.pdf`
+- `./proceedings/vol1/conceicao-medeiros-2019-projeto-de-um-controlador-pid-aplicado-em-um-tanque-de-nivel-didatico.pdf`
+- `./proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf`
+- `./proceedings/vol1/costa-fontes-2019-modelagem-numerica-de-problema-de-contato.pdf`
+- `./proceedings/vol1/figueiredo-carmo-gomes-mota-2019-desenvolvimento-de-hardware-didatico-para-ensino-de-controle-digital.pdf`
+- `./proceedings/vol1/filgueiras-fontes-2019-aplicativo-android-para-verificacao-de-elementos-de-aco-sob-forca-axial.pdf`
+- `./proceedings/vol1/fonseca-slayder-jesus-2019-modelagem-baseada-em-agentes-para-derrame-de-oleo.pdf`
+- `./proceedings/vol1/fussuma-rocha-2019-avaliacao-do-monitoramento-do-sistema-fotovoltaico-conectado-a-rede-e-seus-impactos-na-qualidade-de-energia-da-ufpi.pdf`
+- `./proceedings/vol1/leao-medeiros-2019-controle-fuzzy-aplicado-em-um-tanque-de-nivel-didatico.pdf`
+- `./proceedings/vol1/melo-lisboa-souza-2019-simulacao-numerica-para-analise-estrutural-dos-cavaletes-suporte-de-viradores-de-vagao-por-meio-do-metododos-elementos-finitos.pdf`
+- `./proceedings/vol1/mocao-aquino-magalhaes-2019-nitretacao-a-plasmacom-gaiola-catodica-do-aco-aisi-444_investigacao-e-analise-dos-parametros-de-tratamento.pdf`
+- `./proceedings/vol1/nascimento-girao-2019-electronic-structure-of-carbon-nanocage-with-bipartite-structure-a-dft-study.pdf`
+- `./proceedings/vol1/nunes-figueiredo-mota-2019-sistema-de-acionamento-para-incubadora-neonatal.pdf`
+- `./proceedings/vol1/pinho-aratuza-barbosa-2019-identificacao-e-classificacao-do-fenomeno-de-transferencia-apagamento-de-ah-pb-ile-utilizando-rna-do-tipo-mlp.pdf`
+- `./proceedings/vol1/queiroz-araujo-bezerra-2019-programacao-aplicada-a-insercao-de-elementos-graficos-em-ambiente-autocad.pdf`
+- `./proceedings/vol1/sanches-slayder-jesus-2019-a-boundary-element-method-formulation-to-modeling-the-gas-coning-phenomenomn-in-oil-wells.pdf`
+- `./proceedings/vol1/serra-lobato-2019-analise-em-cfd-da-geometria-da-garganta-de-uma-tubeira.pdf`
+- `./proceedings/vol1/silveira-bezerra-araujo-2019-desenvolvimento-de-redes-de-distribuicao-de-agua-envolvendo-o-autocad-e-o-epanet.pdf`
+- `./proceedings/vol1/siqueira-cortez-hoefel-2019-free-vibration-of-a-beam-column-on-two-parameter-elastic-foundation.pdf`
+- `./proceedings/vol1/siqueira-hoefel-2019-nonlocal-finite-element-analysis-of-euler-bernoulli-nanobeams.pdf`
+- `./proceedings/vol1/soares-fontes-2019-ferramenta-computacional-para-dimensionamento-de-cobertura-em-madeira.pdf`
+- `./proceedings/vol1/sobrinho-virgens-jesus-2019-avancos-da-nanotecnologia-farmaceutica-aplicados-ao-desenvolvimento_uma-prospeccao-tecnologica.pdf`
+- `./proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno-contendo-anti-dots.pdf`
+- `./proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno.pdf`
+- `./proceedings/vol1/vol1_complete_simcompi.pdf`
+- `./proceedings/vol2/barreto-rodrigues-2025-simulacao-em-matlab-de-controle-psicrometrico-aplicado-a-sistemas-de-refrigeracao.pdf`
+- `./proceedings/vol2/borges-goncalves-rocha-silva-2025-modelagem-computacional-de-um-sistema-de-minigeracao-agrivoltaica-em-um-empreendimento-de-avicultura-no-estado-do-piaui.pdf`
+- `./proceedings/vol2/borges-mota-paiva-2025-desenvolvimento-do-sistema-de-monitoramento-das-grandezas.pdf`
+- `./proceedings/vol2/brandao-reis-hoefel-2025-periodic-structures-for-vibration-attenuation-in-tracks.pdf`
+- `./proceedings/vol2/gomes-hoefel-2025-numerical-modeling-of-partially-submerged-beam-column.pdf`
+- `./proceedings/vol2/melo-viveiros-hoefel-2025-passive-mitigation-of-vibration-frequencies-on.pdf`
+- `./proceedings/vol2/oliveira-girao-2025-propriedades-eletronicas-de-tripentafenos-retangulares-dopados-com-nitrogenio.pdf`
+- `./proceedings/vol2/reis-hoefel-labaki-2025-periodic-surface-walls-for-ground-vibration-attenuation.pdf`
+- `./proceedings/vol2/rodrigues-hoefel-2025-wave-propagation-in-periodic-railway-tracks-lateral-and-vertical-bending-analysis.pdf`
+- `./proceedings/vol2/sarmento-mota-2025-identificacao-e-controle-dos-motores-de-um-robo.pdf`
+- `./proceedings/vol2/silva-franca-mota-2025-regulador-de-fluxo-diafragma-iris-para-aplicacao-em-uma-planta-didatica-de-levitacao-a-ar.pdf`
+- `./proceedings/vol2/vol2_complete_simcompi.pdf`
