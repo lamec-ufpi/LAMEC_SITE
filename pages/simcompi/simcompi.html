@@ -11,13 +11,13 @@
 <body>
 
     <!-- Navegação (Com Dropdowns implementados na resposta anterior) -->
-            <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar">
       <div class="container nav-container">
-        <div class="logo"><a href="simcompi.html" class="logo-text"><span class="logo-highlight">SIM</span>COMPI</a></div>
+        <div class="logo"><a href="simcompi.html" class="logo-text"><img src="../../images/brand/simcompi-logo.png" alt="SIMCOMPI" class="navbar-brand-img"></a></div>
         <ul class="nav-links">
           <li><a href="simcompi.html">SIMCOMPI</a></li>
           <li><a href="submissions.html">SUBMISSÕES</a></li>
-          <li><a href="proceedings.html">ANAIS DO EVENTO</a></li>
+          <li><a href="proceedings/proceedings.html">ANAIS DO EVENTO</a></li>
           <li class="dropdown"><a href="prev_edition/i_simcompi.html">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="prev_edition/i_simcompi.html">I SIMCOMPI</a></li><li><a href="prev_edition/ii_simcompi.html">II SIMCOMPI</a></li></ul></li>
           <li><a href="committees.html">COMISSÕES</a></li>
           <li><a href="contact-us.html">CONTATO</a></li>
@@ -27,8 +27,8 @@
     </nav>
 
     <!-- Hero & Countdown -->
-    <header class="simcompi-hero">
-        <img src="https://via.placeholder.com/600x150/transparent/ffffff?text=SIMCOMPI+Logo+Here" alt="SIMCOMPI Logo" class="logo-image">
+    <header class="simcompi-hero current-event-hero">
+        <img src="../../images/simcompi/simcompi%203/logo-horizonta-liii-simcompi.png" alt="SIMCOMPI Logo" class="logo-image">
         
         <div class="countdown-container">
             <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
@@ -43,8 +43,8 @@
         </div>
     </header>
 
-        <!-- Event Sub-Navbar -->
-<!-- Intro Text -->
+    <!-- Event Sub-Navbar -->
+    <!-- Intro Text -->
     <section class="simcompi-intro">
         <p>A terceira edição do <strong>SIMCOMPI</strong> será realizada de <strong>22 a 24 de março de 2027</strong>, no <strong>Auditório do Centro de Tecnologia da Universidade Federal do Piauí</strong>. O SIMCOMPI é um evento nacional organizado pelo LAMEC que reúne especialistas para discutir avanços e desafios relacionados à aplicação de modelos computacionais. Nosso principal objetivo é promover a troca de conhecimentos e fortalecer a colaboração entre pesquisadores, profissionais e estudantes das áreas de engenharia, computação, matemática e física.</p>
         <br>
@@ -55,59 +55,39 @@
         </div>
         </section>
 
-    <!-- Palestrantes -->
-    <section class="speakers-section">
-        <div class="container">
-            <h2 class="section-title-left">Palestrantes</h2>
-            <div class="speakers-grid">
-                
-                <div class="speaker-card">
-                    <img src="https://via.placeholder.com/150" alt="Adriano Fabro" class="speaker-photo">
-                    <h4>Adriano Fabro</h4>
-                </div>
-                <div class="speaker-card">
-                    <img src="https://via.placeholder.com/150" alt="Daniel Candeloro" class="speaker-photo">
-                    <h4>Daniel Candeloro</h4>
-                </div>
-                <div class="speaker-card">
-                    <img src="https://via.placeholder.com/150" alt="Heitor Lopes" class="speaker-photo">
-                    <h4>Heitor Lopes</h4>
-                </div>
-                <div class="speaker-card">
-                    <img src="https://via.placeholder.com/150" alt="Speaker 4" class="speaker-photo">
-                    <h4>Nome Palestrante</h4>
-                </div>
-                <div class="speaker-card">
-                    <img src="https://via.placeholder.com/150" alt="Speaker 5" class="speaker-photo">
-                    <h4>Nome Palestrante</h4>
-                </div>
-                <div class="speaker-card">
-                    <img src="https://via.placeholder.com/150" alt="Speaker 6" class="speaker-photo">
-                    <h4>Nome Palestrante</h4>
-                </div>
-
-            </div>
-        </div>
-    </section>
+    <div id="even3-widget-speaker" height="auto"></div><script src="https://www.even3.com.br/widget/js?e=iii-simcompi-687611&t=speaker&lang=pt"></script>
 
     <!-- Instagram Section -->
-    <section class="instagram-section">
-        <h2 class="instagram-title">Siga no Instagram <span>@simcompi</span></h2>
+    <iframe 
+    src="https://instagram.com/simcompi/embed" 
+    width="100%" 
+    height="700px" 
+    style="border: none;" 
+    title="Convidados do Evento">
+    </iframe>
+
+        <!-- Logos Flexbox Automático -->
+    <section class="logos-wrapper">
         
-        <!-- 
-        ======================================================================
-        INÍCIO DO WIDGET DO INSTAGRAM 
-        Para usar o widget real, apague a <div class="insta-grid"> inteira 
-        abaixo e cole o código do widget dentro desta seção.
-        -->
-        <div class="insta-grid">
-            <div class="insta-item" data-background-image="url('https://via.placeholder.com/300/154c6b/fff?text=Insta+Post+1')"></div>
-            <div class="insta-item" data-background-image="url('https://via.placeholder.com/300/267c94/fff?text=Insta+Post+2')"></div>
-            <div class="insta-item" data-background-image="url('https://via.placeholder.com/300/154c6b/fff?text=Insta+Post+3')"></div>
-            <div class="insta-item" data-background-image="url('https://via.placeholder.com/300/267c94/fff?text=Insta+Post+4')"></div>
-            <div class="insta-item" data-background-image="url('https://via.placeholder.com/300/154c6b/fff?text=Insta+Post+5')"></div>
-            <div class="insta-item" data-background-image="url('https://via.placeholder.com/300/267c94/fff?text=Insta+Post+6')"></div>
+        <h3>Organizadores</h3>
+        <div class="logos-container">
+            <!-- Jogue as imagens aqui e elas se alinham sozinhas -->
+            <img src="../../images/brand/lamec-logo.png" alt="LAMEC">
+            <img src="../../images/brand/crea-logo.jpg" alt="CREA PI">
         </div>
+
+        <h3>Parceiros institucionais</h3>
+        <div class="logos-container">
+            <img src="../../images/brand/prh-59-logo.jpg" alt="PRHANP">
+            <img src="../../images/brand/ufpi-logo.png" alt="Brasão da UFPI">
+        </div>
+
+        <h3>Patrocinadores</h3>
+        <div class="logos-container">
+            <img src="../../images/brand/fapepi-logo.png" alt="FAPEPI">
+            <img src="../../images/brand/vida-verde-logo.png" alt="Vida Verde">
+        </div>
+
     </section>
 
     <footer>

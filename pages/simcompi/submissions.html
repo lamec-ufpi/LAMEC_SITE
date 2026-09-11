@@ -13,11 +13,11 @@
     <!-- Navegação Principal -->
             <nav class="navbar" id="navbar">
       <div class="container nav-container">
-        <div class="logo"><a href="simcompi.html" class="logo-text"><span class="logo-highlight">SIM</span>COMPI</a></div>
+        <div class="logo"><a href="simcompi.html" class="logo-text"><img src="../../images/brand/simcompi-logo.png" alt="SIMCOMPI" class="navbar-brand-img"></a></div>
         <ul class="nav-links">
           <li><a href="simcompi.html">SIMCOMPI</a></li>
           <li><a href="submissions.html">SUBMISSÕES</a></li>
-          <li><a href="proceedings.html">ANAIS DO EVENTO</a></li>
+          <li><a href="proceedings/proceedings.html">ANAIS DO EVENTO</a></li>
           <li class="dropdown"><a href="prev_edition/i_simcompi.html">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="prev_edition/i_simcompi.html">I SIMCOMPI</a></li><li><a href="prev_edition/ii_simcompi.html">II SIMCOMPI</a></li></ul></li>
           <li><a href="committees.html">COMISSÕES</a></li>
           <li><a href="contact-us.html">CONTATO</a></li>
@@ -28,7 +28,7 @@
 
     <!-- Hero & Countdown -->
     <header class="simcompi-hero">
-        <img src="https://via.placeholder.com/600x150/transparent/ffffff?text=SIMCOMPI+Logo+Here" alt="SIMCOMPI Logo" class="logo-image">
+        <img src="../../images/simcompi/simcompi%203/logo-horizonta-liii-simcompi.png" alt="SIMCOMPI Logo" class="logo-image">
         
         <div class="countdown-container">
             <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
@@ -44,7 +44,7 @@
     </header>
 
     <!-- Event Sub-Navbar -->
-<!-- Important Dates -->
+    <!-- Important Dates -->
     <section class="important-dates container">
         <h2 class="section-title-plain">Datas importantes</h2>
         <ul class="dates-list">
@@ -59,37 +59,27 @@
     </section>
 
     <!-- Submission (Fundo Azul + Even3 Embed) -->
-    <section class="bg-light-blue submission-section" id="author-guidelines">
-        <div class="container">
-            <h2 class="section-title-highlight">Submissão</h2>
-            <a href="#submission-form" class="btn btn-green">Ir para o formul�rio de submiss�o</a>
-            
-            <!-- ÁREA DO EVEN3 -->
-            <div class="even3-embed-container" id="submission-form">
-                <div>
-                    <strong>[ Widget do Even3 - Modalidade e Áreas Temáticas ]</strong><br><br>
-                    Apague este texto e insira o código <code>&lt;iframe&gt;</code> ou <code>&lt;script&gt;</code> fornecido pelo Even3 diretamente dentro desta div no HTML.
-                </div>
-            </div>
-            
-        </div>
+    <section class="bg-light-blue submission-section" id="guidelines">
+        <div id="even3-widget-submission" class="even3-embed-container" height="auto"></div><script src="https://www.even3.com.br/widget/js?e=iii-simcompi-687611&t=submission&lang=pt"></script>
     </section>
 
     <!-- Resources (Downloads) -->
-    <section class="resources-section container">
-        <div class="resource-block">
-            <h3>Recursos para submissão de artigo completo em LaTeX</h3>
-            Clique aqui para baixar o modelo de artigo completo em LaTeX.
-        </div>
-        
-        <div class="resource-block">
-            <h3>Recursos para submissão de artigo completo em MS Word</h3>
-            Clique aqui para baixar o modelo de artigo completo em MS Word.
-        </div>
-        
-        <div class="resource-block">
-            <h3>Recursos para apresentação de pôsteres</h3>
-            O modelo para apresentação de pôsteres ainda não está disponível.
+    <section class="resources-section">
+        <div class="container">
+            <div class="resource-block">
+                <h3>Recursos para submissão de artigo completo em LaTeX</h3>
+                Clique aqui para baixar o modelo de artigo completo em LaTeX.
+            </div>
+            
+            <div class="resource-block">
+                <h3>Recursos para submissão de artigo completo em MS Word</h3>
+                Clique aqui para baixar o modelo de artigo completo em MS Word.
+            </div>
+            
+            <div class="resource-block">
+                <h3>Recursos para apresentação de pôsteres</h3>
+                O modelo para apresentação de pôsteres ainda não está disponível.
+            </div>
         </div>
     </section>
 
@@ -100,34 +90,11 @@
             <div class="proceedings-box">
                 Todos os artigos completos apresentados no SIMCOMPI serão reunidos em um único documento e disponibilizados publicamente na seção de <strong>anais</strong>.
             </div>
+            <a href="proceedings/proceedings.html" class="btn btn-green">Ver anais do evento</a>
         </div>
     </section>
 
-    <!-- Logos Flexbox Automático -->
-    <section class="logos-wrapper">
-        
-        <h3>Organizadores</h3>
-        <div class="logos-container">
-            <!-- Jogue as imagens aqui e elas se alinham sozinhas -->
-            <img src="https://via.placeholder.com/200x80/ffffff/154c6b?text=LAMEC" alt="LAMEC">
-            <img src="https://via.placeholder.com/150x80/ffffff/154c6b?text=CREA-PI" alt="CREA PI">
-        </div>
 
-        <h3>Parceiros institucionais</h3>
-        <div class="logos-container">
-            <img src="https://via.placeholder.com/150x80/ffffff/5ab1bb?text=PRHANP" alt="PRHANP">
-            <img src="https://via.placeholder.com/100x120/ffffff/5ab1bb?text=Brasao" alt="Brasão">
-            <img src="https://via.placeholder.com/150x80/ffffff/5ab1bb?text=LAPCON" alt="LAPCON">
-            <img src="https://via.placeholder.com/120x100/ffffff/5ab1bb?text=SAPHIRA" alt="Saphira">
-        </div>
-
-        <h3>Patrocinadores</h3>
-        <div class="logos-container">
-            <img src="https://via.placeholder.com/200x80/ffffff/111111?text=FAPEPI" alt="FAPEPI">
-            <img src="https://via.placeholder.com/150x80/ffffff/27ae60?text=Vida+Verde" alt="Vida Verde">
-        </div>
-
-    </section>
 
     <footer>
         <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>

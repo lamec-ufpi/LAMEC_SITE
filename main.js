@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroSlider = document.getElementById('hero-slider');
     if (heroSlider) {
         const backgroundImages = [
-            "url('https://via.placeholder.com/1920x1080/444/fff?text=LABORATORY+PHOTO+1')",
-            "url('https://via.placeholder.com/1920x1080/267c94/fff?text=LABORATORY+PHOTO+2')",
-            "url('https://via.placeholder.com/1920x1080/154c6b/fff?text=LABORATORY+PHOTO+3')"
+            "url('images/backgrounds/home-horizontal-banner-1.jpg')",
+            "url('images/backgrounds/home-horizontal-banner-2-lamec-foto.jpeg')",
+            "url('images/backgrounds/about-home-horizontal-banner-lamec-foto.jpeg')"
         ];
         let currentSlide = 0;
         const changeSlide = (direction) => {

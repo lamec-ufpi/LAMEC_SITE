@@ -12,13 +12,13 @@
 
 
     <!-- Navegação Principal -->
-            <nav class="navbar" id="navbar">
+    <nav class="navbar" id="navbar">
       <div class="container nav-container">
-        <div class="logo"><a href="simcompi.html" class="logo-text"><span class="logo-highlight">SIM</span>COMPI</a></div>
+        <div class="logo"><a href="simcompi.html" class="logo-text"><img src="../../images/brand/simcompi-logo.png" alt="SIMCOMPI" class="navbar-brand-img"></a></div>
         <ul class="nav-links">
           <li><a href="simcompi.html">SIMCOMPI</a></li>
           <li><a href="submissions.html">SUBMISSÕES</a></li>
-          <li><a href="proceedings.html">ANAIS DO EVENTO</a></li>
+          <li><a href="proceedings/proceedings.html">ANAIS DO EVENTO</a></li>
           <li class="dropdown"><a href="prev_edition/i_simcompi.html">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="prev_edition/i_simcompi.html">I SIMCOMPI</a></li><li><a href="prev_edition/ii_simcompi.html">II SIMCOMPI</a></li></ul></li>
           <li><a href="committees.html">COMISSÕES</a></li>
           <li><a href="contact-us.html">CONTATO</a></li>
@@ -29,11 +29,52 @@
 
     <header class="page-header">
         <h1>Comissões</h1>
+        <!-- n era pa existir uma section h1 e h2 do msm estilo, ou é td h2, ou td h1 (eu prefiro td h1) -->
     </header>
 
     <!-- Event Sub-Navbar -->
-<!-- Comissões Content -->
-    <main class="container committees-section">
+    <!-- Comissões Content -->
+    <main class="container proceedings-layout">
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Buscar</div>
+                <div class="sidebar-content">
+                    <form id="searchForm">
+                        <input type="text" id="searchInput" class="search-input" placeholder="Buscar artigos, autores..." required>
+                        <button type="submit" class="search-btn">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Navegação</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="proceedings/apresentacao.html">Apresentação</a></li>
+                        <li><a href="proceedings/expediente.html">Expediente</a></li>
+                        <li><a href="submissions.html#author-guidelines">Normas para Publicação</a></li>
+                        <li><a href="contact-us.html#contact">Contato</a></li>
+                        <li><a href="proceedings/volumes/vol_3.html">Edição Atual</a></li>
+                        <li><a href="proceedings/volumes/vol_1.html">Edições Anteriores</a></li>
+                        <li><a href="proceedings/arquivo.html">Arquivo (Todos os Volumes)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Explorar</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="proceedings/arquivo.html#author">Por Autor</a></li>
+                        <li><a href="proceedings/arquivo.html#title">Por Título</a></li>
+                        <li><a href="proceedings/arquivo.html#category">Por Categoria</a></li>
+                        <li><a href="proceedings/arquivo.html#edition">Por Edição</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class="main-content committees-section">
 
                 <!-- Informações da Publicação -->
         <div class="info-card">
@@ -111,6 +152,7 @@
         </div>
     
 
+        </section>
     </main>
 
     <footer>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - SIMCOMPI Anais do evento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+<body>
+
+    <!-- Navegação Principal -->
+            <nav class="navbar" id="navbar">
+      <div class="container nav-container">
+        <div class="logo"><a href="../simcompi.html" class="logo-text"><img src="../../../images/brand/simcompi-logo.png" alt="SIMCOMPI" class="navbar-brand-img"></a></div>
+        <ul class="nav-links">
+          <li><a href="../simcompi.html">SIMCOMPI</a></li>
+          <li><a href="../submissions.html">SUBMISSÕES</a></li>
+          <li><a href="proceedings.html">ANAIS DO EVENTO</a></li>
+          <li class="dropdown"><a href="../prev_edition/i_simcompi.html">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../prev_edition/i_simcompi.html">I SIMCOMPI</a></li><li><a href="../prev_edition/ii_simcompi.html">II SIMCOMPI</a></li></ul></li>
+          <li><a href="../committees.html">COMISSÕES</a></li>
+          <li><a href="../contact-us.html">CONTATO</a></li>
+          <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Header do Evento -->
+    <header class="page-header current-event-page-header">
+        <h1>Anais do evento</h1>
+    </header>
+
+    <!-- Sub-Navbar do Evento -->
+    <!-- Estrutura Principal: Sidebar + Grade de Cards -->
+    <main class="container proceedings-layout">
+        
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            
+            <!-- Widget 1: Buscar -->
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Buscar</div>
+                <div class="sidebar-content">
+                    <form action="#" method="GET" id="searchForm">
+                        <input type="text" class="search-input" placeholder="Buscar artigos, autores, palavras-c..." required>
+                        <button type="submit" class="search-btn">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Widget 2: Navegação -->
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Navegação</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="apresentacao.html">Apresentação</a></li>
+                        <li><a href="expediente.html">Expediente</a></li>
+                        <li><a href="../submissions.html#guidelines">Normas para Publicação</a></li> <!--  ### ancora pra section <h2 class="section-title">Diretrizes para autores</h2> -->
+                        <li><a href="../contact-us.html#contact">Contato</a></li>
+                        <li><a href="volumes/vol_3.html">Edição Atual</a></li>
+                        <li><a href="volumes/vol_1.html">Edições Anteriores</a></li>
+                        <li><a href="arquivo.html">Arquivo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Widget 3: Explorar -->
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Explorar</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="#edition">Por Edição</a></li>
+                        <li><a href="#author">Por Autor</a></li>
+                        <li><a href="#title">Por Título</a></li>
+                        <li><a href="#category">Por Categoria</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Widget 4: Edição Atual -->
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Edição Atual</div>
+                <div class="sidebar-content">
+                    <div class="edition-text">Vol. 3 (2027)</div>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT (Grade de Cartões) -->
+        <section class="main-content">
+            <div class="cards-grid">
+                
+                <div class="proc-card">
+                    <h3>Apresentação</h3>
+                    <p>Conheça nossa revista e nossos objetivos</p>
+                    <!-- Os links abaixo já apontam para a estrutura de pastas que você mencionou -->
+                    <a href="apresentacao.html" class="btn-acessar">Acessar</a>
+                </div>
+
+                <div class="proc-card">
+                    <h3>Corpo Editorial</h3>
+                    <p>Conheça nossa equipe editorial</p>
+                    <a href="expediente.html" class="btn-acessar">Acessar</a>
+                </div>
+
+ 
+
+            </div>
+
+            <h2 class="section-title">Diretrizes para autores</h2>
+
+            <p>Os autores devem seguir rigorosamente as diretrizes de formatação dos modelos oficiais. Para instruções detalhadas sobre a preparação dos manuscritos e para baixar os modelos da edição atual, acesse a página de submissões.</p>
+            <a href="../submissions.html#guidelines" class="btn btn-solid">Diretrizes para submissão</a>
+            <h2 class="section-title">Contato</h2>
+
+            <p>Estamos à disposição para ajudar com dúvidas ou informações. Entre em contato pelo e-mail simcompiaui@gmail.com.</p>
+            <a href="../contact-us.html#contact" class="btn btn-solid">Entre em contato</a>
+        </section>
+
+        
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </footer>
+
+    <!-- Script de Placeholder para o Formulário de Busca -->
+    
+    <script src="../../../main.js"></script>
+</body>
+</html>
+
+
