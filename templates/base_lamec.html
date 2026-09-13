@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LAMEC{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/brand/lamec-logo.png') }}">
+    <script>
+        window.STATIC_ROOT = "{{ url_for('static', filename='style.css') }}".replace('style.css', '');
+        window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
+    </script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="{{ url_for('index') }}" class="logo-text">
+                    <img src="{{ url_for('static', filename='images/brand/lamec-logo.png') }}" alt="LAMEC" class="navbar-brand-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('index') }}" class="{% if current_endpoint == 'index' %}active{% endif %}">HOME</a></li>
+                <li><a href="{{ url_for('publications') }}" class="{% if current_endpoint == 'publications' %}active{% endif %}">PUBLICATIONS</a></li>
+                <li class="dropdown"><a href="{{ url_for('research_team') }}" class="{% if current_endpoint in ['research_team', 'alumni'] %}active{% endif %}">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('research_team') }}" class="{% if current_endpoint == 'research_team' %}active{% endif %}">RESEARCH TEAM</a></li>
+                        <li><a href="{{ url_for('alumni') }}" class="{% if current_endpoint == 'alumni' %}active{% endif %}">ALUMNI</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('simcompi') }}">SIMCOMPI</a></li>
+                <li class="dropdown"><a href="{{ url_for('faisca') }}" class="{% if current_endpoint in ['bull_racing', 'faisca'] %}active{% endif %}">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url_for('bull_racing') }}" class="{% if current_endpoint == 'bull_racing' %}active{% endif %}">BULL RACING</a></li>
+                        <li><a href="{{ url_for('faisca') }}" class="{% if current_endpoint == 'faisca' %}active{% endif %}">FAÍSCA</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url_for('about') }}" class="{% if current_endpoint == 'about' %}active{% endif %}">ABOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <div class="container footer-content">
+            <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+        </div>
+    </footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

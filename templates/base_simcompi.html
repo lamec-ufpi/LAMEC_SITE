@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LAMEC - SIMCOMPI{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/brand/lamec-logo.png') }}">
+<script>
+    window.STATIC_ROOT = "{{ url_for('static', filename='style.css') }}".replace('style.css', '');
+    window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
+</script>
+</head>
+<body>
+    <nav class="navbar navbar-simcompi" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+            <a href="{{ url_for('simcompi') }}" class="logo-text">
+                <img src="{{ url_for('static', filename='images/brand/logo-simcompi-navbar-white.png') }}" alt="SIMCOMPI" class="navbar-brand-img">
+            </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="{{ url_for('submissions') }}" class="{% if current_endpoint == 'submissions' %}active{% endif %}">SUBMISSÕES</a></li>
+          <li><a href="{{ url_for('proceedings') }}" class="{% if current_endpoint in ['proceedings', 'apresentacao', 'expediente', 'normas', 'contato_anais', 'arquivo', 'volume'] %}active{% endif %}">ANAIS DO EVENTO</a></li>
+          <li class="dropdown"><a href="#" class="{% if current_endpoint in ['i_simcompi', 'ii_simcompi'] %}active{% endif %}">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="{{ url_for('i_simcompi') }}" class="{% if current_endpoint == 'i_simcompi' %}active{% endif %}">I SIMCOMPI</a></li>
+                <li><a href="{{ url_for('ii_simcompi') }}" class="{% if current_endpoint == 'ii_simcompi' %}active{% endif %}">II SIMCOMPI</a></li>
+            </ul>
+          </li>
+          <li><a href="{{ url_for('committees') }}" class="{% if current_endpoint == 'committees' %}active{% endif %}">COMISSÕES</a></li>
+          <li><a href="{{ url_for('contact_us') }}" class="{% if current_endpoint == 'contact_us' %}active{% endif %}">CONTATO</a></li>
+          <li><a href="{{ url_for('index') }}" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

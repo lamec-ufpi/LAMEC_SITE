@@ -1,0 +1,468 @@
+{
+  "volumes": [
+    {
+      "id": "vol_1_2019",
+      "title": "SIMCOMPI - Vol. 1 (2019)",
+      "year": 2019,
+      "cover_img": "../static/images/simcompi/simcompi 1/i-simcompi-banner.png",
+      "full_pdf_link": "../../../proceedings/vol1/vol1_complete_simcompi.pdf",
+      "categories": [
+        {
+          "name": "Desenvolvimento de ferramentas computacionais",
+          "articles": [
+            {
+              "title": "Android Aplicativo para verificação de Steel Elements under Axial Force",
+              "authors": "Rodrigo Diniz Filgueiras, Prof. Dr. Eduardo Martins Fontes do Rêgo",
+              "doi": "",
+              "abstract": "Considerando-se a crescente utilização de estruturas metálicas na modernidade e a popularização dos smartphones, pensou-se na implementação de um aplicativo Android a fim de executar as situações de verificação e dimensionamento de elementos de aço submetidos à força axial, cujas diretrizes de cálculo são baseadas na ABNT NBR 8800 (2008). O objetivo deste trabalho é que o aplicativo, chamado SteelApp, desenvolvido no ambiente do Android Studio, utilizando a linguagem de programação Java, apresente resultados confiáveis tais como os obtidos em softwares para desktop. A ferramenta gratuita destinar-se-á aos estudantes de engenharia civil como também poderá auxiliar profissionais da área que lidam com questões práticas de dimensionamento.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/filgueiras-fontes-2019-aplicativo-android-para-verificacao-de-elementos-de-aco-sob-forca-axial.pdf"
+            },
+            {
+              "title": "Dimensionamento de redes de distribuição de água com AutoCAD e EPANET",
+              "authors": "José Paulo da Silveira Neto, Alessandro de Araújo Bezerra, Renata Shirley de Andrade Araújo, Jordana Madeira Alaggio Ribeiro",
+              "doi": "",
+              "abstract": "Segundo Gomes (1997), dentre os componentes de um sistema de abastecimento de água, a rede de distribuição é responsável por distribuir água potável ao consumidor final. Para auxiliar no dimensionamento dessas redes, existem softwares como o Epanet, que executa simulações hidráulicas de redes de distribuição pressurizadas, conforme explica Rossman (2000). No entanto, a composição do traçado no programa implica em atividades bastante repetitivas e que demandam um grande esforço por parte do projetista. A automação, como sugere Castro (2004), surge então como uma alternativa para solucionar esse problema, permitindo maior economia de tempo e esforço e reduzindo significativamente o risco de erros no projeto. O objetivo deste trabalho foi desenvolver um pacote computacional para otimizar o processo de simulações hidráulicas de redes de distribuição de água no Epanet, através de uma interface interativa com o AutoCAD que promova rapidez e confiabilidade na entrada de dados e traçado da rede.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/silveira-bezerra-araujo-2019-desenvolvimento-de-redes-de-distribuicao-de-agua-envolvendo-o-autocad-e-o-epanet.pdf"
+            },
+            {
+              "title": "Ferramenta computacional para dimensionamento de Wooden Roofs",
+              "authors": "João Pedro Silva Soares, Prof. Dr. Eduardo Martins Fontes do Rêgo",
+              "doi": "",
+              "abstract": "As estruturas de madeira são empregadas na construção civil desde a antiguidade, principalmente devido à sua disponibilidade na natureza e à sua capacidade de isolamento térmico (PFEIL, 2003). Essas estruturas também possuem tipos de conexões fáceis de serem executadas e a capacidade de serem ampliadas de acordo com futura necessidade. Na atualidade, a madeira como material estrutural é utilizada principalmente em coberturas de determinadas estruturas, cujo dimensionamento é facilitado pela utilização de programas computacionais (software) de cálculo estrutural. Visando otimizar o cálculo de estruturas de cobertura em madeira, este trabalho se propõe a desenvolver um software em C# apto a dimensionar a capacidade da estrutura de cobertura de resistir aos esforços solicitantes. Tal dimensionamento é embasado nas considerações e orientações presentes na norma específica.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/soares-fontes-2019-ferramenta-computacional-para-dimensionamento-de-cobertura-em-madeira.pdf"
+            },
+            {
+              "title": "Modelagem computacional de Pumping Systems",
+              "authors": "Natanael Basilio Pires, Profª. Dra. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro de Araújo Bezerra",
+              "doi": "",
+              "abstract": "A água é um recurso essencial na realização de diversas atividades humanas e seu consumo gera uma demanda por sistemas de infraestrutura urbana, como de esgotamento sanitário e drenagem urbana, por exemplo, nesses sistemas é comum a utilização de fornecedores de energia para o escoamento adequado de fluxo, que são os sistemas elevatórios ou de recalque, formados por tubulações, acessórios e bombas. Para realização de projetos nessa área vários parâmetros referentes a tubulação e ao conjunto motor-bomba devem ser considerados, o que torna o mesmo uma atividade complexa e trabalhosa, dessa forma, vários projetista utilizam de softwares computacionais, como o AutoCAD, para realização desse tipo de projeto, entretanto, o mesmo não possui ferramentas específicas para a realização desse tipo de projeto. Dessa forma, esse trabalho busca utilizar-se da programação presente no AutoCAD, como o AutoLISP e o Visual Basic Applications (VBA) para criar ferramentas que permitam a representação e criação de projetos de sistemas elevatórios de maneira prática e eficiente.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/basilio-araujo-bezerra-2019-modelagem-computacional-de-sistemas-elevatorios.pdf"
+            },
+            {
+              "title": "Programação aplicada à inserção de elementos gráficos em ambiente AutoCAD",
+              "authors": "Paulo Roberto Queiroz de Almeida, Profª. Drª. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro De Araújo Bezerra",
+              "doi": "",
+              "abstract": "É de conhecimento geral que a água é um recurso fundamental para a sociedade, sendo, portanto, importante objeto de estudo. Pádua (2008) informa que o alto grau de qualidade da água é indicativo de saúde e essencial para a sociedade em geral. Muitos são os fatores que proporcionam uma boa qualidade à água, um deles é a rede de transporte, esta que, segundo Porto (2006), podem ser bastante complexas, devido aos vários componentes da rede e consequentemente o dimensionamento, operação e manutenção desse sistema são considerados uma parte bastante dispendiosa do projeto global de abastecimento. Nesse contexto, softwares projetados para melhoria dessas redes de distribuição são de grande interesse de estudo, visto que são capazes de simplificar tarefas, ou reduzir esforços repetitivos, provenientes de atividades ligadas à área de projetos. O AutoCAD é um software compatível para o planejamento das redes e já bastante utilizado, pois sua linguagem de programação, AutoLISP, permite personalização de comandos e é de aprendizagem relativamente simples. Valdivino (2011) cita a possibilidade de utilizar seus inúmeros comandos originais e acessar um banco de dados do próprio AutoCAD, facilitando a manipulação das entidades do desenho, como vantagem dessa linguagem de programação. Este trabalho tem como objetivo a criação de ferramentas de inserção de elementos gráficos que simulam alguns dos acessórios utilizados nas redes de distribuição, na forma de comandos customizados por meio do ambiente integral de desenvolvimento (IDE, sigla em inglês) do software AutoCAD.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/queiroz-araujo-bezerra-2019-programacao-aplicada-a-insercao-de-elementos-graficos-em-ambiente-autocad.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Engenharia Aeronáutica",
+          "articles": [
+            {
+              "title": "CFD Análise de a Nozzle Throat Geometry",
+              "authors": "Kassio Felipe da Costa Serra, João Manoel Torres Lobato",
+              "doi": "",
+              "abstract": "A tubeira de motor de foguete é um dispositivo que é usado para converter a energia termoquímica gerada na câmara de combustão em energia cinética. O principio é converter gases de alta pressão e baixa velocidade em gases de baixa pressão e alta velocidade, resultado pela queima do propelente que sai do motor, ampliando o empuxo. O dipositivo é dividido em três partes, subsônica convergente, garganta e supersonica divergente. Este trabalho tem como objetivo de analisar a geometria da garganta em formato circular e triangular se terá influência na pressão total e na velocidade distribuida na tubeira, com a ajuda do software ANSYS, poderemos utilizar técnicas de simulações computacionais para chegar em melhores resultados.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/serra-lobato-2019-analise-em-cfd-da-geometria-da-garganta-de-uma-tubeira.pdf"
+            },
+            {
+              "title": "Estudo prospectivo sobre o uso de materiais poliméricos na engenharia aeroespacial",
+              "authors": "Millena de Cassia Sousa e Silva, Yvo Borges da Silva, Valdivânia Albuquerque do Nascimento",
+              "doi": "",
+              "abstract": "A facilidade e o baixo custo de processamento fizeram com que os materiais poliméricos se tornassem abundantemente presentes na nossa vida cotidiana, após décadas de uso restrito, devido ao seu custo de obtenção, os compósitos poliméricos, também denominados avançados, têm ampliado a sua utilização em diferentes setores da indústria moderna. Existe uma gama de tipos de polímeros para aplicações avançadas: polímeros com excelentes estabilidade térmica e oxidativa, para o uso em aplicações aeroespaciais; plásticos utilizados na engenharia. Os termoplásticos reforçados com fibras continuas têm sido utilizados amplamente no setor aeroespacial por serem mais resistentes que os metais, possuírem baixa absorção de umidade entre outras características.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/cassia-borges-albuquerque-2019-estudo-prospectivo-sobre-a-utilizacao-de-materiais-polimericos-na-engenharia-aeroespacial.pdf"
+            },
+            {
+              "title": "Nitretação por plasma em gaiola catódica do aço AISI 444: investigação e análise dos parâmetros de tratamento",
+              "authors": "Renan Matos Monção, Bruno Barbosa de Aquino, Prof. Dr. Rômulo Ribeiro Magalhães",
+              "doi": "",
+              "abstract": "Tratamentos de superficie têm assumido um papel de crescente importância entre as técnicas de processamento de materiais. A nitretação por plasma convencional é um processo bem aceito industrialmente, porque apreserita várias vantagens em relação aos outros processos de nitretação (a gás e em banho de sais), tais como maior economia de gases e menor duração do processo. Segundo Bermudez (1999), dentre as várias aplicações industriais da nitretação por plasma, se destaca a indústria de armamento e aeroespacial em que canos de canhão, peças do guiamento de misseis e outros componentes do mesmo podem utilizar a técnica para aprimorar suas propriedades mecânicas. Além disso, segundo Silva (2016) é possível também utilizar a nitretação a plasma para o compressor de um motor de uma caça aeronáutico. Uma técnica alternativa de nitretação iônica é a ASPN (Active Screen Plasma Nitriding), onde as amostras ficam envolvidas por uma tela polarizada catodicamente e com ela é possível obter uma camada nitretada perfeitamente uniforme independente da forma da amostra. Desta forma o plasma atua na tela e não nas superficies das amostras. (Sousa, 2004). Nesse trabalho será utilizada uma técnica mais recente (2007) de nitretação, denominada de nitretação em gaiola catódica (NGC). Esta técnica é derivada da ASPN, mas que utiliza o efeito do catodo oco para aumentar a eficiência do processo de nitretação, proporcionando um aumento de dureza e espessura de camada. O objetivo deste trabalho é tratar termoquimicamente o aço AISI 444, melhorando suas propriedades como dureza, resistência ao desgaste, rugosidade e resistência a corrosão. Além de descobrir os melhores parâmetros de tratamento.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/mocao-aquino-magalhaes-2019-nitretacao-a-plasmacom-gaiola-catodica-do-aco-aisi-444_investigacao-e-analise-dos-parametros-de-tratamento.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Eficiência Energética",
+          "articles": [
+            {
+              "title": "Análise de eficiência energética em uma rede de distribuição de ar comprimido para uma fábrica de bicicletas",
+              "authors": "Luiz Henrique Portela de Abreu, Renan Matos Monção, Wênio Fhará Alencar Borges",
+              "doi": "",
+              "abstract": "O ar comprimido fornece energia para uma intensa variedade de operações fabris, dentre elas podemos destacar o controle e automação de processos, esmerilhar, furar, parafusar, pintar e pressurizar (EP, 2003). Na maioria das indústrias não há uma autocritica do sistema de ar comprimido buscando melhorias constantes e as condições de operação são somente as necessárias para que a produção de ar seja mantida (CAGI, 2004). Através de observações e estudos preliminares, foi levantada a hipótese de que a linha de distribuição de ar comprimido da unidade avaliada possuía defeitos e irregularidades que estavam influenciando no rendimento das máquinas e ferramentas pneumáticas utilizadas e um aumento nas horas de trabalho do compressor. Assim, este trabalho, através de uma análise de eficiência energética, visa apresentar o projeto do layout, a análise da queda de pressão e a estimativa da quantidade de vazamentos na rede de distribuição de ar comprimido de uma fábrica de bicicleta em Teresina (PI).",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/abreu-mocao-borges-2019-analise-da-eficiencia-energetica-em-rede-de-distribuicao-de-ar-comprimido-para-uma-fabrica-de-bicicletas.pdf"
+            },
+            {
+              "title": "Avaliação de monitoramento de sistema fotovoltaico conectado à rede e seus impactos na qualidade da energia na UFPI",
+              "authors": "Tatyane Mityko Dias Fussuma, Prof. Dr. Fábio Rocha Barbosa",
+              "doi": "",
+              "abstract": "O monitoramento de Qualidade de Energia é necessário para caracterizar os fenômenos eletromagnéticos em uma localidade típica, diagnosticar incompatibilidades entre a fonte de energia elétrica e a carga, além de refinar técnicas de modelagem (IEEE, 2009). No presente trabalho, realiza-se a avaliação do monitoramento de um Sistema Fotovoltaico Conectado à Rede, composto por 114 painéis fotovoltaicos do tipo policristalino, cuja potência nominal é de 36KW, e sua influência na qualidade de energia elétrica na rede de distribuição na UFPI. Sob uma ótica especifica, objetiva-se estimar a economia de energia na instituição após sua instalação e calcular o tempo de retorno financeiro do mesmo. No qual é realizado um estudo de caracterização do perfil da tensão e verificação da injeção de componentes harmônicos na rede, analisando assim a influência da instalação do SFCR na qualidade da rede que atende o local onde está instalado o sistema fotovoltaico.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/fussuma-rocha-2019-avaliacao-do-monitoramento-do-sistema-fotovoltaico-conectado-a-rede-e-seus-impactos-na-qualidade-de-energia-da-ufpi.pdf"
+            },
+            {
+              "title": "Uso de materiais supercondutores de alta temperatura em sistemas de energia: uma prospecção tecnológica",
+              "authors": "Laura Almeida Pereira dos Santos, Valdivânia Albuquerque do Nascimento, Felipe Pereira Siqueira e Silva",
+              "doi": "",
+              "abstract": "Os materiais supercondutores de alta temperatura apresentam-se como potenciais promotores de importantes desenvolvimentos na área energética. Algumas das suas caracteristicas possibilitam o desenvolvimento de novas tecnologias que de outra forma seriam impraticáveis ou impossíveis, tendo como exemplo dessas caracteristicas as suas propriedades eletromagnéticas e o seu nivel de diamagnetismo. Dentre os problemas energéticos com que a sociedade se confronta atualmente e que o emprego desses materiais pode influenciar de maneira positiva podemos citar a necessidade, não só econômica, mas também ambiental, de reduzir as perdas associadas à geração, transporte e distribuição de energia [1]. Esse trabalho tem como objetivo realizar uma busca na literatura de materiais supercondutores de alta temperatura em sistemas de energia.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/almeida-albuquerque-siqueira-2019-utilizacao-de-materiais-supercondutores-de-alta-temperatura-em-sistemas-de-energia_uma-prospeccao-tecnologica.pdf"
+            },
+            {
+              "title": "Uso de nanocompósitos metálicos para eficiência energética na produção industrial: uma prospecção tecnológica",
+              "authors": "Yvo Borges da Silva, Millena de Cássia Sousa e Silva, Valdivânia Albuquerque do Nascimento",
+              "doi": "",
+              "abstract": "Os nanocompositos são materiais em que pelo menos um de seus componentes apresentam dimensões nanométricas. O interesse pelos nanocompósitos metálicos tem crescido acentuadamente, uma vez que estes compostos tendem a apresentar melhores propriedades quando comparados com os compósitos convencionais. A preocupação com a elevação do consumo de combustíveis e energia na atividade industrial, tem estimulado o desenvolvimento de técnicas para a quantificação das entradas e saídas de energia na indústria, possibilitando o cálculo do balanço energético. Os balanços energéticos são indicadores relacionadores de energia e constituem promissora abordagem técnica para se avaliar e investigar problemas relacionados à sustentabilidade e eficiência de sistemas industriais.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/borges-cassia-albuquerque-2019-utilizacao-de-nanocompositos-metalicos-para-eficiencia-energetica-na-producao-industrial-uma-prospeccao-tecnologica.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Método dos Elementos de Contorno",
+          "articles": [
+            {
+              "title": "Formulação pelo método dos elementos de contorno para modelagem do fenômeno de cone de gás em poços de petróleo",
+              "authors": "Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus",
+              "doi": "",
+              "abstract": "For years the water/gas coning phenomenon in oil reservoirs has been a big challenge for the upstream industry. It happens because the conification causes serious limitations on the well productivity, increasing the production costs.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/sanches-slayder-jesus-2019-a-boundary-element-method-formulation-to-modeling-the-gas-coning-phenomenomn-in-oil-wells.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Método dos Elementos Finitos",
+          "articles": [
+            {
+              "title": "Análise de vibração livre de uma viga cônica rotativa",
+              "authors": "Juan Gabriel Queiroz Blanche, Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "Rotating beams are widely found in several engineering structures such as wind turbine blades, industrial fans and gas turbine engine. Blade is one of the most critical mechanical component in rotating machines, as result, the behavior of rotating beams structures has received a lot of attention. Therefore, different configurations of blades was investigated with classical theory of beam by many researchers, such as Euler-Bernoulli and Timoshenko. Since blades rarely has uniform area along the length, a non-prismatic analysis becomes more accurate and reliable motivating several authors to investigate the effect of tapering on rotating beams. In this paper, the vibration frequency of a tapered rotating beam is investigated. The finite element method is used, a non-constant flexural rigidity and mass per unit over the element is developed using a cubic polynomial. The effects of taper ratio and rotational speed are analyzed and the mode shapes are determined for some values of taper parameters. The results obtained shown that Rayleigh-Ritz method for Finite Elements finds the natural frequencies of a rotating tapered cantilever Euler-Bernoulli beam with high precision.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/blanche-hoefel-2019-free-vibration-of-a-rotating-tapered-beam.pdf"
+            },
+            {
+              "title": "Vibração livre de uma viga-coluna sobre fundação elástica de dois parâmetros",
+              "authors": "Lucas Oliveira Siqueira, Rômulo Luz Cortez, Profa. Dra. Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "The behavior of the Euler-Bernoulli beam on elastic foundation has been extensively studied in the modern engineering. There are many applications for beam on elastic foundation mainly in mechanical and civil engineering, like shafts supported on ball, roller, or journal bearings, vibrating machines on elastic foundations, network of beams in the construction of floor systems for ships, buildings, submerged floating tunnels, buried pipelines, railroad tracks etc. The purpose of this work is to analyze the influence of the axial load on the dynamic response of an axial-loaded Euler-Bernoulli beam resting on two-parameter foundation. Some examples presents the influence of the axial load and the foundation in the natural frequencies of the beam. Also, mode shapes were determined for some classical boundary conditions. The results obtained by FEM are discussed and compared with the exact solution.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf"
+            },
+            {
+              "title": "Modelagem numérica de Contact Problem",
+              "authors": "Vinicius da Silva Costa, Prof. Dr. Eduardo Martins Fontes do Rêgo",
+              "doi": "",
+              "abstract": "O principal mecanismo causador de falha nos cabos condutores é a fadiga provocada pela ação continua do vento, e ocorre frequentemente nos pontos de fixação do cabo, como por exemplo, grampos de suspensão. No ponto de fixação, há a restrição do movimento do cabo, além do contato entre seus fios constituintes e o grampo. Ambos são sujeitos ao movimento relativo entre si, gerando o processo de fretting entre os mesmos e induzindo, por fadiga, a nucleação e crescimento de trincas. A consequência é o rompimento dos componentes ou do próprio cabo, que se materializa em transtornos à população atendida (FADEL, 2010). O problema de contato é simplificado para um modelo numérico bidimensional (2D), onde o custo computacional é reduzido. Para isso utiliza-se o software ANSYS, que baseia-se no método dos elementos finitos. Desta forma, pretende-se obter computacionalmente as tensões de contato.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/costa-fontes-2019-modelagem-numerica-de-problema-de-contato.pdf"
+            },
+            {
+              "title": "Nonlocal Finite Element Análise de Euler-Bernoulli Nanobeams",
+              "authors": "Aldemar Pontes de Siqueira Neto, Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "Nanostructured materials present outstanding features like elevated modulus of elasticity and yield strength, high flexibility and conductivity. This materials are widely applied to nanoelectronics, nanodevices, nanosensors and nanocomposites. Various nonclassical elasticity theories were developed to study the mechanical behaviour of nanostructures, among them, nonlocal elasticity theory (ERINGEN, 1983) is the most used. In this theory, a nonlocal parameter which accounts for small scale effects is included in the constitutive equations. Carbon nanotubes are an extensively studied nanostructure often modelled as an Euler-Bernoulli nanobeam. In the present work, governing equations for bending, buckling and free vibration of an Euler-Bernoulli nanobeam are presented. A finite element model is developed to investigate the influence of nonlocal parameter, slenderness, rotational inertia and boundary conditions on deflections, buckling loads and natural frequencies. Numerical results obtained are discussed and compared with results obtained by other researchers.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/siqueira-hoefel-2019-nonlocal-finite-element-analysis-of-euler-bernoulli-nanobeams.pdf"
+            },
+            {
+              "title": "Simulação numérica para análise estrutural de estruturas de suporte de basculador ferroviário pelo método dos elementos finitos",
+              "authors": "Rodrigo da Silva Melo, Leonardo Vinícius Lisboa da Cruz, Anaximandro Souza",
+              "doi": "",
+              "abstract": "A modelagem computacional é uma área de conhecimento que se baseia no processo de aplicação de modelos matemáticos, com técnicas de computação, para o entendimento de problemas complexos, que incluem diversas áreas da ciência. Nesse sentido, foram analisados cavaletes por meio de modelagem computacional que servem de suporte para os viradores de vagões da empresa Vale, dispositivos para descarga de minério em pátios de estocagem da empresa. O objetivo do presente trabalho é a realização de análises estáticas e análises de fadiga dos cavaletes suporte de viradores de vagão. Com o auxilio da modelagem computacional e simulações numéricas, parâmetros importantes foram analisados com o objetivo de auxiliar nas análises de manutenção, visto que a interpretação dos dados é fundamental, considerando a vida útil e a durabilidade desses elementos que são de grande importância para a rotina da empresa.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/melo-lisboa-souza-2019-simulacao-numerica-para-analise-estrutural-dos-cavaletes-suporte-de-viradores-de-vagao-por-meio-do-metododos-elementos-finitos.pdf"
+            },
+            {
+              "title": "Resposta vibratória de a Beam-Column on Pasternack Foundation",
+              "authors": "Rômulo Luz Cortez, Lucas Oliveira Siqueira, Prof. Dra. Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "Several researchers over the years have sought describe and analyze problems of soil-structure interaction. For example, Arboleda-Monsalve et al. (2008) used the finite element method (FEM) to analyze the dynamic of a Timoshenko beam-column resting on elastic foundation with general constraints ends, and Abohadima et al. (2015) investigated the free and forced vibration of an axial-loaded Timoshenko beam resting on a elastic foundation using the Recursive Differentiation Method (RDM). Further, Soares et al. (2017), also using the FEM, investigated the dynamic behave of a Timoshenko beam resting on a Pasternak foundation. In this context, the purpose of this work is investigate the dynamic behavior of an axial-loaded Timoshenko beam resting on a two-parameter elastic foundation. FEM is developed and compared with the analytical solution. Foundation parameters and the axial load contributions are investigated in several numerical examples for beams with different end restraints.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Modelagem e identificação de sistemas",
+          "articles": [
+            {
+              "title": "Estudo e aplicação de sensor LIDAR em carros autônomos",
+              "authors": "Darieldon de Brito Medeiros, Denilson Alves de Sousa, José Maria Pires de Menezes Júnior",
+              "doi": "",
+              "abstract": "Segundo Santos e Khoshelham (2015), o crescimento de sistemas de sensores de imageamento e navegação tornou o mapeamento tridimensional uma tarefa essencial para diversas áreas da engenharia, tais como o sistema de localização e mapeamento simultâneo (SLAM), para inspeção de infraestruturas, cartografia, dentre outras. De acordo com Wang et al. (2017) para os casos que os veículos autônomos operam com certa proximidade com pedestres, o reconhecimento e o rastreamento de pedestres em movimento são funções básicas do sistema de prevenção de colisão.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/brito-alves-pires-2019-estudo-e-aplicacao-de-sensor-lidar-em-carros-autonomos.pdf"
+            },
+            {
+              "title": "Modelagem baseada em agentes para Oil Spills on the Maranhão Coast",
+              "authors": "Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus",
+              "doi": "",
+              "abstract": "A Modelagem Baseada em Agentes (MBA) é uma técnica de modelagem extremamente rica que permite lidar com sistemas complexos a partir de suas unidades constituintes e gerar resultados através das interações entre estas.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/fonseca-slayder-jesus-2019-modelagem-baseada-em-agentes-para-derrame-de-oleo.pdf"
+            },
+            {
+              "title": "Modelagem de um modelo didático para a Servomotor",
+              "authors": "Luan da Silva Bezerra, Prof. Dr. José Medeiros de Araújo Júnior",
+              "doi": "",
+              "abstract": "Os servomotores são máquinas eletromecânicas, cujos eixos apresentam movimentos rotacionais proporcionais a um sinal de entrada, como por exemplo, sinais do tipo PWM. Esses servos são utilizados em aplicações que exigem um movimento rotativo preciso, sendo bastante utilizados em impressoras, sistemas de controle como o Ball and Beam, máquinas-ferramenta, pêndulos e braços robóticos. O interesse neste sisterna é motivado por sua precisão, fácil manutenção e baixo custo. Para as mais diversas aplicações com servos, idealmente deve-se utilizar algoritmos de controle, de modo a se otimizar mais ainda a precisão do deslocamento angular gerado pelo seu eixo. Neste caso, é necessário que seja realizado o levantamento do modelo matemático que represente a dinâmica do servomotor, onde esse modelo vai relacionar o sinal de saída (deslocamento angular) em relação a sua entrada (sinal PWM). A modelagem matemática desses tipos de motores é um fator de real importância na busca de um melhor desempenho. Aplicando leis fisicas inerentes a sua natureza, como as leis de Newton e as leis de Kirchhoff, chegamos nas equações que relacionam matematicamente as variáveis do modelo e tomam possível o projeto de controladores. Dessa forma, o presente trabalho consiste em obter o modelo matemático de um servomotor, e em seguida, aplicar o mesmo em um sistema de controle. Além dessas equações, tem-se também uma implementação computacional de um controlador, e com isso, desenvolvimento de uma ferramenta didática para o estudo e aprimoramento das técnicas de modelagens e de controle.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/bezerra-araujo-2019-modelagem-de-um-modelo-didatico-para-um-servomotor.pdf"
+            },
+            {
+              "title": "Modelagem da atitude de a Quadrotor Drone",
+              "authors": "Pedro Iago Carvalho Martins, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "",
+              "abstract": "A atitude em um drone quadrotor corresponde aos dois ângulos que localizam o seu plano de atuação em relação à horizontal. O controle de atitude corrige a inclinação de um drone quadrotor através de alterações de velocidade, e portanto de força de propulsão, nas suas quatro hélices. Ajustando a atitude e a propulsão total, é possível equilibrar um quadrotor em uma altura fixa, bem como o locomover de um ponto a outro (BRESCIANI, 2008). No referente trabalho analisou-se um drone restrito ao balanço horizontal como na Figura 1, no Laboratório de Controle e Automação da UFPI, fixado por cordas em um eixo horizontal, enquanto no outro eixo controlou-se a atitude, acionando-se dois motores de forma simétrica. Assim, identificou-se um modelo de função de transferência por aproximação à curva de Nyquist, obtida com medições de entrada e saída no método do relė (ASTROM, 1995).",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/carvalho-mota-2019-modelando-a-atitude-de-um-drone-quadrotor.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Nanotecnologia",
+          "articles": [
+            {
+              "title": "Avanços em Pharmaceutical Nanotechnology aplicado ao the Desenvolvimento de Controlled-Release Drugs: A Technological Foresight",
+              "authors": "Nayara de Oliveira Sobrinho, Moisés das Virgens Santana, Hitalo de Jesus Bezerra da Silva",
+              "doi": "",
+              "abstract": "Segundo a literatura, verificou-se que a gama de nanoparticulas (NPs) é eficaz na administração de fármacos direcionados (Chow et al., 2015). Ao longo da última década, relatos na literatura descreveram vários tipos de nanoparticulas com uma variedade de usos possíveis, incluindo lipossomas, nanocápsulas poliméricas, nanocápsulas de núcleo lipídico, nanopartículas lipídicas sõlidas, carreadores lipídicos nanoestruturados, nanoemulsões, nanocristais, nanoparticulas metálicas (Islan et al., 2017). Estes sistemas podem melhorar os perfis de liberação e estabilidade das drogas, mantendo sua concentração dentro de uma faixa terapêutica e superando as barreiras biológicas para captação celular (Canbolat et al., 2014). As nanoestruturas também são adequadas como agentes de imagem que possuem funcionalidade avançada, incluindo resposta a estímulos internos e externos na área de doença alvo. O uso de nanopartículas permite aumentar a eficácia terapêutica com baixos riscos de efeitos colaterais (Contri et al., 2014, Fang e Al-Suwayeh, 2012, Frank et al., 2015). Melhorias na segurança, entrega de fármacos não-viral específica ao alvo, captação celular, bem como estabilidade e atividade intracelular são as principais razões para o desenvolvimento de nanossistemas multifuncionais, inteligentes e comutáveis (Li et al., 2010). Nesse sentido, esse trabalho tem como objetivo fazer um levantamento de dados com os números de artigos e patentes depositadas nas principais bases de dados, lincando os avanços da nanotecnologia aplicada ao desenvolvimento de fármacos.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/sobrinho-virgens-jesus-2019-avancos-da-nanotecnologia-farmaceutica-aplicados-ao-desenvolvimento_uma-prospeccao-tecnologica.pdf"
+            },
+            {
+              "title": "Propriedades eletrônicas de Nitrogen Doped Graphene Nanowiggles",
+              "authors": "Anderson Soares da Costa Azevêdo, Eduardo Costa Girão",
+              "doi": "",
+              "abstract": "Early researchers demonstrated considerably interest in investigating nanoscale carbon materials. This is due to their remarkable properties and promising potential applications in novel nanoelectronic devices (Son et al., 2006). These materials include: fullerenes, carbon nanotubes and graphene nanoflakes. In this work, we investigate the electronic properties and emergence of magnetic states in periodic nitrogen-doped graphene structures of complex geometry inspired into nanostructures fabricated and reported in the literature (Cai et al., 2010).",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/azevedo-girao-2019-electronic-properties-of-nitrogen-doped-graphene-nanowiggles.pdf"
+            },
+            {
+              "title": "Estrutura eletrônica de Carbon Nanocage with Bipartite Structure: A DFT study",
+              "authors": "Fábio Nascimento de Sousa, Eduardo Costa Girão",
+              "doi": "",
+              "abstract": "The carbon is one of the chemical elements most found in nature. A of its main characteristics is the formation of polymorphs under various conditions of temperature and pressure. The figure. 1 shows some of the main forms allotropic of the carbon. Although nanotubes and graphene are the most studied elements of the carbon nanostructures family, cage-like structure, like fullerenes[1], are subject de constant interest in the area. Such structure have potencial applications drug delivery(fig. 2a)[2] or as elements in nanojunctions(fig. 2b). For exemple[3].",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/nascimento-girao-2019-electronic-structure-of-carbon-nanocage-with-bipartite-structure-a-dft-study.pdf"
+            },
+            {
+              "title": "Estados magnéticos em Graphene Nanoflakes",
+              "authors": "Caio Vitor Teixeira Costa, Eduardo Costa Girão",
+              "doi": "",
+              "abstract": "A quantidade de alótropos do carbono como grafite, diamante, fulereno - e as propriedades particulares que cada um possuía fez com que a química do carbono fosse vista como potencialmente capaz de gerar uma nova geração de dispositivos. Nesse contexto, o grafeno, com sua elevada mobilidade eletrônica [1] e resistência mecânica[1], mostra-se como um dos materiais mais indicados a ocupar o posto hoje pertencente ao Silicio. Porém, o grafeno é um semicondutor de gap(expressão do inglês relacionado ao espaço entre as bandas de condução e de valência do material) zero[2], e a existência dessa lacuna de energia é fundamental para se controlar o transporte eletrônico[3]. Tendo isso em vista, buscam-se maneiras de se abrir esse gap de energia em torno do nível de Fermi, com o objetivo de tornar mais fácil sua integração em dispositivos eletrônicos. As duas estratégias mais usadas pela comunidade cientifica se baseiam na dopagem e em \"cortes\" do grafeno ao longo de uma ou de duas de suas direções. A primeira estratégia se baseia na inclusão de impurezas na estrutura do grafeno, como por exemplo substituindo-se átomos de carbono por outros de diferentes elementos, como Boro e Nitrogênio, de forma estratégica. Já o segundo método gera estruturas finitas em uma das dimensões do sistema, chamadas de nanoflocos de grafeno (ou GNFs, do inglês graphene nanoflakes) que são subunidades do grafeno com tamanho e geometria limitado nas suas duas dimensões. Essas estruturas apresentam propriedades que dependem da largura da fita e da geometria de suas bordas. Em particular, as GNFs chamam a atenção por ter estados localizados nas bordas, facilitando o estudo por meio de cálculos computacionais de suas propriedades elétricas e magnéticas[4]. Neste trabalho tem-se como objetivo realizar um estudo teórico dos GNFS contendo estados de borda com spin polarizado e descrever as propriedades de diferentes configurações magnéticas.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno.pdf"
+            },
+            {
+              "title": "Estados magnéticos em Graphene Nanoflakes Containing Anti-dots",
+              "authors": "Herus Teixeira Lopes, Prof. Dr. Eduardo Girão Costa",
+              "doi": "",
+              "abstract": "A sociedade anseia por inovações tecnológicas, como dispositivos cada vez menores e mais eficientes. Por consequência, a busca por possíveis substitutos ao silício movimenta a comunidade científica. Hoje estudam-se diversos candidatos a componentes básicos de uma futura eletrônica visando o alcance da escala nanométrica. Entre os diversos novos materiais estudados em Fisica da Matéria Condensada, pode-se citar o grafeno. Neste trabalho, são investigadas as propriedades eletrônicas de nano flocos hexagonais de grafeno com borda zig zag com defeitos estruturais compostos de poros. Os poros são constituidos de \"furos\" triangulares centrais como uma modificação da estrutura. Este estudo utiliza a Teoria do Funcional da Densidade (DFT) para a investigação dos estado eletrônicos dos sistemas estudados, como será descrito adiante.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno-contendo-anti-dots.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Sistemas Inteligentes",
+          "articles": [
+            {
+              "title": "Classificação de High-Speed Steel Metallographic Samples Using Machine Learning Models",
+              "authors": "Marcus Patrick Acioli da Silva, Dr. José Maria Pires de Menezes Júnior, Dr. Francisco Riccelly Pereira Feitosa",
+              "doi": "",
+              "abstract": "Metalografia é a técnica de estudar as propriedades físicas, químicas e mecânicas dos metais e seus produtos. Essas propriedades estão intrinsecamente relacionadas com a natureza das microestruturas que constituem um material. A observação desses parâmetros permite realizar análises qualitativas e quantitativas de um material. Em posse desses dados, é possível a classificação de um material de acordo com seus microconstituintes. No presente estudo, propõe-se a classificação de amostras metalográficas de aços-rápidos através de técnicas de Visão Computacional e Aprendizado de Máquinas.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/acioli-pires-feitosa-2019-classificacao-de-amostras-metalograficas-de-acos-rapidos.pdf"
+            },
+            {
+              "title": "Identificação do fenômeno de transferência grafêmica-fônica-fonológica BP-EFL usando redes neurais artificiais",
+              "authors": "Atos Apollo Silva Borges, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa",
+              "doi": "",
+              "abstract": "Os fenômenos de transferência entre linguas cometidos por falantes não nativos já são conhecidos e bem documentados na literatura. Contudo, o reconhecimento e a classificação dos mesmos são feitos, principalmente, através de transcrições, um processo lento e trabalhoso. A identificação rápida desse tipo de fenômeno seria de grande valia para sistemas de nivelamento de alunos de lingua estrangeira, podendo ser usados em escolas de idiomas, sistemas de ensino à distância, aprendizes autodidatas, aplicativos de lingua estrangeira ou até mesmo por pesquisadores linguistas. No presente trabalho, foi realizada uma verificação das possibilidades de técnicas e ferramentas que podem ser utilizadas na classificação automática desses processos de transferência, em especial do fenômeno de transferência grafo-fônico-fonológica de Sonorização de <s> (SOS), guiado sob uma ótica do paradigma conexionista da linguagem.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/borges-aratuza-barbosa-2019-identificacao-de-fenomeno-de-transferencia-grafo-fonico-fonologica-pb-ile.pdf"
+            },
+            {
+              "title": "Identificação e classificação do fenômeno de transferência de apagamento (HD) BP-EFL usando redes neurais artificiais MLP",
+              "authors": "Washington Luís Pinho Rodrigues Filho, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa",
+              "doi": "",
+              "abstract": "Durante a aprendizagem de uma nova lingua, manifesta-se uma processo chamado de fonologia da interlingua. Esse processo, que ocorre nos estágios iniciais do aprendizado, caracteriza como um surgimento de um sistema linguistico diferente da lingua estrangeira alvo (L2) por conta das caracteristicas da lingua nativa (L1), a qual ainda exerce influência sobre o sistema em criação (ROCHA, 2012). Tal fenômeno, que se manifesta durante o processo de transferência de conhecimento grafo-fónico-fonológico de L1 para L2 (ZIMMER e ALVES, 2006). No presente trabalho, foi proposta a identificação do fenômeno de transferência AH utilizando RNA do tipo MLP. Para isso, foram colhidas produções na ferramenta Google Tradutor que são de palavras inglesas produzidas pelo software nas opções de áudio Inglês e Português Brasileiro como pode ser visto na figura 1. Logo após, foram extraidos dois descritores de sinal para servirem de dados para o treinamento da rede neural e, posteriormente, seren identificados e classificados por ela.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/pinho-aratuza-barbosa-2019-identificacao-e-classificacao-do-fenomeno-de-transferencia-apagamento-de-ah-pb-ile-utilizando-rna-do-tipo-mlp.pdf"
+            }
+          ]
+        },
+        {
+          "name": "Teoria de controle e aplicações",
+          "articles": [
+            {
+              "title": "Controladores com estrutura PID fuzzy aplicada à malha de temperatura de uma incubadora neonatal",
+              "authors": "José Borges do Carmo Neto, Luno Gomes de Oliveira, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "",
+              "abstract": "Alguns autores declaram, por exemplo, que em aplicações de controle de processo, mais de 95% dos controladores implementados até hoje são do tipo Pl ou PID (VILANOVA, 2012). Entretanto, no projeto de controladores convencionais, com os Pl e PID, considera-se apenas as relações lineares entre as variáveis do processo controlado, o que impõe severas limitações na performance de controle, frente a sistemas que possuem modelagens complexas, não-linearidades ou incertezas (ASTROM, 2001). Em um estudo com cerca de 150,000 malhas de controle em 250 plantas industriais ao redor do mundo mostrou que 68% de todos os controladores têm performances inaceitáveis (VILANOVA, 2012). No presente trabalho, lógica fuzzy é aplicada na sintonia de controladores com estrutura PID, com o objetivo de melhorar a performance do controlador e diminuir o esforço de controle sobre a malha.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/carmo-gomes-figueiredo-mota-2019-controladores-com-estrutura-fuzzy-pid-aplicados-a-malha-de-temperatura-de-uma-incubadora-neonatal.pdf"
+            },
+            {
+              "title": "Fuzzy Control aplicado ao a Didactic Level Tank",
+              "authors": "Francisco Leão de Oliveira, Prof. Dr. José Medeiros de Araújo Júnior",
+              "doi": "",
+              "abstract": "A indústria aplica em vários de seus processos tanques acoplados para realização de diversas funções, como o armazenamento e transporte de liquidos. Indústrias petroquímicas, de celulose ou de tratamento de liquidos, normalmente apresentam processamento de líquidos por reações químicas ou tratamento de misturas. Este processamento requer continuamente um controle criterioso sobre o nível do fluido, assim como regulação do fluxo entre os tanques. O presente trabalho apresenta a implementação de um controle fuzzy em uma planta didática, onde deseja-se obter a resposta ao degrau do controle fuzzy e compara-la a uma técnica clássica de controle, como exemplo a um controle PID, para que assim possa ser visto a eficiência dessa classe de controle.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/leao-medeiros-2019-controle-fuzzy-aplicado-em-um-tanque-de-nivel-didatico.pdf"
+            },
+            {
+              "title": "Desenvolvimento de hardware didático para ensino de controle digital",
+              "authors": "Gabryel Figueiredo Soares, José B. do Carmo Neto, Luno Gomes de Oliveira, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "",
+              "abstract": "Os sistemas de controle estão cada vez mais presentes nas diversas áreas do conhecimento, logo há necessidade da aplicação prática das teorias discutidas em sala de aula. Tendo em vista a necessidade de ensinar técnicas de controle digital para futuros profissionais de engenharia nas áreas de controle e automação, faz-se necessário o desenvolvimento de plantas didáticas aplicadas ao ensino de técnicas de controle apresentadas em sala de aula, simulando processos industriais com suas reais dificuldades. O presente trabalho tem como objetivo desenvolver uma planta de controle didática que possibilite à aplicação prática dos controladores simulados.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/figueiredo-carmo-gomes-mota-2019-desenvolvimento-de-hardware-didatico-para-ensino-de-controle-digital.pdf"
+            },
+            {
+              "title": "Desenvolvimento de a SCARA-Type Manipulator Robot",
+              "authors": "Victor Eduardo Alves da Silva Carvalho, Nádia Raquel Matos Oliveira, José Maria Pires Menezes Junior",
+              "doi": "",
+              "abstract": "É indiscutivel a importância da Robótica e seu papel em inúmeras aplicações, desde o seu envolvimento em aplicações na área da saúde (BONATTI, 2014) à área militar (ACKERMAN, 2015). Uma ramificação importante da mesma, é o estudo de robôs manipuladores, que possuem a capacidade de manusear objetos e realizar operações de forma mais rápida e precisa que um ser humano. O uso deste tipo de robô, em ambientes industriais, é imprescindível para eficiência da produção, por exemplo (AHRENS, 2012). Com isso, é importante o estudo do mesmo e realizar a modelagem matemática e implementação via simulação. Assim, propõe-se a modelagem e simulação da cinemática de um robó manipulador com estrutura fisica baseado no manipulador SCARA (Selective Compliance Assembly Robot Arm). Robôs do tipo SCARA são utilizados na indústria por serem precisos, compactos e apresentarem um excelente rendimento em atividades repetitivas.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/carvalho-oliveira-pires-2019-desenvolvimento-de-um-robo-manipulador-do-tipo-scara.pdf"
+            },
+            {
+              "title": "Projeto de um controlador PID aplicado a um tanque didático de nível",
+              "authors": "Vanessa dos Santos Conceição, Prof. Dr. José Medeiros de Araújo Júnior",
+              "doi": "",
+              "abstract": "Em projeto de sistemas de controle é necessário o modelo matemático do processo a ser controlado. Como os modelos são obtidos, inicialmente, na forma de equações diferenciais, normalmente faz-se o uso da Transformada de Laplace para se ter uma representação mais prática, devido a sua vantagem de facilitar o entendimento em relação ao desempenho, resposta do sistema e até análise de estabilidade obtida graficamente (FRANKLIN, 2013). Com essa transformada, as EDO's, que são funções no domínio do tempo, são convertidas para funções onde o domínio são variáveis complexas, e essa representação é denominada de Função de Transferência. Por meio dessas funções, pode-se verificar se o sistema apresenta dinâmica lenta, resposta oscilatória e erro em relação às condições desejadas aplicadas na entrada (ROSARIO, 2009), (OGATA, 1998). Com base em técnicas da teoría de controle, este trabalho apresenta a modelagem de um sistema de tanques de nível, bem como a sua análise em malha fechada, de tal forma a se verificar quantitativamente a sua dinâmica, e a partir dessas informações, realizar o projeto de um controlador PID, utilizando o método LGR (Lugar Geométrico das Raízes). A inclusão desse controlador visa melhorar a dinâmica do sistema, fazendo com que o mesmo apresente uma resposta satisfatória, possibilitando a sua melhor aplicação em processos industriais.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/conceicao-medeiros-2019-projeto-de-um-controlador-pid-aplicado-em-um-tanque-de-nivel-didatico.pdf"
+            },
+            {
+              "title": "Sistema de acionamento para incubadora neonatal",
+              "authors": "Raimundo da Silva Nunes Neto, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida",
+              "doi": "",
+              "abstract": "Incubadoras Neonatais são equipamentos hospitalares de suma importância para a manutenção da vida de bebês rescém-nascidos prematuros e com problemas de saúde. Esses equipamentos são responsáveis por proporcionar um ambiente termoneutro para o neonato, que ao nascer possuem limitada capacidade de reagir a situações adversas (SILVADO, 1993), nescessita que haja um controle rigorosos dos parâmetros de umidade, temperatura e fluxo de ar do ambiente. No presente trabalho é abordado o desenvolvimento de um hardware base, que satisfaz as determinações da NBR IEC 60601-2-19, para o acionamento de um Incubadora Neonatal presente no laboratório de Controle e Telecomunicações do Curso de Engenharia Elétrica - UFPI. Com o hardware, é possivel aferir dados de temperatura e umidade do ambiente, e dessa forma, facilitar a implementação de diversas técnicas de controle, a fim de manter, de forma rigorosa, os padrões estabelecidos para os parâmetros dentro da incubadora.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol1/nunes-figueiredo-mota-2019-sistema-de-acionamento-para-incubadora-neonatal.pdf"
+            }
+          ]
+        }
+        
+      ]
+    },
+    {
+      "id": "vol_2_2025",
+      "title": "II SIMCOMPI - Vol. 2 (2025)",
+      "year": 2025,
+      "cover_img": "../static/images/simcompi/simcompi 2/banner-ii-simcompi.png",
+      "full_pdf_link": "../../../proceedings/vol2/vol2_complete_simcompi.pdf",
+      "categories": [
+        {"name": "Desenvolvimento de ferramentas computacionais",
+        "articles": [
+          {
+            "title": "Simulação MATLAB de controle psicrométrico aplicado a sistemas de refrigeração",
+            "authors": "Álvaro Barreto da Silva, Lucas Rodrigues Soares da Silva",
+            "doi": "",
+            "abstract": "A psicrometria, o ramo focado no estudo das propriedades fisicas do ar úmido, é muito relevante para a engenharia de climatização. A psicrometria possibilita o estudo e o controle de variáveis psicrométricas básicas para manter o conforto térmico e a economia de energia em sistemas de ar condicionado.  medida que ambientes climatizados se tornam cada vez mais necessários em paises tropicais e diante das questões e imprecisões associadas à leitura manual das cartas psicrométricas, a aplicação de simulação computacional aparece como uma alternativa avançada e precisa. Com base nesse raciocinio, este trabalho sugere o emprego do MATLAB para modelar e simular os processos de desumidificação e resfriamento, a fim de oferecer uma ferramenta intuitiva e estável para o controle de sistemas HVAC.",
+            "keywords": "Não informadas",
+            "pdf_link": "../../../proceedings/vol2/barreto-rodrigues-2025-simulacao-em-matlab-de-controle-psicrometrico-aplicado-a-sistemas-de-refrigeracao.pdf"
+          },
+          {
+            "title": "Desenvolvimento de do sistema de monitoramento de grandezas elétricas em máquinas eletromecânicas",
+            "authors": "João Ferreira Borges Filho, Otacílio da Mota Almeida, Raphael Lima de Paiva",
+            "doi": "",
+            "abstract": "A procura do mercado por técnicas de controle industrial tem crescido bastante nos últimos 20 anos [15]. Contudo, ainda não é possível determinar, de maneira trivial, quando esses métodos irão compensar uma carga computacional mais robusta e podem trazer de fato, melhorias de desempenho que as estruturas mais simples de controle [16]. O controlador PID é atualmente a estrutura de controle mais empregada em sistemas industriais. Tal fato decorre de sua rapidez de atuação, simplicidade e eficiência no controle de processos [20]. Este projeto de pesquisa visa dar continuidade na modernização e comissionamento das plantas experimentais disponíveis no Laboratório do Grupo de Robótica, Automação e Sistemas Inteligentes (GRASI) do Curso de Engenharia Elétrica da UFPI desenvolver aprofundamentos nos algoritmos de identificação e controle, incluindo o Auto-Ajuste dos controladores PID, o Controle Inteligente, o Controle PID e Preditivo. Serão dado continuidade na melhoria e modernização do túnel de levitação a ar com fris e o tanque duplo multivariável acoplado e do torno mecânico Veker TVK-1660ECO. Contudo, a automação industrial vem para ajudar na sociedade, e o seu uso tem inúmeras vantagens, como por exemplo: operadores humanos com tarefas de trabalhos pesadas ou monótonas podem ser substituídos; operadores humanos que exercem atividades perigosas, como temperaturas extremas, atmosferas radioativas, ou equipamentos cortantes. O manuseio de cargas grandes e pesadas, a manipulação de equipamentos minúsculos, entre outros.",
+            "keywords": "Não informadas",
+            "pdf_link": "../../../proceedings/vol2/borges-mota-paiva-2025-desenvolvimento-do-sistema-de-monitoramento-das-grandezas.pdf"
+          }
+        ]},
+        {
+        "name": "Nanotecnologia",
+        "articles": [
+          {
+            "title": "Propriedades eletrônicas de Nitrogen-Doped Rectangular Tripentaphenes",
+            "authors": "Lourdes Maria de Oliveira Santos, Eduardo Costa Girão",
+            "doi": "",
+            "abstract": "Nos últimos anos, o ramo da nanociência tem se desenvolvido substancialmente no mundo acadêmico, ganhando uma posição de destaque, sob a luz de grande interesse pela comunidade cientifica (Macédo, et al, 2022; Kumar, Yadav, Prasad, 2023; Silva, et al, 2020; Silva, et al, 2022; Van Noorden, 2011; Vega, Saillard, 2007; Zeng, et al, 2020) e de altos investimentos pelas industrias. As nanoetruturas apresentam aplicações em variadas áreas como medicina, eletrônica, ciência dos materiais, energia, aeroespacial, automotiva, ambiental e entre outros, uma vez que têm apresentado uma alta capacidade de otimizar processos nesses ámbitos. O conhecimento existente acerca das nanoestruturas já nos proporciona técnicas e procedimentos, bem como a criação de equipamentos como o microscópio de varredura por tunelamento, para a manipulação, produção e estudo das mesmas. No entanto, é necessário que mais conhecimento seja produzido na área a fim de proporcionar uma produção efetiva, em larga escala, baixo custo e sustentável de nanomateriais, assim como utiliza-los em aplicações específicas, como nos circuitos presentes em chips, de modo que possam competir comercialmente com outros materiais dominantes no mercado global, como o silicio. Este trabalho tem como objetivo investigar alterações na estrutura eletrônica de um tripentafeno de rede retangular, alótropo do carbono bidimensional baseado na concatenação direta de moléculas de acepentaleno, mediante dopagens substitucionais com nitrogénio.",
+            "keywords": "Não informadas",
+            "pdf_link": "../../../proceedings/vol2/oliveira-girao-2025-propriedades-eletronicas-de-tripentafenos-retangulares-dopados-com-nitrogenio.pdf"
+          }
+      ]},
+      {"name": "Modelagem e Identificação de Sistemas",
+      "articles": [
+        {
+          "title": "Modelagem computacional de um sistema de minigeração agrivoltaica em uma granja no estado do Piauí",
+          "authors": "Atos A. S. Borges, Juan de A. Gonçalves, Thiago M. S. Rocha, Ítalo F. e Silva",
+          "doi": "",
+          "abstract": "Os sistemas agrivoltaicos (AgroPV) emergem como uma solução inovadora e sustentável para a integração de produção de energia fotovoltaica com a agricultura. Esses sistemas combinam a geração de eletricidade a partir da radiação solar com o uso do mesmo espaço físico para atividades agrícolas, tanto vegetais como animais, otimizando o uso de recursos naturais, como a luz solar e o espaço disponível (GOETZBERGER: ZASTROW, 1982; DINESH; PEARCE, 2016). No contexto da avicultura, a associação de sistemas fotovoltaicos à criação de aves tem se mostrado promissora (VIDOTTO et al., 2024). Como o desenvolvimento tecnológico crescente dos empreendimentos de avicultura, o setor vem continuamente aumentando sua demanda pelo consumo de energia elétrica. Automatização de produção, controle climático das plantas de produção e produções em maior escala são fatores que contribuem diretamente para o aumento do consumo de energia elétrica desse tipo de produção (HANDLER; PEARCE, 2022). O presente trabalho propõe a modelagem tridimensional e simulação de um empreendimento agrivoltaico de minigeração fotovoltaica aliada a uma indústria privada de avicultura. O objetivo do estudo é construir um modelo virtual para avaliar o potencial de geração de energia elétrica, analisando a presença e o impacto de sombreamentos, dimensionamento de perdas elétricas, perdas de irradiância e métricas de performance de geração. O estudo é baseado em um caso prático em desenvolvimento a partir da parceria entre o Núcleo de Formação e Pesquisa em Energias Renováveis e Telecomunicações do Piauí (NUFPERPI) e uma empresa do setor privado de energia renovável.",
+          "keywords": "Não informadas",
+          "pdf_link": "../../../proceedings/vol2/borges-goncalves-rocha-silva-2025-modelagem-computacional-de-um-sistema-de-minigeracao-agrivoltaica-em-um-empreendimento-de-avicultura-no-estado-do-piaui.pdf"
+        },
+        {
+          "title": "Identificação e controle dos dos motores de um robô micromouse diferencial",
+          "authors": "Händel Mateus Carvalho Sarmento, Otacilio da Mota Almeida",
+          "doi": "",
+          "abstract": "Os robôs solucionadores de labirintos surgiram na década de 1950 como dispositivos autônomos e compactos, e, desde os anos 1970, competições de micromouses se tornaram populares, especialmente no Reino Unido e no Japão, conforme pode ser visto na Figura 1. A competição envolve robôs móveis autônomos (Figura 2) para resolver um labirinto composto de 16x16 células de 180x180 mm². A padronização da competição foi introduzida pela revista do IEEE Spectrum em 1977. O robô tem um tempo limitado para resolver um labirinto, cuja configuração é estabelecida no início da competição. O robo tem como objetivo sair de um dos cantos do labirinto e alcançar o centro no menor tempo possivel. O automato  pontuado de acordo com três parâmetros: velocidade, eficiência em resolver labirinto, e confiabilidade do Micromouse. O desenvolvimento desses robôs envolve etapas essenciais, sendo o controle e a automação fundamentais para otimizar a navegação. Este trabalho foca no controle simulado de percursos em linha reta para o micromouse do Laboratório de Controle e Automação da Engenharia Elétrica UFPI apresentado na Figura 2, ajustando independentemente as velocidades lineares de suas rodas para melhorar a eficiência dos deslocamentos.",
+          "keywords": "Não informadas",
+          "pdf_link": "../../../proceedings/vol2/sarmento-mota-2025-identificacao-e-controle-dos-motores-de-um-robo.pdf"
+        },
+        {
+          "title": "Regulador de Fluxo Diafragma-Íris para Aplicação em uma Planta Didática de Levitação a Ar",
+          "authors": "João Marcos V. A. M. Silva, Douglas de Araújo França, Otacílio da Mota Almeida",
+          "doi": "",
+          "abstract": "A engenharia necessita de experimentos práticos na formação de engenheiros, sendo essencial o estudo e prática em sistemas protótipos com problemas dinâmicos para modelagem e adequação matemática, garantindo a capacidade teórica e prática de tomada de decisões (Chacon et al., 2017). Nos cursos de engenharia elétrica, especialmente em controle e automação de sistemas dinâmicos, a experimentação conecta teoria e prática, e a construção de uma planta didática assegura essa conexão. A adição de uma planta de levitação a ar inspirada nos estudos de Chołodowicz e Orlowski (2017) e Chacon et al. (2017), junto a um inédito regulador de fluxo para o Laboratório de Controle Digital da Universidade Federal do Piauí traz consigo uma abordagem diferente das empregadas no laboratório.",
+          "keywords": "Não informadas",
+          "pdf_link": "../../../proceedings/vol2/silva-franca-mota-2025-regulador-de-fluxo-diafragma-iris-para-aplicacao-em-uma-planta-didatica-de-levitacao-a-ar.pdf"
+          }    
+        ]},
+        {"name": "Metamateriais",
+        "articles": [
+          {
+              "title": "Mitigação passiva de frequências de vibração em estruturas offshore",
+              "authors": "Thierry Miqueias Melo Madeira, Dário Carvalho Viveiros, Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "Offshore platforms operate in environments subject to constant wave action, which induces dynamic loads on structural components, particularly the support legs or tendons (Fig. la). These loads propagate as mechanical vibrations throughout the structure and may compromise its integrity, performance, and service life. Among passive vibration mitigation strategies, periodic structures have attracted increasing interest due to their ability to generate band gaps specific frequency ranges where the propagation of waves is naturally attenuated. This behavior is directly influenced by the geometry and material distribution along the structure (Fig. 1b). This study investigates the vibrational behavior of stepped and bimaterial periodic beams, focusing on how geometric variations influence wave attenuation.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol2/melo-viveiros-hoefel-2025-passive-mitigation-of-vibration-frequencies-on.pdf"
+            },
+            {
+              "title": "Estruturas periódicas para atenuação de vibrações em trilhos",
+              "authors": "Iasmin Brandão Leal, Jenário Souza dos Reis Júnior, Profa. Dra. Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "Railway tracks are subject to dynamic loads that generate vibrations in rails, ballast, and underlying structures. These vibrations can cause noise, accelerate maintenance needs, and affect nearby infrastructure. Periodic structures offer a passive solution by creating band gaps - frequency ranges where wave propagation is suppressed. In rail systems, such effects can be achieved using components like pads or dampers with varying mass and stiffness. This study analyzes how changes in the mass ratio between adjacent elements influence the formation and width of the first band gap, using analytical models and Wave Finite Element Method (WFEM) simulations.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol2/brandao-reis-hoefel-2025-periodic-structures-for-vibration-attenuation-in-tracks.pdf"
+            },
+            {
+              "title": "Paredes superficiais periódicas para atenuação de vibrações no solo",
+              "authors": "Jenario Souza dos Reis Júnior, Profa. Dra. Simone dos Santos Hoefel, Prof. Dr. Josué Labaki",
+              "doi": "",
+              "abstract": "Ground vibrations caused by construction, traffic, earthquakes, and other external sources can compromise structural integrity and disturb the operation of sensitive equipment, such as particle accelerators. These facilities demand efficient vibration mitigation strategies to ensure stability and precision. Among the proposed solutions, surface walls (Carneiro et al., 2022) and periodic walls stand out for their ability to reflect and absorb vibrational energy, increasing structural resilience to dynamic disturbances In this work, the interaction between a novel model of periodic walls and the soil is analyzed using a coupled formulation based on the Indirect Boundary Element Method (IBEM) and the Finite Element Method (FEM), the IBEM-FEM coupling scheme. FEM is used to model the walls and IBEM is employed to modeled the soil. To represent a substantial range of phenomena relevant to geotechnical and seismic engineering practice, the proposed models account for ground vibration induced by Rayleigh waves.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol2/reis-hoefel-labaki-2025-periodic-surface-walls-for-ground-vibration-attenuation.pdf"
+            },
+            {
+              "title": "Propagação de ondas em trilhos ferroviários periódicos: análise de flexão lateral e vertical",
+              "authors": "Isadora Rodrigues de Souza, Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "Vibrations in railway tracks, resulting from wheel-rail interactions, can lead to structural damage, passenger discomfort, and environmental disturbances. Periodic structures offer a promising solution by generating bandgaps frequency ranges that inhibit wave propagation which can be classified into two types: Bragg scattering bandgaps (BSBG) and local resonance bandgaps (LRBG). This work analyzes a periodic rail track with uniformly spaced supports, using the Wave and Finite Element Method, which combines finite element modeling with Floquet-Bloch theory to analyze periodic structures. The influence of variations in sleeper spacing and pad stiffness on the attenuation of vertical and lateral bending waves is investigated through dispersion curves, which describe the correlation between angular frequency and propagation constants (DOS REIS; DE SOUZA; HOEFEL, 2024).",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol2/rodrigues-hoefel-2025-wave-propagation-in-periodic-railway-tracks-lateral-and-vertical-bending-analysis.pdf"
+            }
+        ]},
+        {"name": "Estruturas Offshore e Engenharia Petrolífera",
+        "articles": [
+          {
+              "title": "Modelagem numérica de Partially Submerged Beam-column",
+              "authors": "Davi Kauê de Sousa Gomes, Simone dos Santos Hoefel",
+              "doi": "",
+              "abstract": "The offshore industry often employs excessive structural material due to the unpredictable nature of the marine environment (Fig. 1). Submerged structures are subject to various hydrodynamic forces, including drag, inertia, added mass, diffraction, Froude-Krylov, and wave slamming forces. This study aims to contribute to reducing over-dimensioning, thereby lowering manufacturing costs and CO2 emissions. The Morison equation is applied to estimate wave-induced forces, and the structure is modeled using a beam-column element.",
+              "keywords": "Não informadas",
+              "pdf_link": "../../../proceedings/vol2/gomes-hoefel-2025-numerical-modeling-of-partially-submerged-beam-column.pdf"
+            }
+        ]}
+      ]
+    }
+  ]
+}

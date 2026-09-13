@@ -1,0 +1,69 @@
+{% extends "proceedings/layout.html" %}
+{% block title %}LAMEC - Expediente{% endblock %}
+
+{% block proceedings_content %}
+    <a href="{{ url_for('proceedings') }}" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Voltar aos anais do evento</a>
+
+    <div class="info-card">
+        <div class="info-card-header">
+            <i class="fa-solid fa-circle-info"></i> COORDENAÇÃO
+        </div>
+        <div class="info-card-body">
+            <ul class="info-list">
+                <li><strong>Título:</strong> Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí</li>
+                <li><strong>Periodicidade:</strong> Bienal</li>
+                <li><strong>Idiomas aceitos:</strong> Português, Inglês</li>
+            </ul>
+            <ul class="info-list">
+                <li><strong>Responsável:</strong> Simone dos Santos Hoefel</li>
+                <li><strong>Endereço:</strong>
+                    Laboratório de Métodos de Modelagem Computacional</br>
+                    Universidade Federal do Piauí (UFPI)</br>
+                    Campus Universitário Ministro Petrônio Portella</br>
+                    Ininga, Teresina - PI, 64049-550. Brazil.</li>                
+                <li><strong><i class="fa-solid fa-envelope"></i> E-mail:</strong> simone.santos@ufpi.edu.br</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">Comissão organizadora</h2>
+    <div class="table-responsive">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Instituição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Simone dos Santos Hoefel</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Bruna Silveira Lira</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Wallison Angelim Medeiros</strong></td><td>UFPI</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="section-title">Comissão científica</h2>
+    <div class="table-responsive">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Instituição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td><strong>Adriano Todorovic Fabro</strong></td><td>UNB</td></tr>
+                <tr><td><strong>Anderson Soares da Costa Azevêdo</strong></td><td>USP</td></tr>
+                <tr><td><strong>Daniel Candeloro Cunha</strong></td><td>UNICAMP</td></tr>
+                <tr><td><strong>Ediman Dias Novo</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Eduardo Martins Fontes Do Rêgo</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Francisco Wellington Dourado Rebelo</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Hélio De Paula Barbosa</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Laís Bittencourt Visnadi</strong></td><td>UNB</td></tr>
+                <tr><td><strong>Márcio Davi Tenório Correia Alves</strong></td><td>UFPI</td></tr>
+                <tr><td><strong>Waydson Martins Ferreira</strong></td><td>UFPI</td></tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}
