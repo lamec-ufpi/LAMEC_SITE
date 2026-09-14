@@ -1,0 +1,60 @@
+{% macro render_committee_table(committee_list) %}
+<div class="table-responsive">
+    <table class="styled-table">
+        <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
+        <tbody>
+            {% for member in committee_list %}
+            <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endmacro %}
+
+{% macro render_article_card(article, is_js_template=False) %}
+<div class="article-card">
+    <h3 class="article-title js-title">{{ '__TITLE__' if is_js_template else article.title }}</h3>
+    <p class="article-authors js-authors"><i>{{ '__AUTHORS__' if is_js_template else article.authors }}</i></p>
+    
+    {% if is_js_template or article.volumeTitle %}
+    <p class="article-doi js-volume" {% if is_js_template %}style="display:none;"{% endif %}>
+        <strong>Volume:</strong> <span class="js-vol-text">{{ '__VOLUME__' if is_js_template else article.volumeTitle ~ ' (' ~ article.volumeYear ~ ')' }}</span>
+    </p>
+    {% endif %}
+
+    {% if is_js_template or article.doi %}
+    <p class="article-doi js-link-wrapper" {% if is_js_template %}style="display:none;"{% endif %}>
+        <i class="fa-solid fa-link"></i> <strong>Link:</strong> <a href="{{ '__LINK__' if is_js_template else article.doi }}" target="_blank" rel="noopener" class="js-link">{{ '__LINK__' if is_js_template else article.doi }}</a>
+    </p>
+    {% endif %}
+    
+    <div class="article-actions">
+        {% if is_js_template %}
+            <a href="#" class="btn btn-primary js-pdf" target="_blank" rel="noopener" style="display:none;">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            <span class="btn btn-outline js-no-pdf" style="cursor: not-allowed; opacity: 0.5; display:none;">
+                <i class="fa-solid fa-file-pdf"></i> PDF Indisponível
+            </span>
+        {% else %}
+            {% set final_pdf = article.pdf_path or article.pdf_link %}
+            {% if final_pdf %}
+            <a href="{{ url_for('static', filename=final_pdf) }}" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            {% else %}
+            <span class="btn btn-outline" style="cursor: not-allowed; opacity: 0.5;">
+                <i class="fa-solid fa-file-pdf"></i> PDF Indisponível
+            </span>
+            {% endif %}
+        {% endif %}
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> {{ '__ABSTRACT__' if is_js_template else (article.abstract | default('Não informado', true)) }}
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+{% endmacro %}

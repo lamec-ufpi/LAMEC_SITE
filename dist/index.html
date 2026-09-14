@@ -8,39 +8,48 @@
     <link rel="stylesheet" href="static/style.css">
     <link rel="icon" href="static/images/brand/lamec-logo.png">
     <script>
-        window.STATIC_ROOT = "static/style.css".replace('style.css', '');
-        window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "static/style.css".replace('style.css', ''),
+            baseUrl: "index.html".replace('index.html', ''),
+            proceedingsApiUrl: "api/proceedings.json"
+        };
     </script>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html" class="logo-text">
-                    <img src="static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
-                </a>
-            </div>
-            <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">HOME</a></li>
-                <li><a href="publications/index.html" class="">PUBLICATIONS</a></li>
-                <li class="dropdown"><a href="research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="research-team/index.html" class="">RESEARCH TEAM</a></li>
-                        <li><a href="alumni/index.html" class="">ALUMNI</a></li>
-                    </ul>
-                </li>
-                <li><a href="simcompi/index.html">SIMCOMPI</a></li>
-                <li class="dropdown"><a href="extension/faisca/index.html" class="">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="extension/bull-racing/index.html" class="">BULL RACING</a></li>
-                        <li><a href="extension/faisca/index.html" class="">FAÍSCA</a></li>
-                    </ul>
-                </li>
-                <li><a href="about/index.html" class="">ABOUT</a></li>
-            </ul>
+    
+
+
+
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html" class="logo-text">
+                <img src="static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
+            </a>
         </div>
-    </nav>
+        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="publications/index.html" class="">PUBLICATIONS</a></li>
+            <li class="dropdown"><a href="research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="research-team/index.html" class="">RESEARCH TEAM</a></li>
+                    <li><a href="alumni/index.html" class="">ALUMNI</a></li>
+                </ul>
+            </li>
+            <li><a href="simcompi/index.html">SIMCOMPI</a></li>
+            <li class="dropdown"><a href="extension/faisca/index.html" class="">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="extension/bull-racing/index.html" class="">BULL RACING</a></li>
+                    <li><a href="extension/faisca/index.html" class="">FAÍSCA</a></li>
+                </ul>
+            </li>
+            <li><a href="about/index.html" class="">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
 
     
     <div class="css-slider">
@@ -92,7 +101,6 @@
             <div class="feature-text dark-card">
                 <h3>About LAMEC</h3>
                 <p>The LAMEC - Laboratory of Computational Modeling Methods is a space dedicated to the academic and scientific training of undergraduate students, linked to the Technology Center at the Federal University of Piauí (UFPI)...</p>
-                <a href="about/index.html" class="btn btn-outline">Read More ></a>
             </div>
         </div>
         <div class="feature-row reverse">
@@ -100,7 +108,6 @@
             <div class="feature-text dark-card">
                 <h3>Research Topics</h3>
                 <p>LAMEC develops projects in areas such as dynamic analysis of offshore structures, soil-structure interaction, and fluid-structure interaction. Furthermore, the lab strongly encourages scientific production...</p>
-                <a href="research-team/index.html" class="btn btn-outline">Read More ></a>
             </div>
         </div>
         <div class="feature-row">
@@ -132,7 +139,7 @@
         <div class="project-card" style="background-image: url('static/images/backgrounds/home/fem-mesh-background.png');">
             <div class="project-content">
                 <h2>III SIMCOMPI</h2>
-                <p class="small">The next edition of the Symposium on Computational Modeling in Science and Technology in Piauí will take place from 22 to 24 March 2027.</p>
+                <p class="small">The next edition of the Symposium on Computational Modeling in Science and Technology in Piauí will take place from 22 a 24 de março de 2027.</p>
                 <a href="simcompi/index.html" class="btn btn-primary">Read More ></a>
             </div>
         </div>
@@ -147,7 +154,7 @@
 
     <br>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-grid">
             <div class="contact-info dark-card">
                 <p>We are here to assist you with any questions or information you may need. Please feel free to reach out to us through any of the contact methods below.</p>
@@ -180,15 +187,16 @@
 
 
     <footer>
-        <div class="container footer-content">
-            <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-        </div>
-    </footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
     <script src="static/main.js"></script>
+    
 </body>
 </html>

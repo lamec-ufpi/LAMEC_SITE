@@ -7,47 +7,58 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="../static/images/brand/lamec-logo.png">
-<script>
-    window.STATIC_ROOT = "../static/style.css".replace('style.css', '');
-    window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
-</script>
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../static/style.css".replace('style.css', ''),
+            baseUrl: "../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../api/proceedings.json"
+        };
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-simcompi" id="navbar">
-      <div class="container nav-container">
-        <div class="logo">
-            <a href="index.html" class="logo-text">
-                <img src="../static/images/brand/logo-simcompi-navbar-white.png" alt="SIMCOMPI" class="navbar-brand-img">
-            </a>
-        </div>
-        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-        <ul class="nav-links">
-          <li><a href="submissions/index.html" class="">SUBMISSÕES</a></li>
-          <li><a href="proceedings/index.html" class="">ANAIS DO EVENTO</a></li>
-          <li class="dropdown"><a href="#" class="">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-                <li><a href="edicoes-anteriores/i-simcompi/index.html" class="">I SIMCOMPI</a></li>
-                <li><a href="edicoes-anteriores/ii-simcompi/index.html" class="">II SIMCOMPI</a></li>
-            </ul>
-          </li>
-          <li><a href="committees/index.html" class="">COMISSÕES</a></li>
-          <li><a href="contact-us/index.html" class="">CONTATO</a></li>
-          <li><a href="../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    
+
+
+
+<nav class="navbar navbar-simcompi" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+        <a href="index.html" class="logo-text">
+            <img src="../static/images/brand/logo-simcompi-navbar-white.png" alt="SIMCOMPI" class="navbar-brand-img">
+        </a>
+    </div>
+    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links">
+      <li><a href="submissions/index.html" class="">SUBMISSÕES</a></li>
+      <li><a href="proceedings/index.html" class="">ANAIS DO EVENTO</a></li>
+      <li class="dropdown"><a href="#" class="">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="edicoes-anteriores/i-simcompi/index.html" class="">I SIMCOMPI</a></li>
+            <li><a href="edicoes-anteriores/ii-simcompi/index.html" class="">II SIMCOMPI</a></li>
         </ul>
-      </div>
-    </nav>
+      </li>
+      <li><a href="committees/index.html" class="">COMISSÕES</a></li>
+      <li><a href="contact-us/index.html" class="">CONTATO</a></li>
+      <li><a href="../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 
     
     <header class="simcompi-hero current-event-hero" style="background-image: linear-gradient(rgba(249, 252, 255, 0.6), rgba(179, 227, 255, 0.6)), url('../static/images/backgrounds/rio-poty-fundo-banner-iii-simcompi.jpg');">
-        <img src="../static/images/simcompi/simcompi_3/logo-horizonta-iii-simcompi.png" alt="SIMCOMPI Logo" class="logo-image" style="max-width: 900px;">
-        <div class="countdown-container">
-            <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
-            <div class="countdown-box"><span id="hours">00</span><small>Horas</small></div>
-            <div class="countdown-box"><span id="minutes">00</span><small>Minutos</small></div>
-            <div class="countdown-box"><span id="seconds">00</span><small>Segundos</small></div>
-            <div class="countdown-info">22 a 24 de março de 2027<br>Auditório do Centro de Tecnologia, UFPI</div>
-        </div>
-    </header>
+    <img src="../static/images/simcompi/simcompi_3/logo-horizonta-iii-simcompi.png" alt="SIMCOMPI Logo" class="logo-image" style="max-width: 900px;">
+    <!-- Injetando a data do Backend via Data-Attribute -->
+    <div class="countdown-container" data-target-date="2027-03-22T11:00:00+00:00">
+        <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
+        <div class="countdown-box"><span id="hours">00</span><small>Horas</small></div>
+        <div class="countdown-box"><span id="minutes">00</span><small>Minutos</small></div>
+        <div class="countdown-box"><span id="seconds">00</span><small>Segundos</small></div>
+        <div class="countdown-info">22 a 24 de março de 2027<br>Auditório do Centro de Tecnologia, UFPI</div>
+    </div>
+</header>
 
     <section class="simcompi-intro">
         <p>A terceira edição do <strong>SIMCOMPI</strong> será realizada de <strong>22 a 24 de março de 2027</strong>, no <strong>Auditório do Centro de Tecnologia da Universidade Federal do Piauí</strong>. O SIMCOMPI é um evento nacional organizado pelo LAMEC que reúne especialistas para discutir avanços e desafios relacionados à aplicação de modelos computacionais.</p>
@@ -55,19 +66,18 @@
         <p>Em sua terceira edição, o simpósio destaca a integração entre universidade e indústria, oferecendo um espaço dedicado a aproximar a pesquisa científica dos desafios reais do setor industrial. Esperamos por você!</p>
         
         <div class="subscribe-btn-container">
-            <a href="https://www.even3.com.br/iii-simcompi-687611" class="btn btn-primary">INSCREVA-SE AGORA</a>
+            <a href="https://www.even3.com.br/iii-simcompi-687611" class="btn btn-primary" target="_blank" rel="noopener">INSCREVA-SE AGORA</a>
         </div>
     </section>
 
-    <!-- Even3 Palestrantes -->
     <div style="width: 100%; max-width: 1200px; margin: 40px auto; padding: 0 20px;">
         <div id="even3-widget-speaker" style="height: auto"></div>
         <script src="https://www.even3.com.br/widget/js?e=iii-simcompi-687611&t=speaker&lang=pt"></script>
     </div>
 
-    <div style="width: 100%; max-width: 1200px; margin: 40px auto; text-align: center; padding: 0 20px;">
+    <!-- <div style="width: 100%; max-width: 1200px; margin: 40px auto; text-align: center; padding: 0 20px;">
         <iframe src="https://instagram.com/simcompi/embed" width="100%" height="700px" style="border: none; max-width: 1200px; display: inline-block;" title="Convidados do Evento"></iframe>
-    </div>
+    </div> -->
     
     <section class="logos-wrapper">
         <h3>Organizadores</h3>
@@ -91,8 +101,10 @@
 
 
     <footer>
+    <div class="container footer-content">
         <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-    </footer>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>

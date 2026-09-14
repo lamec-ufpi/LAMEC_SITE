@@ -8,39 +8,48 @@
     <link rel="stylesheet" href="../../static/style.css">
     <link rel="icon" href="../../static/images/brand/lamec-logo.png">
     <script>
-        window.STATIC_ROOT = "../../static/style.css".replace('style.css', '');
-        window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../api/proceedings.json"
+        };
     </script>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="../../index.html" class="logo-text">
-                    <img src="../../static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
-                </a>
-            </div>
-            <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-            <ul class="nav-links">
-                <li><a href="../../index.html" class="">HOME</a></li>
-                <li><a href="../../publications/index.html" class="">PUBLICATIONS</a></li>
-                <li class="dropdown"><a href="../../research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../../research-team/index.html" class="">RESEARCH TEAM</a></li>
-                        <li><a href="../../alumni/index.html" class="">ALUMNI</a></li>
-                    </ul>
-                </li>
-                <li><a href="../../simcompi/index.html">SIMCOMPI</a></li>
-                <li class="dropdown"><a href="index.html" class="active">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../bull-racing/index.html" class="">BULL RACING</a></li>
-                        <li><a href="index.html" class="active">FAÍSCA</a></li>
-                    </ul>
-                </li>
-                <li><a href="../../about/index.html" class="">ABOUT</a></li>
-            </ul>
+    
+
+
+
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="../../index.html" class="logo-text">
+                <img src="../../static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
+            </a>
         </div>
-    </nav>
+        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="../../index.html" class="">HOME</a></li>
+            <li><a href="../../publications/index.html" class="">PUBLICATIONS</a></li>
+            <li class="dropdown"><a href="../../research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../research-team/index.html" class="">RESEARCH TEAM</a></li>
+                    <li><a href="../../alumni/index.html" class="">ALUMNI</a></li>
+                </ul>
+            </li>
+            <li><a href="../../simcompi/index.html">SIMCOMPI</a></li>
+            <li class="dropdown"><a href="index.html" class="active">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../bull-racing/index.html" class="">BULL RACING</a></li>
+                    <li><a href="index.html" class="active">FAÍSCA</a></li>
+                </ul>
+            </li>
+            <li><a href="../../about/index.html" class="">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
 
     
     <header class="simcompi-hero" style="background-image: linear-gradient(rgba(0, 2, 3, 0.7), rgba(0, 0, 0, 0.7)), url('../../static/images/backgrounds/home/fire-background.jpg');">
@@ -51,25 +60,22 @@
         <p>Faísca is a project that aims to strengthen the Female Presence in Mechanical Engineering, promoting a more inclusive, welcoming and motivating environment. The initiative seeks to encourage female students to participate, offering support, inspiration, and representation to overcome challenges and drive change in the field.</p>
         
         <div class="subscribe-btn-container">
-            <a href="https://instagram.com/faisca.ufpi/" class="btn btn-primary">Visit the Instagram</a>
+            <a href="https://instagram.com/faisca.ufpi/" class="btn btn-primary" target="_blank" rel="noopener">Visit the Instagram</a>
         </div>
     </section>
 
-    <div style="width: 100%; max-width: 1200px; margin: 40px auto; text-align: center;">
-        <iframe src="https://instagram.com/faisca.ufpi/embed" width="100%" height="700px" style="border: none; max-width: 1200px; display: inline-block;" title="Convidados do Evento"></iframe>
-    </div>
-
 
     <footer>
-        <div class="container footer-content">
-            <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-        </div>
-    </footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
     <script src="../../static/main.js"></script>
+    
 </body>
 </html>

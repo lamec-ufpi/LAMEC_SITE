@@ -1,4 +1,4 @@
-{% extends "components/base_simcompi.html" %}
+{% extends "components/base.html" %}
 {% block title %}LAMEC - Comissões do Evento{% endblock %}
 
 {% block content %}
@@ -28,28 +28,12 @@
             </div>
         </div>
 
+        {% from "components/macros.html" import render_committee_table %}
+
         <h2 class="section-title">Comissão organizadora</h2>
-        <div class="table-responsive">
-            <table class="styled-table">
-                <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
-                <tbody>
-                    {% for member in committees.organizing %}
-                    <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
+        {{ render_committee_table(committees.organizing) }}
 
         <h2 class="section-title">Comissão científica</h2>
-        <div class="table-responsive">
-            <table class="styled-table">
-                <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
-                <tbody>
-                    {% for member in committees.scientific %}
-                    <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
+        {{ render_committee_table(committees.scientific) }}
     </main>
 {% endblock %}

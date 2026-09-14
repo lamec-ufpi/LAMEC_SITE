@@ -100,9 +100,32 @@ a { color: inherit; text-decoration: none; }
     .navbar .nav-links { display: none; flex-direction: column; width: 100%; position: absolute; top: 100%; left: 0; background: var(--color-bg-white); box-shadow: 0 4px 10px rgba(0,0,0,0.1); padding: 1rem; gap: 1rem; }
     .navbar .nav-links.show { display: flex; }
     .navbar-simcompi .nav-links { background: var(--color-primary); }
-    .navbar .dropdown-menu { position: static; box-shadow: none; display: none; padding-left: 20px; }
-    .navbar .dropdown:focus-within > .dropdown-menu, .navbar .dropdown:hover > .dropdown-menu { display: block; }
+    
+    /* Removemos a abertura por HOVER no Mobile */
+    .navbar .dropdown:focus-within > .dropdown-menu, .navbar .dropdown:hover > .dropdown-menu { display: none; }
+    
+    /* Abertura controlada pelo JS com a classe .active */
+    .navbar .dropdown.active > .dropdown-menu { display: block; position: static; box-shadow: none; padding-left: 20px; animation: none;}
+    .navbar .dropdown > a { display: flex; justify-content: space-between; align-items: center; }
 }
+
+/* Acessibilidade: Prefere Movimento Reduzido (Labirintite, etc) */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* CSS Slider Home */
+.css-slider { width: 100%; height: 60vh; min-height: 400px; position: relative; overflow: hidden; }
+.css-slider .slide { width: 100%; height: 100%; position: absolute; top: 0; left: 0; opacity: 0; transition: opacity 0.5s ease-in-out; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: white; z-index: 0; }
+.css-slider .slide::before { content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0.3); z-index: 1; }
+.css-slider .slider-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 100%; display: flex; justify-content: space-between; padding: 0 20px; z-index: 20; box-sizing: border-box; pointer-events: none; }
+.css-slider .slider-nav a { pointer-events: auto; color: rgba(255, 255, 255, 0.7); font-size: 4rem; text-decoration: none; transition: color 0.3s; cursor: pointer; }
+.css-slider .slider-nav a:hover { color: #ffffff; }
 
 /* Hero Sections Gerais */
 .hero { height: 60vh; min-height: 400px; background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center; text-align: center; color: var(--color-text-light); position: relative; }
@@ -116,7 +139,7 @@ a { color: inherit; text-decoration: none; }
 .slider-next { right: 20px; }
 
 /* About Hero */
-.about-hero { position: relative; width: 100%; height: 85vh; min-height: 600px; background-color: #ccc; background-image: url('images/backgrounds/home/home-horizontal-banner-1.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: flex-end; transition: background-image 0.5s ease-in-out; }
+.about-hero { position: relative; width: 100%; height: 60vh; min-height: 600px; background-color: #ccc; background-image: url('images/backgrounds/home/home-horizontal-banner-1.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: flex-end; transition: background-image 0.5s ease-in-out; }
 .about-hero::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.1); z-index: 1; }
 .hero-text-box { position: relative; z-index: 2; background: rgba(230, 235, 238, 0.85); padding: 50px; max-width: 650px; margin-right: 100px; border-radius: 4px; backdrop-filter: blur(5px); }
 .hero-text-box h1 { color: var(--color-primary); font-size: 2.5rem; text-align: right; margin-bottom: 25px; font-weight: 800; }

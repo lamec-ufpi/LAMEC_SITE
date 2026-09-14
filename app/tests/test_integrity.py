@@ -1,12 +1,14 @@
 import pytest
 from pathlib import Path
+import sys
 
-BASE_DIR = Path(__file__).parent.parent
+# CORREÇÃO AQUI: adicionado mais um .parent para apontar para a verdadeira RAIZ do projeto
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 DATA_DIR = BASE_DIR / "data"
 STATIC_DIR = BASE_DIR / "static"
 TEMPLATES_DIR = BASE_DIR / "app" / "templates"
 
-FORBIDDEN_CHARS = ["Ãƒ", "Ã‚", "â€", "\ufffd", "Ã§", "Ã£", "Ã©", "Ã³", "Ã­", "Ã"]
+FORBIDDEN_CHARS = ["ÃƒÆ’", "Ãƒâ€š", "Ã¢â‚¬", "\ufffd", "ÃƒÂ§", "ÃƒÂ£", "ÃƒÂ©", "ÃƒÂ³", "ÃƒÂ­", "Ãƒ", "Ã©", "Ã³", "Ã§", "Ã£", "Ãµ", "Ã¡", "Ã¢", "Ãª", "Ãº"]
 
 def test_no_mojibake():
     """Garante ausência de problemas de codificação (mojibake)."""
@@ -21,7 +23,6 @@ def test_no_mojibake():
 
 def test_team_photos_are_unique():
     """Testa se ocorreu bug de copy-paste resultando em membros usando a mesma foto."""
-    import sys
     sys.path.insert(0, str(BASE_DIR))
     from app.data.loader import load_team, load_alumni
     
@@ -37,6 +38,7 @@ def test_team_photos_are_unique():
 
 def test_lattes_not_placeholder():
     """Garante que links Lattes não são placeholders inúteis."""
+    sys.path.insert(0, str(BASE_DIR))
     from app.data.loader import load_team, load_alumni
     people = load_team() + load_alumni()
     invalid_links = ("http://lattes.cnpq.br/", "https://lattes.cnpq.br/", "")
@@ -47,6 +49,7 @@ def test_lattes_not_placeholder():
 
 def test_static_files_exist_in_proceedings():
     """Garante que nenhum PDF listado nos anais dará página 404."""
+    sys.path.insert(0, str(BASE_DIR))
     from app.data.loader import load_proceedings_all
     data = load_proceedings_all()
     erros = []
@@ -62,10 +65,17 @@ def test_static_files_exist_in_proceedings():
                 
         for cat in vol.get('categories', []):
             for art in cat.get('articles', []):
-                pdf = art.get('pdf')
-                if pdf:
-                    path = STATIC_DIR / "proceedings" / pdf.replace('../../../proceedings/', '').replace('proceedings/', '')
+                # Testa direto a variável final de caminho de PDF gerada pelo loader
+                pdf_path = art.get('pdf_path')
+                if pdf_path and pdf_path != "#":
+                    path = STATIC_DIR / pdf_path
                     if not path.exists():
-                        erros.append(f"PDF Artigo 404: {path.name} ({art.get('title')})")
+                        erros.append(f"PDF Artigo 404: {pdf_path} ({art.get('title')})")
 
     assert not erros, "\n".join(erros)
+
+if __name__ == "__main__":
+    print("Iniciando suíte de testes de integridade...")
+    exit_code = pytest.main(["-v", __file__])
+    input("\nPressione ENTER para fechar a janela...")
+    sys.exit(exit_code)

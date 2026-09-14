@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LAMEC{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/brand/lamec-logo.png') }}">
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "{{ url_for('static', filename='style.css') }}".replace('style.css', ''),
+            baseUrl: "{{ url_for('main.index') }}".replace('index.html', ''),
+            proceedingsApiUrl: "{{ url_for('main.proceedings_api') }}"
+        };
+    </script>
+</head>
+<body>
+    {% include "components/navbar.html" %}
+
+    {% block content %}{% endblock %}
+
+    {% include "components/footer.html" %}
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

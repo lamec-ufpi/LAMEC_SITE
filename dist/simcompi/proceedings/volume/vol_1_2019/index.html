@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../../../static/style.css">
     <link rel="icon" href="../../../../static/images/brand/lamec-logo.png">
-<script>
-    window.STATIC_ROOT = "../../../../static/style.css".replace('style.css', '');
-    window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
-</script>
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../../../api/proceedings.json"
+        };
+    </script>
 </head>
 <body>
     
-    <nav class="navbar navbar-simcompi navbar-proceedings" id="navbar">
-      <div class="container nav-container">
-        <div class="logo">
-          <a href="../../index.html" class="logo-text" style="font-size:x-large;">Anais do Simpósio de Modelagem <br>Computacional em Ciência e Tecnologia do Piauí</a>
-        </div>
-        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-        <ul class="nav-links">          
-            <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> VOLTAR PARA O SIMCOMPI</a></li>
-            <li><a href="../../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
-        </ul>
-      </div>
-    </nav>
+
+
+
+<nav class="navbar navbar-simcompi navbar-proceedings" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="../../index.html" class="logo-text" style="font-size:x-large;">Anais do Simpósio de Modelagem <br>Computacional em Ciência e Tecnologia do Piauí</a>
+    </div>
+    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links">          
+        <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> VOLTAR PARA O SIMCOMPI</a></li>
+        <li><a href="../../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 
     
     <main class="container proceedings-layout">
@@ -48,7 +57,7 @@
                         <li><a href="../../expediente/index.html" class="">Corpo Editorial</a></li>
                         <li><a href="../../normas/index.html" class="">Normas para Publicação</a></li>
                         <li><a href="../../contato/index.html" class="">Contato</a></li>
-                        <li><a href="../vol_3/index.html">Volume atual: Vol. 3 2027</a></li>
+                        <li><a href="../vol_3_2027/index.html">Volume atual: Vol. 3 2027</a></li>
                         <li><a href="../../arquivo/index.html" class="">Arquivo Completo</a></li>
                     </ul>
                 </div>
@@ -82,854 +91,1114 @@
 
     
         
+        
             <h2 class="section-title-highlight">Desenvolvimento de ferramentas computacionais</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Android Aplicativo para verificação de Steel Elements under Axial Force</h3>
-                <p class="article-authors">Rodrigo Diniz Filgueiras, Prof. Dr. Eduardo Martins Fontes do Rêgo</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/filgueiras-fontes-2019-aplicativo-android-para-verificacao-de-elementos-de-aco-sob-forca-axial.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Considerando-se a crescente utilização de estruturas metálicas na modernidade e a popularização dos smartphones, pensou-se na implementação de um aplicativo Android a fim de executar as situações de verificação e dimensionamento de elementos de aço submetidos à força axial, cujas diretrizes de cálculo são baseadas na ABNT NBR 8800 (2008). O objetivo deste trabalho é que o aplicativo, chamado SteelApp, desenvolvido no ambiente do Android Studio, utilizando a linguagem de programação Java, apresente resultados confiáveis tais como os obtidos em softwares para desktop. A ferramenta gratuita destinar-se-á aos estudantes de engenharia civil como também poderá auxiliar profissionais da área que lidam com questões práticas de dimensionamento.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Android Aplicativo para verificação de Steel Elements under Axial Force</h3>
+    <p class="article-authors js-authors"><i>Rodrigo Diniz Filgueiras, Prof. Dr. Eduardo Martins Fontes do Rêgo</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Dimensionamento de redes de distribuição de água com AutoCAD e EPANET</h3>
-                <p class="article-authors">José Paulo da Silveira Neto, Alessandro de Araújo Bezerra, Renata Shirley de Andrade Araújo, Jordana Madeira Alaggio Ribeiro</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/silveira-bezerra-araujo-2019-desenvolvimento-de-redes-de-distribuicao-de-agua-envolvendo-o-autocad-e-o-epanet.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Segundo Gomes (1997), dentre os componentes de um sistema de abastecimento de água, a rede de distribuição é responsável por distribuir água potável ao consumidor final. Para auxiliar no dimensionamento dessas redes, existem softwares como o Epanet, que executa simulações hidráulicas de redes de distribuição pressurizadas, conforme explica Rossman (2000). No entanto, a composição do traçado no programa implica em atividades bastante repetitivas e que demandam um grande esforço por parte do projetista. A automação, como sugere Castro (2004), surge então como uma alternativa para solucionar esse problema, permitindo maior economia de tempo e esforço e reduzindo significativamente o risco de erros no projeto. O objetivo deste trabalho foi desenvolver um pacote computacional para otimizar o processo de simulações hidráulicas de redes de distribuição de água no Epanet, através de uma interface interativa com o AutoCAD que promova rapidez e confiabilidade na entrada de dados e traçado da rede.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Ferramenta computacional para dimensionamento de Wooden Roofs</h3>
-                <p class="article-authors">João Pedro Silva Soares, Prof. Dr. Eduardo Martins Fontes do Rêgo</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/soares-fontes-2019-ferramenta-computacional-para-dimensionamento-de-cobertura-em-madeira.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> As estruturas de madeira são empregadas na construção civil desde a antiguidade, principalmente devido à sua disponibilidade na natureza e à sua capacidade de isolamento térmica (PFEIL, 2003). Essas estruturas também possuem tipos de conexões fáceis de serem executadas e a capacidade de serem ampliadas de acordo com futura necessidade. Na atualidade, a madeira como material estrutural é utilizada principalmente em coberturas de determinadas estruturas, cujo dimensionamento é facilitado pela utilização de programas computacionais (software) de cálculo estrutural. Visando otimizar o cálculo de estruturas de cobertura em madeira, este trabalho se propõe a desenvolver um software em C# apto a dimensionar a capacidade da estrutura de cobertura de resistir aos esforços solicitantes. Tal dimensionamento é embasado nas considerações e orientações presentes na norma específica.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+            <a href="../../../../static/proceedings/vol1/filgueiras-fontes-2019-aplicativo-android-para-verificacao-de-elementos-de-aco-sob-forca-axial.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
             
-            <div class="article-card">
-                <h3 class="article-title">Modelagem computacional de Pumping Systems</h3>
-                <p class="article-authors">Natanael Basilio Pires, Profª. Dra. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro de Araújo Bezerra</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/basilio-araujo-bezerra-2019-modelagem-computacional-de-sistemas-elevatorios.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A água é um recurso essencial na realização de diversas atividades humanas e seu consumo gera uma demanda por sistemas de infraestrutura urbana, como de esgotamento sanitário e drenagem urbana, por exemplo, nesses sistemas é comum a utilização de fornecedores de energia para o escoamento adequado de fluxo, que são os sistemas elevatórios ou de recalque, formados por tubulações, acessórios e bombas. Para realização de projetos nessa área vários parâmetros referentes a tubulação e ao conjunto motor-bomba devem ser considerados, o que torna o mesmo uma atividade complexa e trabalhosa, dessa forma, vários projetista utilizam de softwares computacionais, como o AutoCAD, para realização desse tipo de projeto, entretanto, o mesmo não possui ferramentas específicas para a realização desse tipo de projeto. Dessa forma, esse trabalho busca utilizar-se da programação presente no AutoCAD, como o AutoLISP e o Visual Basic Applications (VBA) para criar ferramentas que permitam a representação e criação de projetos de sistemas elevatórios de maneira prática e eficiente.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Considerando-se a crescente utilização de estruturas metálicas na modernidade e a popularização dos smartphones, pensou-se na implementação de um aplicativo Android a fim de executar as situações de verificação e dimensionamento de elementos de aço submetidos à força axial, cujas diretrizes de cálculo são baseadas na ABNT NBR 8800 (2008). O objetivo deste trabalho é que o aplicativo, chamado SteelApp, desenvolvido no ambiente do Android Studio, utilizando a linguagem de programação Java, apresente resultados confiáveis tais como os obtidos em softwares para desktop. A ferramenta gratuita destinar-se-á aos estudantes de engenharia civil como também poderá auxiliar profissionais da área que lidam com questões práticas de dimensionamento.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
-            <div class="article-card">
-                <h3 class="article-title">Programação aplicada à inserção de elementos gráficos em ambiente AutoCAD</h3>
-                <p class="article-authors">Paulo Roberto Queiroz de Almeida, Profª. Drª. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro De Araújo Bezerra</p>
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Dimensionamento de redes de distribuição de água com AutoCAD e EPANET</h3>
+    <p class="article-authors js-authors"><i>José Paulo da Silveira Neto, Alessandro de Araújo Bezerra, Renata Shirley de Andrade Araújo, Jordana Madeira Alaggio Ribeiro</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/silveira-bezerra-araujo-2019-desenvolvimento-de-redes-de-distribuicao-de-agua-envolvendo-o-autocad-e-o-epanet.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Segundo Gomes (1997), dentre os componentes de um sistema de abastecimento de água, a rede de distribuição é responsável por distribuir água potável ao consumidor final. Para auxiliar no dimensionamento dessas redes, existem softwares como o Epanet, que executa simulações hidráulicas de redes de distribuição pressurizadas, conforme explica Rossman (2000). No entanto, a composição do traçado no programa implica em atividades bastante repetitivas e que demandam um grande esforço por parte do projetista. A automação, como sugere Castro (2004), surge então como uma alternativa para solucionar esse problema, permitindo maior economia de tempo e esforço e reduzindo significativamente o risco de erros no projeto. O objetivo deste trabalho foi desenvolver um pacote computacional para otimizar o processo de simulações hidráulicas de redes de distribuição de água no Epanet, através de uma interface interativa com o AutoCAD que promova rapidez e confiabilidade na entrada de dados e traçado da rede.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Ferramenta computacional para dimensionamento de Wooden Roofs</h3>
+    <p class="article-authors js-authors"><i>João Pedro Silva Soares, Prof. Dr. Eduardo Martins Fontes do Rêgo</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/soares-fontes-2019-ferramenta-computacional-para-dimensionamento-de-cobertura-em-madeira.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> As estruturas de madeira são empregadas na construção civil desde a antiguidade, principalmente devido à sua disponibilidade na natureza e à sua capacidade de isolamento térmica (PFEIL, 2003). Essas estruturas também possuem tipos de conexões fáceis de serem executadas e a capacidade de serem ampliadas de acordo com futura necessidade. Na atualidade, a madeira como material estrutural é utilizada principalmente em coberturas de determinadas estruturas, cujo dimensionamento é facilitado pela utilização de programas computacionais (software) de cálculo estrutural. Visando otimizar o cálculo de estruturas de cobertura em madeira, este trabalho se propõe a desenvolver um software em C# apto a dimensionar a capacidade da estrutura de cobertura de resistir aos esforços solicitantes. Tal dimensionamento é embasado nas considerações e orientações presentes na norma específica.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/queiroz-araujo-bezerra-2019-programacao-aplicada-a-insercao-de-elementos-graficos-em-ambiente-autocad.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Modelagem computacional de Pumping Systems</h3>
+    <p class="article-authors js-authors"><i>Natanael Basilio Pires, Profª. Dra. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro de Araújo Bezerra</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/basilio-araujo-bezerra-2019-modelagem-computacional-de-sistemas-elevatorios.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A água é um recurso essencial na realização de diversas atividades humanas e seu consumo gera uma demanda por sistemas de infraestrutura urbana, como de esgotamento sanitário e drenagem urbana, por exemplo, nesses sistemas é comum a utilização de fornecedores de energia para o escoamento adequado de fluxo, que são os sistemas elevatórios ou de recalque, formados por tubulações, acessórios e bombas. Para realização de projetos nessa área vários parâmetros referentes a tubulação e ao conjunto motor-bomba devem ser considerados, o que torna o mesmo uma atividade complexa e trabalhosa, dessa forma, vários projetista utilizam de softwares computacionais, como o AutoCAD, para realização desse tipo de projeto, entretanto, o mesmo não possui ferramentas específicas para a realização desse tipo de projeto. Dessa forma, esse trabalho busca utilizar-se da programação presente no AutoCAD, como o AutoLISP e o Visual Basic Applications (VBA) para criar ferramentas que permitam a representação e criação de projetos de sistemas elevatórios de maneira prática e eficiente.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> É de conhecimento geral que a água é um recurso fundamental para a sociedade, sendo, portanto, importante objeto de estudo. Pádua (2008) informa que o alto grau de qualidade da água é indicativo de saúde e essencial para a sociedade em geral. Muitos são os fatores que proporcionam uma boa qualidade à água, um deles é a rede de transporte, esta que, segundo Porto (2006), podem ser bastante complexas, devido aos vários componentes da rede e consequentemente o dimensionamento, operação e manutenção desse sistema são considerados uma parte bastante dispendiosa do projeto global de abastecimento. Nesse contexto, softwares projetados para melhoria dessas redes de distribuição são de grande interesse de estudo, visto que são capazes de simplificar tarefas, ou reduzir esforços repetitivos, provenientes de atividades ligadas à área de projetos. O AutoCAD é um software compatível para o planejamento das redes e já bastante utilizado, pois sua linguagem de programação, AutoLISP, permite personalização de comandos e é de aprendizagem relativamente simples. Valdivino (2011) cita a possibilidade de utilizar seus inúmeros comandos originais e acessar um banco de dados do próprio AutoCAD, facilitando a manipulação das entidades do desenho, como vantagem dessa linguagem de programação. Este trabalho tem como objetivo a criação de ferramentas de inserção de elementos gráficos que simulam alguns dos acessórios utilizados nas redes de distribuição, na forma de comandos customizados por meio do ambiente integral de desenvolvimento (IDE, sigla em inglês) do software AutoCAD.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Programação aplicada à inserção de elementos gráficos em ambiente AutoCAD</h3>
+    <p class="article-authors js-authors"><i>Paulo Roberto Queiroz de Almeida, Profª. Drª. Renata Shirley de Andrade Araújo, Prof. Dr. Alessandro De Araújo Bezerra</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/queiroz-araujo-bezerra-2019-programacao-aplicada-a-insercao-de-elementos-graficos-em-ambiente-autocad.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> É de conhecimento geral que a água é um recurso fundamental para a sociedade, sendo, portanto, importante objeto de estudo. Pádua (2008) informa que o alto grau de qualidade da água é indicativo de saúde e essencial para a sociedade em geral. Muitos são os fatores que proporcionam uma boa qualidade à água, um deles é a rede de transporte, esta que, segundo Porto (2006), podem ser bastante complexas, devido aos vários componentes da rede e consequentemente o dimensionamento, operação e manutenção desse sistema são considerados uma parte bastante dispendiosa do projeto global de abastecimento. Nesse contexto, softwares projetados para melhoria dessas redes de distribuição são de grande interesse de estudo, visto que são capazes de simplificar tarefas, ou reduzir esforços repetitivos, provenientes de atividades ligadas à área de projetos. O AutoCAD é um software compatível para o planejamento das redes e já bastante utilizado, pois sua linguagem de programação, AutoLISP, permite personalização de comandos e é de aprendizagem relativamente simples. Valdivino (2011) cita a possibilidade de utilizar seus inúmeros comandos originais e acessar um banco de dados do próprio AutoCAD, facilitando a manipulação das entidades do desenho, como vantagem dessa linguagem de programação. Este trabalho tem como objetivo a criação de ferramentas de inserção de elementos gráficos que simulam alguns dos acessórios utilizados nas redes de distribuição, na forma de comandos customizados por meio do ambiente integral de desenvolvimento (IDE, sigla em inglês) do software AutoCAD.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Engenharia Aeronáutica</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">CFD Análise de a Nozzle Throat Geometry</h3>
-                <p class="article-authors">Kassio Felipe da Costa Serra, João Manoel Torres Lobato</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/serra-lobato-2019-analise-em-cfd-da-geometria-da-garganta-de-uma-tubeira.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A tubeira de motor de foguete é um dispositivo que é usado para converter a energia termoquímica gerada na câmara de combustão em energia cinética. O principio é converter gases de alta pressão e baixa velocidade em gases de baixa pressão e alta velocidade, resultado pela queima do propelente que sai do motor, ampliando o empuxo. O dipositivo é dividido em três partes, subsônica convergente, garganta e supersonica divergente. Este trabalho tem como objetivo de analisar a geometria da garganta em formato circular e triangular se terá influência na pressão total e na velocidade distribuida na tubeira, com a ajuda do software ANSYS, poderemos utilizar técnicas de simulações computacionais para chegar em melhores resultados.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">CFD Análise de a Nozzle Throat Geometry</h3>
+    <p class="article-authors js-authors"><i>Kassio Felipe da Costa Serra, João Manoel Torres Lobato</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Estudo prospectivo sobre o uso de materiais poliméricos na engenharia aeroespacial</h3>
-                <p class="article-authors">Millena de Cassia Sousa e Silva, Yvo Borges da Silva, Valdivânia Albuquerque do Nascimento</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/cassia-borges-albuquerque-2019-estudo-prospectivo-sobre-a-utilizacao-de-materiais-polimericos-na-engenharia-aeroespacial.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A facilidade e o baixo custo de processamento fizeram com que os materiais poliméricos se tornassem abundantemente presentes na nossa vida cotidiana, após décadas de uso restrito, devido ao seu custo de obtenção, os compósitos poliméricos, também denominados avançados, têm ampliado a sua utilização em diferentes setores da indústria moderna. Existe uma gama de tipos de polímeros para aplicações avançadas: polímeros com excelentes estabilidade térmica e oxidativa, para o uso em aplicações aeroespaciais; plásticos utilizados na engenharia. Os termoplásticos reforçados com fibras continuas têm sido utilizados amplamente no setor aeroespacial por serem mais resistentes que os metais, possuírem baixa absorção de umidade entre outras características.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Nitretação por plasma em gaiola catódica do aço AISI 444: investigação e análise dos parâmetros de tratamento</h3>
-                <p class="article-authors">Renan Matos Monção, Bruno Barbosa de Aquino, Prof. Dr. Rômulo Ribeiro Magalhães</p>
+            <a href="../../../../static/proceedings/vol1/serra-lobato-2019-analise-em-cfd-da-geometria-da-garganta-de-uma-tubeira.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A tubeira de motor de foguete é um dispositivo que é usado para converter a energia termoquímica gerada na câmara de combustão em energia cinética. O principio é converter gases de alta pressão e baixa velocidade em gases de baixa pressão e alta velocidade, resultado pela queima do propelente que sai do motor, ampliando o empuxo. O dipositivo é dividido em três partes, subsônica convergente, garganta e supersonica divergente. Este trabalho tem como objetivo de analisar a geometria da garganta em formato circular e triangular se terá influência na pressão total e na velocidade distribuida na tubeira, com a ajuda do software ANSYS, poderemos utilizar técnicas de simulações computacionais para chegar em melhores resultados.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Estudo prospectivo sobre o uso de materiais poliméricos na engenharia aeroespacial</h3>
+    <p class="article-authors js-authors"><i>Millena de Cassia Sousa e Silva, Yvo Borges da Silva, Valdivânia Albuquerque do Nascimento</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/cassia-borges-albuquerque-2019-estudo-prospectivo-sobre-a-utilizacao-de-materiais-polimericos-na-engenharia-aeroespacial.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A facilidade e o baixo custo de processamento fizeram com que os materiais poliméricos se tornassem abundantemente presentes na nossa vida cotidiana, após décadas de uso restrito, devido ao seu custo de obtenção, os compósitos poliméricos, também denominados avançados, têm ampliado a sua utilização em diferentes setores da indústria moderna. Existe uma gama de tipos de polímeros para aplicações avançadas: polímeros com excelentes estabilidade térmica e oxidativa, para o uso em aplicações aeroespaciais; plásticos utilizados na engenharia. Os termoplásticos reforçados com fibras continuas têm sido utilizados amplamente no setor aeroespacial por serem mais resistentes que os metais, possuírem baixa absorção de umidade entre outras características.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/mocao-aquino-magalhaes-2019-nitretacao-a-plasmacom-gaiola-catodica-do-aco-aisi-444_investigacao-e-analise-dos-parametros-de-tratamento.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Tratamentos de superficie têm assumido um papel de crescente importância entre as técnicas de processamento de materiais. A nitretação por plasma convencional é um processo bem aceito industrialmente, porque apresenta várias vantagens em relação aos outros processos de nitretação (a gás e em banho de sais), tais como maior economia de gases e menor duração do processo. Segundo Bermudez (1999), dentre as várias aplicações industriais da nitretação por plasma, se destaca a indústria de armamento e aeroespacial em que canos de canhão, peças do guiamento de mísseis e outros componentes do mesmo podem utilizar a técnica para aprimorar suas propriedades mecânicas. Além disso, segundo Silva (2016) é possível também utilizar a nitretação a plasma para o compressor de um motor de uma caça aeronáutico. Uma técnica alternativa de nitretação iônica é a ASPN (Active Screen Plasma Nitriding), onde as amostras ficam envolvidas por uma tela polarizada catodicamente e com ela é possível obter uma camada nitretada perfeitamente uniforme independente da forma da amostra. Desta forma o plasma atua na tela e não nas superficies das amostras. (Sousa, 2004). Nesse trabalho será utilizada uma técnica mais recente (2007) de nitretação, denominada de nitretação em gaiola catódica (NGC). Esta técnica é derivada da ASPN, mas que utiliza o efeito do catodo oco para aumentar a eficiência do processo de nitretação, proporcionando um aumento de dureza e espessura de camada. O objetivo deste trabalho é tratar termoquimicamente o aço AISI 444, melhorando suas propriedades como dureza, resistência ao desgaste, rugosidade e resistência a corrosão. Além de descobrir os melhores parâmetros de tratamento.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Nitretação por plasma em gaiola catódica do aço AISI 444: investigação e análise dos parâmetros de tratamento</h3>
+    <p class="article-authors js-authors"><i>Renan Matos Monção, Bruno Barbosa de Aquino, Prof. Dr. Rômulo Ribeiro Magalhães</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/mocao-aquino-magalhaes-2019-nitretacao-a-plasmacom-gaiola-catodica-do-aco-aisi-444_investigacao-e-analise-dos-parametros-de-tratamento.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Tratamentos de superficie têm assumido um papel de crescente importância entre as técnicas de processamento de materiais. A nitretação por plasma convencional é um processo bem aceito industrialmente, porque apresenta várias vantagens em relação aos outros processos de nitretação (a gás e em banho de sais), tais como maior economia de gases e menor duração do processo. Segundo Bermudez (1999), dentre as várias aplicações industriais da nitretação por plasma, se destaca a indústria de armamento e aeroespacial em que canos de canhão, peças do guiamento de mísseis e outros componentes do mesmo podem utilizar a técnica para aprimorar suas propriedades mecânicas. Além disso, segundo Silva (2016) é possível também utilizar a nitretação a plasma para o compressor de um motor de uma caça aeronáutico. Uma técnica alternativa de nitretação iônica é a ASPN (Active Screen Plasma Nitriding), onde as amostras ficam envolvidas por uma tela polarizada catodicamente e com ela é possível obter uma camada nitretada perfeitamente uniforme independente da forma da amostra. Desta forma o plasma atua na tela e não nas superficies das amostras. (Sousa, 2004). Nesse trabalho será utilizada uma técnica mais recente (2007) de nitretação, denominada de nitretação em gaiola catódica (NGC). Esta técnica é derivada da ASPN, mas que utiliza o efeito do catodo oco para aumentar a eficiência do processo de nitretação, proporcionando um aumento de dureza e espessura de camada. O objetivo deste trabalho é tratar termoquimicamente o aço AISI 444, melhorando suas propriedades como dureza, resistência ao desgaste, rugosidade e resistência a corrosão. Além de descobrir os melhores parâmetros de tratamento.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Eficiência Energética</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Análise de eficiência energética em uma rede de distribuição de ar comprimido para uma fábrica de bicicletas</h3>
-                <p class="article-authors">Luiz Henrique Portela de Abreu, Renan Matos Monção, Wênio Fhará Alencar Borges</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/abreu-mocao-borges-2019-analise-da-eficiencia-energetica-em-rede-de-distribuicao-de-ar-comprimido-para-uma-fabrica-de-bicicletas.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> O ar comprimido fornece energia para uma intensa variedade de operações fabris, dentre elas podemos destacar o controle e automação de processos, esmerilhar, furar, parafusar, pintar e pressurizar (EP, 2003). Na maioria das indústrias não há uma autocrítica do sistema de ar comprimido buscando melhorias constantes e as condições de operação são somente as necessárias para que a produção de ar seja mantida (CAGI, 2004). Através de observações e estudos preliminares, foi levantada a hipótese de que a linha de distribuição de ar comprimido da unidade avaliada possuía defeitos e irregularidades que estavam influenciando no rendimento das máquinas e ferramentas pneumáticas utilizadas e um aumento nas horas de trabalho do compressor. Assim, este trabalho, através de uma análise de eficiência energética, visa apresentar o projeto do layout, a análise da queda de pressão e a estimativa da quantidade de vazamentos na rede de distribuição de ar comprimido de uma fábrica de bicicleta em Teresina (PI).
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Análise de eficiência energética em uma rede de distribuição de ar comprimido para uma fábrica de bicicletas</h3>
+    <p class="article-authors js-authors"><i>Luiz Henrique Portela de Abreu, Renan Matos Monção, Wênio Fhará Alencar Borges</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Avaliação de monitoramento de sistema fotovoltaico conectado à rede e seus impactos na qualidade da energia na UFPI</h3>
-                <p class="article-authors">Tatyane Mityko Dias Fussuma, Prof. Dr. Fábio Rocha Barbosa</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/fussuma-rocha-2019-avaliacao-do-monitoramento-do-sistema-fotovoltaico-conectado-a-rede-e-seus-impactos-na-qualidade-de-energia-da-ufpi.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> O monitoramento de Qualidade de Energia é necessário para caracterizar os fenômenos eletromagnéticos em uma localidade típica, diagnosticar incompatibilidades entre a fonte de energia elétrica e a carga, além de refinar técnicas de modelagem (IEEE, 2009). No presente trabalho, realiza-se a avaliação do monitoramento de um Sistema Fotovoltaico Conectado à Rede, composto por 114 painéis fotovoltaicos do tipo policristalino, cuja potência nominal é de 36KW, e sua influência na qualidade de energia elétrica na rede de distribuição na UFPI. Sob uma ótica especifica, objetiva-se estimar a economia de energia na instituição após sua instalação e calcular o tempo de retorno financeiro do mesmo. No qual é realizado um estudo de caracterização do perfil da tensão e verificação da injeção de componentes harmônicos na rede, analisando assim a influência da instalação do SFCR na qualidade da rede que atende o local onde está instalado o sistema fotovoltaico.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Uso de materiais supercondutores de alta temperatura em sistemas de energia: uma prospecção tecnológica</h3>
-                <p class="article-authors">Laura Almeida Pereira dos Santos, Valdivânia Albuquerque do Nascimento, Felipe Pereira Siqueira e Silva</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/almeida-albuquerque-siqueira-2019-utilizacao-de-materiais-supercondutores-de-alta-temperatura-em-sistemas-de-energia_uma-prospeccao-tecnologica.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Os materiais supercondutores de alta temperatura apresentam-se como potenciais promotores de importantes desenvolvimentos na área energética. Algumas das suas características possibilitam o desenvolvimento de novas tecnologias que de outra forma seriam impraticáveis ou impossíveis, tendo como exemplo dessas características as suas propriedades eletromagnéticas e o seu nivel de diamagnetismo. Dentre os problemas energéticos com que a sociedade se confronta atualmente e que o emprego desses materiais pode influenciar de maneira positiva podemos citar a necessidade, não só econômica, mas também ambiental, de reduzir as perdas associadas à geração, transporte e distribuição de energia [1]. Esse trabalho tem como objetivo realizar uma busca na literatura de materiais supercondutores de alta temperatura em sistemas de energia.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+            <a href="../../../../static/proceedings/vol1/abreu-mocao-borges-2019-analise-da-eficiencia-energetica-em-rede-de-distribuicao-de-ar-comprimido-para-uma-fabrica-de-bicicletas.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
             
-            <div class="article-card">
-                <h3 class="article-title">Uso de nanocompósitos metálicos para eficiência energética na produção industrial: uma prospecção tecnológica</h3>
-                <p class="article-authors">Yvo Borges da Silva, Millena de Cássia Sousa e Silva, Valdivânia Albuquerque do Nascimento</p>
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> O ar comprimido fornece energia para uma intensa variedade de operações fabris, dentre elas podemos destacar o controle e automação de processos, esmerilhar, furar, parafusar, pintar e pressurizar (EP, 2003). Na maioria das indústrias não há uma autocrítica do sistema de ar comprimido buscando melhorias constantes e as condições de operação são somente as necessárias para que a produção de ar seja mantida (CAGI, 2004). Através de observações e estudos preliminares, foi levantada a hipótese de que a linha de distribuição de ar comprimido da unidade avaliada possuía defeitos e irregularidades que estavam influenciando no rendimento das máquinas e ferramentas pneumáticas utilizadas e um aumento nas horas de trabalho do compressor. Assim, este trabalho, através de uma análise de eficiência energética, visa apresentar o projeto do layout, a análise da queda de pressão e a estimativa da quantidade de vazamentos na rede de distribuição de ar comprimido de uma fábrica de bicicleta em Teresina (PI).
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Avaliação de monitoramento de sistema fotovoltaico conectado à rede e seus impactos na qualidade da energia na UFPI</h3>
+    <p class="article-authors js-authors"><i>Tatyane Mityko Dias Fussuma, Prof. Dr. Fábio Rocha Barbosa</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/fussuma-rocha-2019-avaliacao-do-monitoramento-do-sistema-fotovoltaico-conectado-a-rede-e-seus-impactos-na-qualidade-de-energia-da-ufpi.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> O monitoramento de Qualidade de Energia é necessário para caracterizar os fenômenos eletromagnéticos em uma localidade típica, diagnosticar incompatibilidades entre a fonte de energia elétrica e a carga, além de refinar técnicas de modelagem (IEEE, 2009). No presente trabalho, realiza-se a avaliação do monitoramento de um Sistema Fotovoltaico Conectado à Rede, composto por 114 painéis fotovoltaicos do tipo policristalino, cuja potência nominal é de 36KW, e sua influência na qualidade de energia elétrica na rede de distribuição na UFPI. Sob uma ótica especifica, objetiva-se estimar a economia de energia na instituição após sua instalação e calcular o tempo de retorno financeiro do mesmo. No qual é realizado um estudo de caracterização do perfil da tensão e verificação da injeção de componentes harmônicos na rede, analisando assim a influência da instalação do SFCR na qualidade da rede que atende o local onde está instalado o sistema fotovoltaico.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Uso de materiais supercondutores de alta temperatura em sistemas de energia: uma prospecção tecnológica</h3>
+    <p class="article-authors js-authors"><i>Laura Almeida Pereira dos Santos, Valdivânia Albuquerque do Nascimento, Felipe Pereira Siqueira e Silva</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/almeida-albuquerque-siqueira-2019-utilizacao-de-materiais-supercondutores-de-alta-temperatura-em-sistemas-de-energia_uma-prospeccao-tecnologica.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Os materiais supercondutores de alta temperatura apresentam-se como potenciais promotores de importantes desenvolvimentos na área energética. Algumas das suas características possibilitam o desenvolvimento de novas tecnologias que de outra forma seriam impraticáveis ou impossíveis, tendo como exemplo dessas características as suas propriedades eletromagnéticas e o seu nivel de diamagnetismo. Dentre os problemas energéticos com que a sociedade se confronta atualmente e que o emprego desses materiais pode influenciar de maneira positiva podemos citar a necessidade, não só econômica, mas também ambiental, de reduzir as perdas associadas à geração, transporte e distribuição de energia [1]. Esse trabalho tem como objetivo realizar uma busca na literatura de materiais supercondutores de alta temperatura em sistemas de energia.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/borges-cassia-albuquerque-2019-utilizacao-de-nanocompositos-metalicos-para-eficiencia-energetica-na-producao-industrial-uma-prospeccao-tecnologica.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Os nanocompositos são materiais em que pelo menos um de seus componentes apresentam dimensões nanométricas. O interesse pelos nanocompósitos metálicos tem crescido acentuadamente, uma vez que estes compostos tendem a apresentar melhores propriedades quando comparados com os compósitos convencionais. A preocupação com a elevação do consumo de combustíveis e energia na atividade industrial, tem estimulado o desenvolvimento de técnicas para a quantificação das entradas e saídas de energia na indústria, possibilitando o cálculo do balanço energético. Os balanços energéticos são indicadores relacionadores de energia e constituem promissora abordagem técnica para se avaliar e investigar problemas relacionados à sustentabilidade e eficiência de sistemas industriais.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Uso de nanocompósitos metálicos para eficiência energética na produção industrial: uma prospecção tecnológica</h3>
+    <p class="article-authors js-authors"><i>Yvo Borges da Silva, Millena de Cássia Sousa e Silva, Valdivânia Albuquerque do Nascimento</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/borges-cassia-albuquerque-2019-utilizacao-de-nanocompositos-metalicos-para-eficiencia-energetica-na-producao-industrial-uma-prospeccao-tecnologica.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Os nanocompositos são materiais em que pelo menos um de seus componentes apresentam dimensões nanométricas. O interesse pelos nanocompósitos metálicos tem crescido acentuadamente, uma vez que estes compostos tendem a apresentar melhores propriedades quando comparados com os compósitos convencionais. A preocupação com a elevação do consumo de combustíveis e energia na atividade industrial, tem estimulado o desenvolvimento de técnicas para a quantificação das entradas e saídas de energia na indústria, possibilitando o cálculo do balanço energético. Os balanços energéticos são indicadores relacionadores de energia e constituem promissora abordagem técnica para se avaliar e investigar problemas relacionados à sustentabilidade e eficiência de sistemas industriais.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Método dos Elementos de Contorno</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Formulação pelo método dos elementos de contorno para modelagem do fenômeno de cone de gás em poços de petróleo</h3>
-                <p class="article-authors">Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/sanches-slayder-jesus-2019-a-boundary-element-method-formulation-to-modeling-the-gas-coning-phenomenomn-in-oil-wells.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> For years the water/gas coning phenomenon in oil reservoirs has been a big challenge for the upstream industry. It happens because the conification causes serious limitations on the well productivity, increasing the production costs.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Formulação pelo método dos elementos de contorno para modelagem do fenômeno de cone de gás em poços de petróleo</h3>
+    <p class="article-authors js-authors"><i>Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/sanches-slayder-jesus-2019-a-boundary-element-method-formulation-to-modeling-the-gas-coning-phenomenomn-in-oil-wells.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> For years the water/gas coning phenomenon in oil reservoirs has been a big challenge for the upstream industry. It happens because the conification causes serious limitations on the well productivity, increasing the production costs.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Método dos Elementos Finitos</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Análise de vibração livre de uma viga cônica rotativa</h3>
-                <p class="article-authors">Juan Gabriel Queiroz Blanche, Simone dos Santos Hoefel</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/blanche-hoefel-2019-free-vibration-of-a-rotating-tapered-beam.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Rotating beams are widely found in several engineering structures such as wind turbine blades, industrial fans and gas turbine engine. Blade is one of the most critical mechanical component in rotating machines, as result, the behavior of rotating beams structures has received a lot of attention. Therefore, different configurations of blades was investigated with classical theory of beam by many researchers, such as Euler-Bernoulli and Timoshenko. Since blades rarely has uniform area along the length, a non-prismatic analysis becomes more accurate and reliable motivating several authors to investigate the effect of tapering on rotating beams. In this paper, the vibration frequency of a tapered rotating beam is investigated. The finite element method is used, a non-constant flexural rigidity and mass per unit over the element is developed using a cubic polynomial. The effects of taper ratio and rotational speed are analyzed and the mode shapes are determined for some values of taper parameters. The results obtained shown that Rayleigh-Ritz method for Finite Elements finds the natural frequencies of a rotating tapered cantilever Euler-Bernoulli beam with high precision.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Análise de vibração livre de uma viga cônica rotativa</h3>
+    <p class="article-authors js-authors"><i>Juan Gabriel Queiroz Blanche, Simone dos Santos Hoefel</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Vibração livre de uma viga-coluna sobre fundação elástica de dois parâmetros</h3>
-                <p class="article-authors">Lucas Oliveira Siqueira, Rômulo Luz Cortez, Profa. Dra. Simone dos Santos Hoefel</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> The behavior of the Euler-Bernoulli beam on elastic foundation has been extensively studied in the modern engineering. There are many applications for beam on elastic foundation mainly in mechanical and civil engineering, like shafts supported on ball, roller, or journal bearings, vibrating machines on elastic foundations, network of beams in the construction of floor systems for ships, buildings, submerged floating tunnels, buried pipelines, railroad tracks etc. The purpose of this work is to analyze the influence of the axial load on the dynamic response of an axial-loaded Euler-Bernoulli beam resting on two-parameter foundation. Some examples presents the influence of the axial load and the foundation in the natural frequencies of the beam. Also, mode shapes were determined for some classical boundary conditions. The results obtained by FEM are discussed and compared with the exact solution.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Modelagem numérica de Contact Problem</h3>
-                <p class="article-authors">Vinicius da Silva Costa, Prof. Dr. Eduardo Martins Fontes do Rêgo</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/costa-fontes-2019-modelagem-numerica-de-problema-de-contato.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> O principal mecanismo causador de falha nos cabos condutores é a fadiga provocada pela ação continua do vento, e ocorre frequentemente nos pontos de fixação do cabo, como por exemplo, grampos de suspensão. No ponto de fixação, há a restrição do movimento do cabo, além do contato entre seus fios constituintes e o grampo. Ambos são sujeitos ao movimento relativo entre si, gerando o processo de fretting entre os mesmos e induzindo, por fadiga, a nucleação e crescimento de trincas. A consequência é o rompimento dos componentes ou do próprio cabo, que se materializa em transtornos à população atendida (FADEL, 2010). O problema de contato é simplificado para um modelo numérico bidimensional (2D), onde o custo computacional é reduzido. Para isso utiliza-se o software ANSYS, que baseia-se no método dos elementos finitos. Desta forma, pretende-se obter computacionalmente as Tensões de contato.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+            <a href="../../../../static/proceedings/vol1/blanche-hoefel-2019-free-vibration-of-a-rotating-tapered-beam.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
             
-            <div class="article-card">
-                <h3 class="article-title">Nonlocal Finite Element Análise de Euler-Bernoulli Nanobeams</h3>
-                <p class="article-authors">Aldemar Pontes de Siqueira Neto, Simone dos Santos Hoefel</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/siqueira-hoefel-2019-nonlocal-finite-element-analysis-of-euler-bernoulli-nanobeams.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Nanostructured materials present outstanding features like elevated modulus of elasticity and yield strength, high flexibility and conductivity. This materials are widely applied to nanoelectronics, nanodevices, nanosensors and nanocomposites. Various nonclassical elasticity theories were developed to study the mechanical behaviour of nanostructures, among them, nonlocal elasticity theory (ERINGEN, 1983) is the most used. In this theory, a nonlocal parameter which accounts for small scale effects is included in the constitutive equations. Carbon nanotubes are an extensively studied nanostructure often modelled as an Euler-Bernoulli nanobeam. In the present work, governing equations for bending, buckling and free vibration of an Euler-Bernoulli nanobeam are presented. A finite element model is developed to investigate the influence of nonlocal parameter, slenderness, rotational inertia and boundary conditions on deflections, buckling loads and natural frequencies. Numerical results obtained are discussed and compared with results obtained by other researchers.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Rotating beams are widely found in several engineering structures such as wind turbine blades, industrial fans and gas turbine engine. Blade is one of the most critical mechanical component in rotating machines, as result, the behavior of rotating beams structures has received a lot of attention. Therefore, different configurations of blades was investigated with classical theory of beam by many researchers, such as Euler-Bernoulli and Timoshenko. Since blades rarely has uniform area along the length, a non-prismatic analysis becomes more accurate and reliable motivating several authors to investigate the effect of tapering on rotating beams. In this paper, the vibration frequency of a tapered rotating beam is investigated. The finite element method is used, a non-constant flexural rigidity and mass per unit over the element is developed using a cubic polynomial. The effects of taper ratio and rotational speed are analyzed and the mode shapes are determined for some values of taper parameters. The results obtained shown that Rayleigh-Ritz method for Finite Elements finds the natural frequencies of a rotating tapered cantilever Euler-Bernoulli beam with high precision.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
-            <div class="article-card">
-                <h3 class="article-title">Simulação numérica para análise estrutural de estruturas de suporte de basculador ferroviário pelo método dos elementos finitos</h3>
-                <p class="article-authors">Rodrigo da Silva Melo, Leonardo Vinícius Lisboa da Cruz, Anaximandro Souza</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/melo-lisboa-souza-2019-simulacao-numerica-para-analise-estrutural-dos-cavaletes-suporte-de-viradores-de-vagao-por-meio-do-metododos-elementos-finitos.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A modelagem computacional é uma área de conhecimento que se baseia no processo de aplicação de modelos matemáticos, com técnicas de computação, para o entendimento de problemas complexos, que incluem diversas áreas da ciência. Nesse sentido, foram analisados cavaletes por meio de modelagem computacional que servem de suporte para os viradores de vagões da empresa Vale, dispositivos para descarga de minério em pátios de estocagem da empresa. O objetivo do presente trabalho é a realização de análises estáticas e análises de fadiga dos cavaletes suporte de viradores de vagão. Com o auxilio da modelagem computacional e simulações numéricas, parâmetros importantes foram analisados com o objetivo de auxiliar nas análises de manutenção, visto que a interpretação dos dados é fundamental, considerando a vida útil e a durabilidade desses elementos que são de grande importância para a rotina da empresa.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Vibração livre de uma viga-coluna sobre fundação elástica de dois parâmetros</h3>
+    <p class="article-authors js-authors"><i>Lucas Oliveira Siqueira, Rômulo Luz Cortez, Profa. Dra. Simone dos Santos Hoefel</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Resposta vibratória de a Beam-Column on Pasternack Foundation</h3>
-                <p class="article-authors">Rômulo Luz Cortez, Lucas Oliveira Siqueira, Prof. Dra. Simone dos Santos Hoefel</p>
+            
+            <a href="../../../../static/proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> The behavior of the Euler-Bernoulli beam on elastic foundation has been extensively studied in the modern engineering. There are many applications for beam on elastic foundation mainly in mechanical and civil engineering, like shafts supported on ball, roller, or journal bearings, vibrating machines on elastic foundations, network of beams in the construction of floor systems for ships, buildings, submerged floating tunnels, buried pipelines, railroad tracks etc. The purpose of this work is to analyze the influence of the axial load on the dynamic response of an axial-loaded Euler-Bernoulli beam resting on two-parameter foundation. Some examples presents the influence of the axial load and the foundation in the natural frequencies of the beam. Also, mode shapes were determined for some classical boundary conditions. The results obtained by FEM are discussed and compared with the exact solution.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Modelagem numérica de Contact Problem</h3>
+    <p class="article-authors js-authors"><i>Vinicius da Silva Costa, Prof. Dr. Eduardo Martins Fontes do Rêgo</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/costa-fontes-2019-modelagem-numerica-de-problema-de-contato.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> O principal mecanismo causador de falha nos cabos condutores é a fadiga provocada pela ação continua do vento, e ocorre frequentemente nos pontos de fixação do cabo, como por exemplo, grampos de suspensão. No ponto de fixação, há a restrição do movimento do cabo, além do contato entre seus fios constituintes e o grampo. Ambos são sujeitos ao movimento relativo entre si, gerando o processo de fretting entre os mesmos e induzindo, por fadiga, a nucleação e crescimento de trincas. A consequência é o rompimento dos componentes ou do próprio cabo, que se materializa em transtornos à população atendida (FADEL, 2010). O problema de contato é simplificado para um modelo numérico bidimensional (2D), onde o custo computacional é reduzido. Para isso utiliza-se o software ANSYS, que baseia-se no método dos elementos finitos. Desta forma, pretende-se obter computacionalmente as Tensões de contato.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Nonlocal Finite Element Análise de Euler-Bernoulli Nanobeams</h3>
+    <p class="article-authors js-authors"><i>Aldemar Pontes de Siqueira Neto, Simone dos Santos Hoefel</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/siqueira-hoefel-2019-nonlocal-finite-element-analysis-of-euler-bernoulli-nanobeams.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Nanostructured materials present outstanding features like elevated modulus of elasticity and yield strength, high flexibility and conductivity. This materials are widely applied to nanoelectronics, nanodevices, nanosensors and nanocomposites. Various nonclassical elasticity theories were developed to study the mechanical behaviour of nanostructures, among them, nonlocal elasticity theory (ERINGEN, 1983) is the most used. In this theory, a nonlocal parameter which accounts for small scale effects is included in the constitutive equations. Carbon nanotubes are an extensively studied nanostructure often modelled as an Euler-Bernoulli nanobeam. In the present work, governing equations for bending, buckling and free vibration of an Euler-Bernoulli nanobeam are presented. A finite element model is developed to investigate the influence of nonlocal parameter, slenderness, rotational inertia and boundary conditions on deflections, buckling loads and natural frequencies. Numerical results obtained are discussed and compared with results obtained by other researchers.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Simulação numérica para análise estrutural de estruturas de suporte de basculador ferroviário pelo método dos elementos finitos</h3>
+    <p class="article-authors js-authors"><i>Rodrigo da Silva Melo, Leonardo Vinícius Lisboa da Cruz, Anaximandro Souza</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/melo-lisboa-souza-2019-simulacao-numerica-para-analise-estrutural-dos-cavaletes-suporte-de-viradores-de-vagao-por-meio-do-metododos-elementos-finitos.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A modelagem computacional é uma área de conhecimento que se baseia no processo de aplicação de modelos matemáticos, com técnicas de computação, para o entendimento de problemas complexos, que incluem diversas áreas da ciência. Nesse sentido, foram analisados cavaletes por meio de modelagem computacional que servem de suporte para os viradores de vagões da empresa Vale, dispositivos para descarga de minério em pátios de estocagem da empresa. O objetivo do presente trabalho é a realização de análises estáticas e análises de fadiga dos cavaletes suporte de viradores de vagão. Com o auxilio da modelagem computacional e simulações numéricas, parâmetros importantes foram analisados com o objetivo de auxiliar nas análises de manutenção, visto que a interpretação dos dados é fundamental, considerando a vida útil e a durabilidade desses elementos que são de grande importância para a rotina da empresa.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Several researchers over the years have sought describe and analyze problems of soil-structure interaction. For example, Arboleda-Monsalve et al. (2008) used the finite element method (FEM) to analyze the dynamic of a Timoshenko beam-column resting on elastic foundation with general constraints ends, and Abohadima et al. (2015) investigated the free and forced vibration of an axial-loaded Timoshenko beam resting on a elastic foundation using the Recursive Differentiation Method (RDM). Further, Soares et al. (2017), also using the FEM, investigated the dynamic behave of a Timoshenko beam resting on a Pasternak foundation. In this context, the purpose of this work is investigate the dynamic behavior of an axial-loaded Timoshenko beam resting on a two-parameter elastic foundation. FEM is developed and compared with the analytical solution. Foundation parameters and the axial load contributions are investigated in several numerical examples for beams with different end restraints.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Resposta vibratória de a Beam-Column on Pasternack Foundation</h3>
+    <p class="article-authors js-authors"><i>Rômulo Luz Cortez, Lucas Oliveira Siqueira, Prof. Dra. Simone dos Santos Hoefel</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Several researchers over the years have sought describe and analyze problems of soil-structure interaction. For example, Arboleda-Monsalve et al. (2008) used the finite element method (FEM) to analyze the dynamic of a Timoshenko beam-column resting on elastic foundation with general constraints ends, and Abohadima et al. (2015) investigated the free and forced vibration of an axial-loaded Timoshenko beam resting on a elastic foundation using the Recursive Differentiation Method (RDM). Further, Soares et al. (2017), also using the FEM, investigated the dynamic behave of a Timoshenko beam resting on a Pasternak foundation. In this context, the purpose of this work is investigate the dynamic behavior of an axial-loaded Timoshenko beam resting on a two-parameter elastic foundation. FEM is developed and compared with the analytical solution. Foundation parameters and the axial load contributions are investigated in several numerical examples for beams with different end restraints.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Modelagem e identificação de sistemas</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Estudo e aplicação de sensor LIDAR em carros autônomos</h3>
-                <p class="article-authors">Darieldon de Brito Medeiros, Denilson Alves de Sousa, José Maria Pires de Menezes Júnior</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/brito-alves-pires-2019-estudo-e-aplicacao-de-sensor-lidar-em-carros-autonomos.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Segundo Santos e Khoshelham (2015), o crescimento de sistemas de sensores de imageamento e navegação tornou o mapeamento tridimensional uma tarefa essencial para diversas áreas da engenharia, tais como o sistema de localização e mapeamento simultâneo (SLAM), para inspeção de infraestruturas, cartografia, dentre outras. De acordo com Wang et al. (2017) para os casos que os veículos autônomos operam com certa proximidade com pedestres, o reconhecimento e o rastreamento de pedestres em movimento são funções básicas do sistema de prevenção de colisão.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Estudo e aplicação de sensor LIDAR em carros autônomos</h3>
+    <p class="article-authors js-authors"><i>Darieldon de Brito Medeiros, Denilson Alves de Sousa, José Maria Pires de Menezes Júnior</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Modelagem baseada em agentes para Oil Spills on the Maranhão Coast</h3>
-                <p class="article-authors">Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/fonseca-slayder-jesus-2019-modelagem-baseada-em-agentes-para-derrame-de-oleo.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A Modelagem Baseada em Agentes (MBA) é uma técnica de modelagem extremamente rica que permite lidar com sistemas complexos a partir de suas unidades constituintes e gerar resultados através das interações entre estas.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Modelagem de um modelo didático para a Servomotor</h3>
-                <p class="article-authors">Luan da Silva Bezerra, Prof. Dr. José Medeiros de Araújo Júnior</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/bezerra-araujo-2019-modelagem-de-um-modelo-didatico-para-um-servomotor.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Os servomotores são máquinas eletromecânicas, cujos eixos apresentam movimentos rotacionais proporcionais a um sinal de entrada, como por exemplo, sinais do tipo PWM. Esses servos são utilizados em aplicações que exigem um movimento rotativo preciso, sendo bastante utilizados em impressoras, sistemas de controle como o Ball and Beam, máquinas-ferramenta, pêndulos e braços robóticos. O interesse neste sisterna é motivado por sua precisão, fácil manutenção e baixo custo. Para as mais diversas aplicações com servos, idealmente deve-se utilizar algoritmos de controle, de modo a se otimizar mais ainda a precisão do deslocamento angular gerado pelo seu eixo. Neste caso, é necessário que seja realizado o levantamento do modelo matemático que represente a dinâmica do servomotor, onde esse modelo vai relacionar o sinal de saída (deslocamento angular) em relação a sua entrada (sinal PWM). A modelagem matemática desses tipos de motores é um fator de real importância na busca de um melhor desempenho. Aplicando leis físicas inerentes a sua natureza, como as leis de Newton e as leis de Kirchhoff, chegamos nas equações que relacionam matematicamente as variáveis do modelo e tornam possível o projeto de controladores. Dessa forma, o presente trabalho consiste em obter o modelo matemático de um servomotor, e em seguida, aplicar o mesmo em um sistema de controle. Além dessas equações, tem-se também uma implementação computacional de um controlador, e com isso, desenvolvimento de uma ferramenta didática para o estudo e aprimoramento das técnicas de modelagens e de controle.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+            <a href="../../../../static/proceedings/vol1/brito-alves-pires-2019-estudo-e-aplicacao-de-sensor-lidar-em-carros-autonomos.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
             
-            <div class="article-card">
-                <h3 class="article-title">Modelagem da atitude de a Quadrotor Drone</h3>
-                <p class="article-authors">Pedro Iago Carvalho Martins, Prof. Dr. Otacílio da Mota Almeida</p>
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Segundo Santos e Khoshelham (2015), o crescimento de sistemas de sensores de imageamento e navegação tornou o mapeamento tridimensional uma tarefa essencial para diversas áreas da engenharia, tais como o sistema de localização e mapeamento simultâneo (SLAM), para inspeção de infraestruturas, cartografia, dentre outras. De acordo com Wang et al. (2017) para os casos que os veículos autônomos operam com certa proximidade com pedestres, o reconhecimento e o rastreamento de pedestres em movimento são funções básicas do sistema de prevenção de colisão.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Modelagem baseada em agentes para Oil Spills on the Maranhão Coast</h3>
+    <p class="article-authors js-authors"><i>Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/fonseca-slayder-jesus-2019-modelagem-baseada-em-agentes-para-derrame-de-oleo.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A Modelagem Baseada em Agentes (MBA) é uma técnica de modelagem extremamente rica que permite lidar com sistemas complexos a partir de suas unidades constituintes e gerar resultados através das interações entre estas.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Modelagem de um modelo didático para a Servomotor</h3>
+    <p class="article-authors js-authors"><i>Luan da Silva Bezerra, Prof. Dr. José Medeiros de Araújo Júnior</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/bezerra-araujo-2019-modelagem-de-um-modelo-didatico-para-um-servomotor.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Os servomotores são máquinas eletromecânicas, cujos eixos apresentam movimentos rotacionais proporcionais a um sinal de entrada, como por exemplo, sinais do tipo PWM. Esses servos são utilizados em aplicações que exigem um movimento rotativo preciso, sendo bastante utilizados em impressoras, sistemas de controle como o Ball and Beam, máquinas-ferramenta, pêndulos e braços robóticos. O interesse neste sisterna é motivado por sua precisão, fácil manutenção e baixo custo. Para as mais diversas aplicações com servos, idealmente deve-se utilizar algoritmos de controle, de modo a se otimizar mais ainda a precisão do deslocamento angular gerado pelo seu eixo. Neste caso, é necessário que seja realizado o levantamento do modelo matemático que represente a dinâmica do servomotor, onde esse modelo vai relacionar o sinal de saída (deslocamento angular) em relação a sua entrada (sinal PWM). A modelagem matemática desses tipos de motores é um fator de real importância na busca de um melhor desempenho. Aplicando leis físicas inerentes a sua natureza, como as leis de Newton e as leis de Kirchhoff, chegamos nas equações que relacionam matematicamente as variáveis do modelo e tornam possível o projeto de controladores. Dessa forma, o presente trabalho consiste em obter o modelo matemático de um servomotor, e em seguida, aplicar o mesmo em um sistema de controle. Além dessas equações, tem-se também uma implementação computacional de um controlador, e com isso, desenvolvimento de uma ferramenta didática para o estudo e aprimoramento das técnicas de modelagens e de controle.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/carvalho-mota-2019-modelando-a-atitude-de-um-drone-quadrotor.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A atitude em um drone quadrotor corresponde aos dois ângulos que localizam o seu plano de atuação em relação à horizontal. O controle de atitude corrige a inclinação de um drone quadrotor através de alterações de velocidade, e portanto de força de propulsão, nas suas quatro hélices. Ajustando a atitude e a propulsão total, é possível equilibrar um quadrotor em uma altura fixa, bem como o locomover de um ponto a outro (BRESCIANI, 2008). No referente trabalho analisou-se um drone restrito ao balanço horizontal como na Figura 1, no Laboratório de Controle e Automação da UFPI, fixado por cordas em um eixo horizontal, enquanto no outro eixo controlou-se a atitude, acionando-se dois motores de forma simétrica. Assim, identificou-se um modelo de função de transferência por aproximação à curva de Nyquist, obtida com medições de entrada e saída no método do relé (ASTROM, 1995).
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Modelagem da atitude de a Quadrotor Drone</h3>
+    <p class="article-authors js-authors"><i>Pedro Iago Carvalho Martins, Prof. Dr. Otacílio da Mota Almeida</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/carvalho-mota-2019-modelando-a-atitude-de-um-drone-quadrotor.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A atitude em um drone quadrotor corresponde aos dois ângulos que localizam o seu plano de atuação em relação à horizontal. O controle de atitude corrige a inclinação de um drone quadrotor através de alterações de velocidade, e portanto de força de propulsão, nas suas quatro hélices. Ajustando a atitude e a propulsão total, é possível equilibrar um quadrotor em uma altura fixa, bem como o locomover de um ponto a outro (BRESCIANI, 2008). No referente trabalho analisou-se um drone restrito ao balanço horizontal como na Figura 1, no Laboratório de Controle e Automação da UFPI, fixado por cordas em um eixo horizontal, enquanto no outro eixo controlou-se a atitude, acionando-se dois motores de forma simétrica. Assim, identificou-se um modelo de função de transferência por aproximação à curva de Nyquist, obtida com medições de entrada e saída no método do relé (ASTROM, 1995).
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Nanotecnologia</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Avanços em Pharmaceutical Nanotechnology aplicado ao the Desenvolvimento de Controlled-Release Drugs: A Technological Foresight</h3>
-                <p class="article-authors">Nayara de Oliveira Sobrinho, Moisés das Virgens Santana, Hitalo de Jesus Bezerra da Silva</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/sobrinho-virgens-jesus-2019-avancos-da-nanotecnologia-farmaceutica-aplicados-ao-desenvolvimento_uma-prospeccao-tecnologica.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Segundo a literatura, verificou-se que a gama de nanoparticulas (NPs) é eficaz na administração de fármacos direcionados (Chow et al., 2015). Ao longo da última década, relatos na literatura descreveram vários tipos de nanoparticulas com uma variedade de usos possíveis, incluindo lipossomas, nanocápsulas poliméricas, nanocápsulas de núcleo lipídico, nanopartículas lipídicas sólidas, carreadores lipídicos nanoestruturados, nanoemulsões, nanocristais, nanoparticulas metálicas (Islan et al., 2017). Estes sistemas podem melhorar os perfis de liberação e estabilidade das drogas, mantendo sua concentração dentro de uma faixa terapêutica e superando as barreiras biológicas para captação celular (Canbolat et al., 2014). As nanoestruturas também são adequadas como agentes de imagem que possuem funcionalidade avançada, incluindo resposta a estímulos internos e externos na área de doença alvo. O uso de nanopartículas permite aumentar a eficácia terapêutica com baixos riscos de efeitos colaterais (Contri et al., 2014, Fang e Al-Suwayeh, 2012, Frank et al., 2015). Melhorias na segurança, entrega de fármacos não-viral específica ao alvo, captação celular, bem como estabilidade e atividade intracelular são as principais razões para o desenvolvimento de nanossistemas multifuncionais, inteligentes e comutáveis (Li et al., 2010). Nesse sentido, esse trabalho tem como objetivo fazer um levantamento de dados com os números de artigos e patentes depositadas nas principais bases de dados, lincando os avanços da nanotecnologia aplicada ao desenvolvimento de fármacos.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Avanços em Pharmaceutical Nanotechnology aplicado ao the Desenvolvimento de Controlled-Release Drugs: A Technological Foresight</h3>
+    <p class="article-authors js-authors"><i>Nayara de Oliveira Sobrinho, Moisés das Virgens Santana, Hitalo de Jesus Bezerra da Silva</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Propriedades eletrônicas de Nitrogen Doped Graphene Nanowiggles</h3>
-                <p class="article-authors">Anderson Soares da Costa Azevêdo, Eduardo Costa Girão</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/azevedo-girao-2019-electronic-properties-of-nitrogen-doped-graphene-nanowiggles.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Early researchers demonstrated considerably interest in investigating nanoscale carbon materials. This is due to their remarkable properties and promising potential applications in novel nanoelectronic devices (Son et al., 2006). These materials include: fullerenes, carbon nanotubes and graphene nanoflakes. In this work, we investigate the electronic properties and emergence of magnetic states in periodic nitrogen-doped graphene structures of complex geometry inspired into nanostructures fabricated and reported in the literature (Cai et al., 2010).
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Estrutura eletrônica de Carbon Nanocage with Bipartite Structure: A DFT study</h3>
-                <p class="article-authors">Fábio Nascimento de Sousa, Eduardo Costa Girão</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/nascimento-girao-2019-electronic-structure-of-carbon-nanocage-with-bipartite-structure-a-dft-study.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> The carbon is one of the chemical elements most found in nature. A of its main characteristics is the formation of polymorphs under various conditions of temperature and pressure. The figure. 1 shows some of the main forms allotropic of the carbon. Although nanotubes and graphene are the most studied elements of the carbon nanostructures family, cage-like structure, like fullerenes[1], are subject de constant interest in the area. Such structure have potencial applications drug delivery(fig. 2a)[2] or as elements in nanojunctions(fig. 2b). For exemple[3].
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+            <a href="../../../../static/proceedings/vol1/sobrinho-virgens-jesus-2019-avancos-da-nanotecnologia-farmaceutica-aplicados-ao-desenvolvimento_uma-prospeccao-tecnologica.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
             
-            <div class="article-card">
-                <h3 class="article-title">Estados magnéticos em Graphene Nanoflakes</h3>
-                <p class="article-authors">Caio Vitor Teixeira Costa, Eduardo Costa Girão</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A quantidade de alótropos do carbono como grafite, diamante, fulereno - e as propriedades particulares que cada um possuía fez com que a química do carbono fosse vista como potencialmente capaz de gerar uma nova geração de dispositivos. Nesse contexto, o grafeno, com sua elevada mobilidade eletrônica [1] e resistência mecânica[1], mostra-se como um dos materiais mais indicados a ocupar o posto hoje pertencente ao Silicio. Porém, o grafeno é um semicondutor de gap(expressão do inglês relacionado ao espaço entre as bandas de condução e de valência do material) zero[2], e a existência dessa lacuna de energia é fundamental para se controlar o transporte eletrônico[3]. Tendo isso em vista, buscam-se maneiras de se abrir esse gap de energia em torno do nível de Fermi, com o objetivo de tornar mais fácil sua integração em dispositivos eletrônicos. As duas estratégias mais usadas pela comunidade cientifica se baseiam na dopagem e em &#34;cortes&#34; do grafeno ao longo de uma ou de duas de suas direções. A primeira estratégia se baseia na inclusão de impurezas na estrutura do grafeno, como por exemplo substituindo-se átomos de carbono por outros de diferentes elementos, como Boro e Nitrogênio, de forma estratégica. Já o segundo método gera estruturas finitas em uma das dimensões do sistema, chamadas de nanoflocos de grafeno (ou GNFs, do inglês graphene nanoflakes) que são subunidades do grafeno com tamanho e geometria limitado nas suas duas dimensões. Essas estruturas apresentam propriedades que dependem da largura da fita e da geometria de suas bordas. Em particular, as GNFs chamam a atenção por ter estados localizados nas bordas, facilitando o estudo por meio de cálculos computacionais de suas propriedades elétricas e magnéticas[4]. Neste trabalho tem-se como objetivo realizar um estudo teórico dos GNFS contendo estados de borda com spin polarizado e descrever as propriedades de diferentes configurações magnéticas.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Segundo a literatura, verificou-se que a gama de nanoparticulas (NPs) é eficaz na administração de fármacos direcionados (Chow et al., 2015). Ao longo da última década, relatos na literatura descreveram vários tipos de nanoparticulas com uma variedade de usos possíveis, incluindo lipossomas, nanocápsulas poliméricas, nanocápsulas de núcleo lipídico, nanopartículas lipídicas sólidas, carreadores lipídicos nanoestruturados, nanoemulsões, nanocristais, nanoparticulas metálicas (Islan et al., 2017). Estes sistemas podem melhorar os perfis de liberação e estabilidade das drogas, mantendo sua concentração dentro de uma faixa terapêutica e superando as barreiras biológicas para captação celular (Canbolat et al., 2014). As nanoestruturas também são adequadas como agentes de imagem que possuem funcionalidade avançada, incluindo resposta a estímulos internos e externos na área de doença alvo. O uso de nanopartículas permite aumentar a eficácia terapêutica com baixos riscos de efeitos colaterais (Contri et al., 2014, Fang e Al-Suwayeh, 2012, Frank et al., 2015). Melhorias na segurança, entrega de fármacos não-viral específica ao alvo, captação celular, bem como estabilidade e atividade intracelular são as principais razões para o desenvolvimento de nanossistemas multifuncionais, inteligentes e comutáveis (Li et al., 2010). Nesse sentido, esse trabalho tem como objetivo fazer um levantamento de dados com os números de artigos e patentes depositadas nas principais bases de dados, lincando os avanços da nanotecnologia aplicada ao desenvolvimento de fármacos.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
-            <div class="article-card">
-                <h3 class="article-title">Estados magnéticos em Graphene Nanoflakes Containing Anti-dots</h3>
-                <p class="article-authors">Herus Teixeira Lopes, Prof. Dr. Eduardo Girão Costa</p>
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Propriedades eletrônicas de Nitrogen Doped Graphene Nanowiggles</h3>
+    <p class="article-authors js-authors"><i>Anderson Soares da Costa Azevêdo, Eduardo Costa Girão</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/azevedo-girao-2019-electronic-properties-of-nitrogen-doped-graphene-nanowiggles.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Early researchers demonstrated considerably interest in investigating nanoscale carbon materials. This is due to their remarkable properties and promising potential applications in novel nanoelectronic devices (Son et al., 2006). These materials include: fullerenes, carbon nanotubes and graphene nanoflakes. In this work, we investigate the electronic properties and emergence of magnetic states in periodic nitrogen-doped graphene structures of complex geometry inspired into nanostructures fabricated and reported in the literature (Cai et al., 2010).
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Estrutura eletrônica de Carbon Nanocage with Bipartite Structure: A DFT study</h3>
+    <p class="article-authors js-authors"><i>Fábio Nascimento de Sousa, Eduardo Costa Girão</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/nascimento-girao-2019-electronic-structure-of-carbon-nanocage-with-bipartite-structure-a-dft-study.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> The carbon is one of the chemical elements most found in nature. A of its main characteristics is the formation of polymorphs under various conditions of temperature and pressure. The figure. 1 shows some of the main forms allotropic of the carbon. Although nanotubes and graphene are the most studied elements of the carbon nanostructures family, cage-like structure, like fullerenes[1], are subject de constant interest in the area. Such structure have potencial applications drug delivery(fig. 2a)[2] or as elements in nanojunctions(fig. 2b). For exemple[3].
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno-contendo-anti-dots.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Estados magnéticos em Graphene Nanoflakes</h3>
+    <p class="article-authors js-authors"><i>Caio Vitor Teixeira Costa, Eduardo Costa Girão</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A quantidade de alótropos do carbono como grafite, diamante, fulereno - e as propriedades particulares que cada um possuía fez com que a química do carbono fosse vista como potencialmente capaz de gerar uma nova geração de dispositivos. Nesse contexto, o grafeno, com sua elevada mobilidade eletrônica [1] e resistência mecânica[1], mostra-se como um dos materiais mais indicados a ocupar o posto hoje pertencente ao Silicio. Porém, o grafeno é um semicondutor de gap(expressão do inglês relacionado ao espaço entre as bandas de condução e de valência do material) zero[2], e a existência dessa lacuna de energia é fundamental para se controlar o transporte eletrônico[3]. Tendo isso em vista, buscam-se maneiras de se abrir esse gap de energia em torno do nível de Fermi, com o objetivo de tornar mais fácil sua integração em dispositivos eletrônicos. As duas estratégias mais usadas pela comunidade cientifica se baseiam na dopagem e em &#34;cortes&#34; do grafeno ao longo de uma ou de duas de suas direções. A primeira estratégia se baseia na inclusão de impurezas na estrutura do grafeno, como por exemplo substituindo-se átomos de carbono por outros de diferentes elementos, como Boro e Nitrogênio, de forma estratégica. Já o segundo método gera estruturas finitas em uma das dimensões do sistema, chamadas de nanoflocos de grafeno (ou GNFs, do inglês graphene nanoflakes) que são subunidades do grafeno com tamanho e geometria limitado nas suas duas dimensões. Essas estruturas apresentam propriedades que dependem da largura da fita e da geometria de suas bordas. Em particular, as GNFs chamam a atenção por ter estados localizados nas bordas, facilitando o estudo por meio de cálculos computacionais de suas propriedades elétricas e magnéticas[4]. Neste trabalho tem-se como objetivo realizar um estudo teórico dos GNFS contendo estados de borda com spin polarizado e descrever as propriedades de diferentes configurações magnéticas.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A sociedade anseia por inovações tecnológicas, como dispositivos cada vez menores e mais eficientes. Por consequência, a busca por possíveis substitutos ao silício movimenta a comunidade científica. Hoje estudam-se diversos candidatos a componentes básicos de uma futura eletrônica visando o alcance da escala nanométrica. Entre os diversos novos materiais estudados em Fisica da Matéria Condensada, pode-se citar o grafeno. Neste trabalho, são investigadas as propriedades eletrônicas de nano flocos hexagonais de grafeno com borda zig zag com defeitos estruturais compostos de poros. Os poros são constituidos de &#34;furos&#34; triangulares centrais como uma modificação da estrutura. Este estudo utiliza a Teoria do Funcional da Densidade (DFT) para a investigação dos estado eletrônicos dos sistemas estudados, como será descrito adiante.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Estados magnéticos em Graphene Nanoflakes Containing Anti-dots</h3>
+    <p class="article-authors js-authors"><i>Herus Teixeira Lopes, Prof. Dr. Eduardo Girão Costa</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/teixeira-girao-2019-estados-magneticos-em-nanoflocos-de-grafeno-contendo-anti-dots.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A sociedade anseia por inovações tecnológicas, como dispositivos cada vez menores e mais eficientes. Por consequência, a busca por possíveis substitutos ao silício movimenta a comunidade científica. Hoje estudam-se diversos candidatos a componentes básicos de uma futura eletrônica visando o alcance da escala nanométrica. Entre os diversos novos materiais estudados em Fisica da Matéria Condensada, pode-se citar o grafeno. Neste trabalho, são investigadas as propriedades eletrônicas de nano flocos hexagonais de grafeno com borda zig zag com defeitos estruturais compostos de poros. Os poros são constituidos de &#34;furos&#34; triangulares centrais como uma modificação da estrutura. Este estudo utiliza a Teoria do Funcional da Densidade (DFT) para a investigação dos estado eletrônicos dos sistemas estudados, como será descrito adiante.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Sistemas Inteligentes</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Classificação de High-Speed Steel Metallographic Samples Using Machine Learning Models</h3>
-                <p class="article-authors">Marcus Patrick Acioli da Silva, Dr. José Maria Pires de Menezes Júnior, Dr. Francisco Riccelly Pereira Feitosa</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/acioli-pires-feitosa-2019-classificacao-de-amostras-metalograficas-de-acos-rapidos.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Metalografia é a técnica de estudar as propriedades físicas, químicas e mecânicas dos metais e seus produtos. Essas propriedades estão intrinsecamente relacionadas com a natureza das microestruturas que constituem um material. A observação desses parâmetros permite realizar análises qualitativas e quantitativas de um material. Em posse desses dados, é possível a classificação de um material de acordo com seus microconstituintes. No presente estudo, propõe-se a classificação de amostras metalográficas de aços-rápidos através de técnicas de Visão Computacional e Aprendizado de Máquinas.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Classificação de High-Speed Steel Metallographic Samples Using Machine Learning Models</h3>
+    <p class="article-authors js-authors"><i>Marcus Patrick Acioli da Silva, Dr. José Maria Pires de Menezes Júnior, Dr. Francisco Riccelly Pereira Feitosa</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Identificação do fenômeno de transferência grafêmica-fônica-fonológica BP-EFL usando redes neurais artificiais</h3>
-                <p class="article-authors">Atos Apollo Silva Borges, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/borges-aratuza-barbosa-2019-identificacao-de-fenomeno-de-transferencia-grafo-fonico-fonologica-pb-ile.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Os fenômenos de transferência entre línguas cometidos por falantes não nativos já são conhecidos e bem documentados na literatura. Contudo, o reconhecimento e a classificação dos mesmos são feitos, principalmente, através de transcrições, um processo lento e trabalhoso. A identificação rápida desse tipo de fenômeno seria de grande valia para sistemas de nivelamento de alunos de língua estrangeira, podendo ser usados em escolas de idiomas, sistemas de ensino à distância, aprendizes autodidatas, aplicativos de língua estrangeira ou até mesmo por pesquisadores linguistas. No presente trabalho, foi realizada uma verificação das possibilidades de técnicas e ferramentas que podem ser utilizadas na classificação automática desses processos de transferência, em especial do fenômeno de transferência grafo-fônico-fonológica de Sonorização de &lt;s&gt; (SOS), guiado sob uma ótica do paradigma conexionista da linguagem.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Identificação e classificação do fenômeno de transferência de apagamento (HD) BP-EFL usando redes neurais artificiais MLP</h3>
-                <p class="article-authors">Washington Luís Pinho Rodrigues Filho, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa</p>
+            <a href="../../../../static/proceedings/vol1/acioli-pires-feitosa-2019-classificacao-de-amostras-metalograficas-de-acos-rapidos.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Metalografia é a técnica de estudar as propriedades físicas, químicas e mecânicas dos metais e seus produtos. Essas propriedades estão intrinsecamente relacionadas com a natureza das microestruturas que constituem um material. A observação desses parâmetros permite realizar análises qualitativas e quantitativas de um material. Em posse desses dados, é possível a classificação de um material de acordo com seus microconstituintes. No presente estudo, propõe-se a classificação de amostras metalográficas de aços-rápidos através de técnicas de Visão Computacional e Aprendizado de Máquinas.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Identificação do fenômeno de transferência grafêmica-fônica-fonológica BP-EFL usando redes neurais artificiais</h3>
+    <p class="article-authors js-authors"><i>Atos Apollo Silva Borges, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/borges-aratuza-barbosa-2019-identificacao-de-fenomeno-de-transferencia-grafo-fonico-fonologica-pb-ile.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Os fenômenos de transferência entre línguas cometidos por falantes não nativos já são conhecidos e bem documentados na literatura. Contudo, o reconhecimento e a classificação dos mesmos são feitos, principalmente, através de transcrições, um processo lento e trabalhoso. A identificação rápida desse tipo de fenômeno seria de grande valia para sistemas de nivelamento de alunos de língua estrangeira, podendo ser usados em escolas de idiomas, sistemas de ensino à distância, aprendizes autodidatas, aplicativos de língua estrangeira ou até mesmo por pesquisadores linguistas. No presente trabalho, foi realizada uma verificação das possibilidades de técnicas e ferramentas que podem ser utilizadas na classificação automática desses processos de transferência, em especial do fenômeno de transferência grafo-fônico-fonológica de Sonorização de &lt;s&gt; (SOS), guiado sob uma ótica do paradigma conexionista da linguagem.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/pinho-aratuza-barbosa-2019-identificacao-e-classificacao-do-fenomeno-de-transferencia-apagamento-de-ah-pb-ile-utilizando-rna-do-tipo-mlp.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Durante a aprendizagem de uma nova língua, manifesta-se uma processo chamado de fonologia da interlingua. Esse processo, que ocorre nos estágios iniciais do aprendizado, caracteriza como um surgimento de um sistema linguistico diferente da língua estrangeira alvo (L2) por conta das caracteristicas da língua nativa (L1), a qual ainda exerce influência sobre o sistema em criação (ROCHA, 2012). Tal fenômeno, que se manifesta durante o processo de transferência de conhecimento grafo-fônico-fonológico de L1 para L2 (ZIMMER e ALVES, 2006). No presente trabalho, foi proposta a identificação do fenômeno de transferência AH utilizando RNA do tipo MLP. Para isso, foram colhidas produções na ferramenta Google Tradutor que são de palavras inglesas produzidas pelo software nas opções de áudio Inglês e Português Brasileiro como pode ser visto na figura 1. Logo após, foram extraidos dois descritores de sinal para servirem de dados para o treinamento da rede neural e, posteriormente, seren identificados e classificados por ela.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Identificação e classificação do fenômeno de transferência de apagamento (HD) BP-EFL usando redes neurais artificiais MLP</h3>
+    <p class="article-authors js-authors"><i>Washington Luís Pinho Rodrigues Filho, Prof. Dra. Aratuza Rodrigues Silva Rocha, Prof. Dr. Fábio Rocha Barbosa</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/pinho-aratuza-barbosa-2019-identificacao-e-classificacao-do-fenomeno-de-transferencia-apagamento-de-ah-pb-ile-utilizando-rna-do-tipo-mlp.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Durante a aprendizagem de uma nova língua, manifesta-se uma processo chamado de fonologia da interlingua. Esse processo, que ocorre nos estágios iniciais do aprendizado, caracteriza como um surgimento de um sistema linguistico diferente da língua estrangeira alvo (L2) por conta das caracteristicas da língua nativa (L1), a qual ainda exerce influência sobre o sistema em criação (ROCHA, 2012). Tal fenômeno, que se manifesta durante o processo de transferência de conhecimento grafo-fônico-fonológico de L1 para L2 (ZIMMER e ALVES, 2006). No presente trabalho, foi proposta a identificação do fenômeno de transferência AH utilizando RNA do tipo MLP. Para isso, foram colhidas produções na ferramenta Google Tradutor que são de palavras inglesas produzidas pelo software nas opções de áudio Inglês e Português Brasileiro como pode ser visto na figura 1. Logo após, foram extraidos dois descritores de sinal para servirem de dados para o treinamento da rede neural e, posteriormente, seren identificados e classificados por ela.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
             <h2 class="section-title-highlight">Teoria de controle e aplicações</h2>
 
             
-            <div class="article-card">
-                <h3 class="article-title">Controladores com estrutura PID fuzzy aplicada à malha de temperatura de uma incubadora neonatal</h3>
-                <p class="article-authors">José Borges do Carmo Neto, Luno Gomes de Oliveira, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/carmo-gomes-figueiredo-mota-2019-controladores-com-estrutura-fuzzy-pid-aplicados-a-malha-de-temperatura-de-uma-incubadora-neonatal.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Alguns autores declaram, por exemplo, que em aplicações de controle de processo, mais de 95% dos controladores implementados até hoje são do tipo Pl ou PID (VILANOVA, 2012). Entretanto, no projeto de controladores convencionais, com os Pl e PID, considera-se apenas as relações lineares entre as variáveis do processo controlado, o que impõe severas limitações na performance de controle, frente a sistemas que possuem modelagens complexas, não-linearidades ou incertezas (ASTROM, 2001). Em um estudo com cerca de 150,000 malhas de controle em 250 plantas industriais ao redor do mundo mostrou que 68% de todos os controladores têm performances inaceitáveis (VILANOVA, 2012). No presente trabalho, lógica fuzzy é aplicada na sintonia de controladores com estrutura PID, com o objetivo de melhorar a performance do controlador e diminuir o esforço de controle sobre a malha.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Controladores com estrutura PID fuzzy aplicada à malha de temperatura de uma incubadora neonatal</h3>
+    <p class="article-authors js-authors"><i>José Borges do Carmo Neto, Luno Gomes de Oliveira, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Fuzzy Control aplicado ao a Didactic Level Tank</h3>
-                <p class="article-authors">Francisco Leão de Oliveira, Prof. Dr. José Medeiros de Araújo Júnior</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/leao-medeiros-2019-controle-fuzzy-aplicado-em-um-tanque-de-nivel-didatico.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> A indústria aplica em vários de seus processos tanques acoplados para realização de diversas funções, como o armazenamento e transporte de liquidos. Indústrias petroquímicas, de celulose ou de tratamento de liquidos, normalmente apresentam processamento de líquidos por reações químicas ou tratamento de misturas. Este processamento requer continuamente um controle criterioso sobre o nível do fluido, assim como regulação do fluxo entre os tanques. O presente trabalho apresenta a implementação de um controle fuzzy em uma planta didática, onde deseja-se obter a resposta ao degrau do controle fuzzy e compara-la a uma técnica clássica de controle, como exemplo a um controle PID, para que assim possa ser visto a eficiência dessa classe de controle.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
             
-            <div class="article-card">
-                <h3 class="article-title">Desenvolvimento de hardware didático para ensino de controle digital</h3>
-                <p class="article-authors">Gabryel Figueiredo Soares, José B. do Carmo Neto, Luno Gomes de Oliveira, Prof. Dr. Otacílio da Mota Almeida</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/figueiredo-carmo-gomes-mota-2019-desenvolvimento-de-hardware-didatico-para-ensino-de-controle-digital.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Os sistemas de controle estão cada vez mais presentes nas diversas áreas do conhecimento, logo há necessidade da aplicação prática das teorias discutidas em sala de aula. Tendo em vista a necessidade de ensinar técnicas de controle digital para futuros profissionais de engenharia nas áreas de controle e automação, faz-se necessário o desenvolvimento de plantas didáticas aplicadas ao ensino de técnicas de controle apresentadas em sala de aula, simulando processos industriais com suas reais dificuldades. O presente trabalho tem como objetivo desenvolver uma planta de controle didática que possibilite à aplicação prática dos controladores simulados.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+            <a href="../../../../static/proceedings/vol1/carmo-gomes-figueiredo-mota-2019-controladores-com-estrutura-fuzzy-pid-aplicados-a-malha-de-temperatura-de-uma-incubadora-neonatal.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
             
-            <div class="article-card">
-                <h3 class="article-title">Desenvolvimento de a SCARA-Type Manipulator Robot</h3>
-                <p class="article-authors">Victor Eduardo Alves da Silva Carvalho, Nádia Raquel Matos Oliveira, José Maria Pires Menezes Junior</p>
-                
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/carvalho-oliveira-pires-2019-desenvolvimento-de-um-robo-manipulador-do-tipo-scara.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> É indiscutivel a importância da Robótica e seu papel em inúmeras aplicações, desde o seu envolvimento em aplicações na área da saúde (BONATTI, 2014) à área militar (ACKERMAN, 2015). Uma ramificação importante da mesma, é o estudo de robôs manipuladores, que possuem a capacidade de manusear objetos e realizar operações de forma mais rápida e precisa que um ser humano. O uso deste tipo de robô, em ambientes industriais, é imprescindível para eficiência da produção, por exemplo (AHRENS, 2012). Com isso, é importante o estudo do mesmo e realizar a modelagem matemática e implementação via simulação. Assim, propõe-se a modelagem e simulação da cinemática de um robô manipulador com estrutura fisica baseado no manipulador SCARA (Selective Compliance Assembly Robot Arm). Robôs do tipo SCARA são utilizados na indústria por serem precisos, compactos e apresentarem um excelente rendimento em atividades repetitivas.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Alguns autores declaram, por exemplo, que em aplicações de controle de processo, mais de 95% dos controladores implementados até hoje são do tipo Pl ou PID (VILANOVA, 2012). Entretanto, no projeto de controladores convencionais, com os Pl e PID, considera-se apenas as relações lineares entre as variáveis do processo controlado, o que impõe severas limitações na performance de controle, frente a sistemas que possuem modelagens complexas, não-linearidades ou incertezas (ASTROM, 2001). Em um estudo com cerca de 150,000 malhas de controle em 250 plantas industriais ao redor do mundo mostrou que 68% de todos os controladores têm performances inaceitáveis (VILANOVA, 2012). No presente trabalho, lógica fuzzy é aplicada na sintonia de controladores com estrutura PID, com o objetivo de melhorar a performance do controlador e diminuir o esforço de controle sobre a malha.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
-            <div class="article-card">
-                <h3 class="article-title">Projeto de um controlador PID aplicado a um tanque didático de nível</h3>
-                <p class="article-authors">Vanessa dos Santos Conceição, Prof. Dr. José Medeiros de Araújo Júnior</p>
                 
-                
-                
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/conceicao-medeiros-2019-projeto-de-um-controlador-pid-aplicado-em-um-tanque-de-nivel-didatico.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
-                
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Em projeto de sistemas de controle é necessário o modelo matemático do processo a ser controlado. Como os modelos são obtidos, inicialmente, na forma de equações diferenciais, normalmente faz-se o uso da Transformada de Laplace para se ter uma representação mais prática, devido a sua vantagem de facilitar o entendimento em relação ao desempenho, resposta do sistema e até análise de estabilidade obtida graficamente (FRANKLIN, 2013). Com essa transformada, as EDO&#39;s, que são funções no domínio do tempo, são convertidas para funções onde o domínio são variáveis complexas, e essa representação é denominada de Função de Transferência. Por meio dessas funções, pode-se verificar se o sistema apresenta dinâmica lenta, resposta oscilatória e erro em relação às condições desejadas aplicadas na entrada (ROSARIO, 2009), (OGATA, 1998). Com base em técnicas da teoría de controle, este trabalho apresenta a modelagem de um sistema de tanques de nível, bem como a sua análise em malha fechada, de tal forma a se verificar quantitativamente a sua dinâmica, e a partir dessas informações, realizar o projeto de um controlador PID, utilizando o método LGR (Lugar Geométrico das Raízes). A inclusão desse controlador visa melhorar a dinâmica do sistema, fazendo com que o mesmo apresente uma resposta satisfatória, possibilitando a sua melhor aplicação em processos industriais.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Fuzzy Control aplicado ao a Didactic Level Tank</h3>
+    <p class="article-authors js-authors"><i>Francisco Leão de Oliveira, Prof. Dr. José Medeiros de Araújo Júnior</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
             
-            <div class="article-card">
-                <h3 class="article-title">Sistema de acionamento para incubadora neonatal</h3>
-                <p class="article-authors">Raimundo da Silva Nunes Neto, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida</p>
+            
+            <a href="../../../../static/proceedings/vol1/leao-medeiros-2019-controle-fuzzy-aplicado-em-um-tanque-de-nivel-didatico.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> A indústria aplica em vários de seus processos tanques acoplados para realização de diversas funções, como o armazenamento e transporte de liquidos. Indústrias petroquímicas, de celulose ou de tratamento de liquidos, normalmente apresentam processamento de líquidos por reações químicas ou tratamento de misturas. Este processamento requer continuamente um controle criterioso sobre o nível do fluido, assim como regulação do fluxo entre os tanques. O presente trabalho apresenta a implementação de um controle fuzzy em uma planta didática, onde deseja-se obter a resposta ao degrau do controle fuzzy e compara-la a uma técnica clássica de controle, como exemplo a um controle PID, para que assim possa ser visto a eficiência dessa classe de controle.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Desenvolvimento de hardware didático para ensino de controle digital</h3>
+    <p class="article-authors js-authors"><i>Gabryel Figueiredo Soares, José B. do Carmo Neto, Luno Gomes de Oliveira, Prof. Dr. Otacílio da Mota Almeida</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/figueiredo-carmo-gomes-mota-2019-desenvolvimento-de-hardware-didatico-para-ensino-de-controle-digital.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Os sistemas de controle estão cada vez mais presentes nas diversas áreas do conhecimento, logo há necessidade da aplicação prática das teorias discutidas em sala de aula. Tendo em vista a necessidade de ensinar técnicas de controle digital para futuros profissionais de engenharia nas áreas de controle e automação, faz-se necessário o desenvolvimento de plantas didáticas aplicadas ao ensino de técnicas de controle apresentadas em sala de aula, simulando processos industriais com suas reais dificuldades. O presente trabalho tem como objetivo desenvolver uma planta de controle didática que possibilite à aplicação prática dos controladores simulados.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
+<div class="article-card">
+    <h3 class="article-title js-title">Desenvolvimento de a SCARA-Type Manipulator Robot</h3>
+    <p class="article-authors js-authors"><i>Victor Eduardo Alves da Silva Carvalho, Nádia Raquel Matos Oliveira, José Maria Pires Menezes Junior</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/carvalho-oliveira-pires-2019-desenvolvimento-de-um-robo-manipulador-do-tipo-scara.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> É indiscutivel a importância da Robótica e seu papel em inúmeras aplicações, desde o seu envolvimento em aplicações na área da saúde (BONATTI, 2014) à área militar (ACKERMAN, 2015). Uma ramificação importante da mesma, é o estudo de robôs manipuladores, que possuem a capacidade de manusear objetos e realizar operações de forma mais rápida e precisa que um ser humano. O uso deste tipo de robô, em ambientes industriais, é imprescindível para eficiência da produção, por exemplo (AHRENS, 2012). Com isso, é importante o estudo do mesmo e realizar a modelagem matemática e implementação via simulação. Assim, propõe-se a modelagem e simulação da cinemática de um robô manipulador com estrutura fisica baseado no manipulador SCARA (Selective Compliance Assembly Robot Arm). Robôs do tipo SCARA são utilizados na indústria por serem precisos, compactos e apresentarem um excelente rendimento em atividades repetitivas.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-actions">
-                    
-                    <a href="../../../../static/proceedings/vol1/nunes-figueiredo-mota-2019-sistema-de-acionamento-para-incubadora-neonatal.pdf" class="btn btn-primary" target="_blank" rel="noopener">
-                        <i class="fa-solid fa-file-pdf"></i> PDF
-                    </a>
-                    
-                </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Projeto de um controlador PID aplicado a um tanque didático de nível</h3>
+    <p class="article-authors js-authors"><i>Vanessa dos Santos Conceição, Prof. Dr. José Medeiros de Araújo Júnior</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/conceicao-medeiros-2019-projeto-de-um-controlador-pid-aplicado-em-um-tanque-de-nivel-didatico.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Em projeto de sistemas de controle é necessário o modelo matemático do processo a ser controlado. Como os modelos são obtidos, inicialmente, na forma de equações diferenciais, normalmente faz-se o uso da Transformada de Laplace para se ter uma representação mais prática, devido a sua vantagem de facilitar o entendimento em relação ao desempenho, resposta do sistema e até análise de estabilidade obtida graficamente (FRANKLIN, 2013). Com essa transformada, as EDO&#39;s, que são funções no domínio do tempo, são convertidas para funções onde o domínio são variáveis complexas, e essa representação é denominada de Função de Transferência. Por meio dessas funções, pode-se verificar se o sistema apresenta dinâmica lenta, resposta oscilatória e erro em relação às condições desejadas aplicadas na entrada (ROSARIO, 2009), (OGATA, 1998). Com base em técnicas da teoría de controle, este trabalho apresenta a modelagem de um sistema de tanques de nível, bem como a sua análise em malha fechada, de tal forma a se verificar quantitativamente a sua dinâmica, e a partir dessas informações, realizar o projeto de um controlador PID, utilizando o método LGR (Lugar Geométrico das Raízes). A inclusão desse controlador visa melhorar a dinâmica do sistema, fazendo com que o mesmo apresente uma resposta satisfatória, possibilitando a sua melhor aplicação em processos industriais.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
+            
                 
-                <div class="article-details-container">
-                    <div class="abstract-text collapsed">
-                        <strong>Abstract:</strong> Incubadoras Neonatais são equipamentos hospitalares de suma importância para a manutenção da vida de bebês rescém-nascidos prematuros e com problemas de saúde. Esses equipamentos são responsáveis por proporcionar um ambiente termoneutro para o neonato, que ao nascer possuem limitada capacidade de reagir a situações adversas (SILVADO, 1993), nescessita que haja um controle rigorosos dos parâmetros de umidade, temperatura e fluxo de ar do ambiente. No presente trabalho é abordado o desenvolvimento de um hardware base, que satisfaz as determinações da NBR IEC 60601-2-19, para o acionamento de um Incubadora Neonatal presente no laboratório de Controle e Telecomunicações do Curso de Engenharia Elétrica - UFPI. Com o hardware, é possivel aferir dados de temperatura e umidade do ambiente, e dessa forma, facilitar a implementação de diversas técnicas de controle, a fim de manter, de forma rigorosa, os padrões estabelecidos para os parâmetros dentro da incubadora.
-                    </div>
-                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-                </div>
-            </div>
+<div class="article-card">
+    <h3 class="article-title js-title">Sistema de acionamento para incubadora neonatal</h3>
+    <p class="article-authors js-authors"><i>Raimundo da Silva Nunes Neto, Gabryel Figueiredo Soares, Prof. Dr. Otacílio da Mota Almeida</i></p>
+    
+    
+
+    
+    
+    <div class="article-actions">
+        
+            
+            
+            <a href="../../../../static/proceedings/vol1/nunes-figueiredo-mota-2019-sistema-de-acionamento-para-incubadora-neonatal.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-file-pdf"></i> PDF
+            </a>
+            
+        
+    </div>
+    
+    <div class="article-details-container">
+        <div class="abstract-text collapsed js-abstract">
+            <strong>Abstract:</strong> Incubadoras Neonatais são equipamentos hospitalares de suma importância para a manutenção da vida de bebês rescém-nascidos prematuros e com problemas de saúde. Esses equipamentos são responsáveis por proporcionar um ambiente termoneutro para o neonato, que ao nascer possuem limitada capacidade de reagir a situações adversas (SILVADO, 1993), nescessita que haja um controle rigorosos dos parâmetros de umidade, temperatura e fluxo de ar do ambiente. No presente trabalho é abordado o desenvolvimento de um hardware base, que satisfaz as determinações da NBR IEC 60601-2-19, para o acionamento de um Incubadora Neonatal presente no laboratório de Controle e Telecomunicações do Curso de Engenharia Elétrica - UFPI. Com o hardware, é possivel aferir dados de temperatura e umidade do ambiente, e dessa forma, facilitar a implementação de diversas técnicas de controle, a fim de manter, de forma rigorosa, os padrões estabelecidos para os parâmetros dentro da incubadora.
+        </div>
+        <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+    </div>
+</div>
+
             
         
     
@@ -939,8 +1208,10 @@
 
 
     <footer>
+    <div class="container footer-content">
         <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-    </footer>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>

@@ -30,11 +30,14 @@
         {% endfor %}
     </div>
 
-    <script id="proceedings-json-data" type="application/json">
-        {{ proceedings_data | tojson | safe }}
-    </script>
+    <!-- Template Invisível pro JS clonar! -->
+    <template id="article-card-template">
+        {% from "components/macros.html" import render_article_card %}
+        {{ render_article_card({}, is_js_template=True) }}
+    </template>
 {% endblock %}
 
 {% block extra_js %}
-    <script src="{{ url_for('static', filename='proceedings.js') }}?v=3"></script>
+    <!-- JS agora vai buscar os dados via Fetch na API -->
+    <script src="{{ url_for('static', filename='proceedings.js') }}?v=4"></script>
 {% endblock %}

@@ -1,0 +1,15 @@
+# Ambientes Virtuais Python
+venv/
+env/
+.env
+
+# Arquivos de Cache do Python e Testes
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Pasta de Build Gerada (Não deve ir pro código-fonte)
+dist/
+build/
+
+testing/

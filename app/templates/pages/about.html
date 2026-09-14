@@ -1,8 +1,12 @@
-{% extends "components/base_lamec.html" %}
+{% extends "components/base.html" %}
 {% block title %}LAMEC - About{% endblock %}
 
 {% block content %}
-    <header class="about-hero" id="about-slider" style="transition: background-image 0.5s ease-in-out;">
+    {% set slides = [
+        url_for('static', filename='images/backgrounds/about/horizontal-banner-lamec-foto.jpeg'),
+        url_for('static', filename='images/backgrounds/about/horizontal-banner-lamec-foto-2.jpeg')
+    ] %}
+    <header class="about-hero" id="about-slider" data-slides='{{ slides | tojson | safe }}' style="transition: background-image 0.5s ease-in-out;">
         <button class="slider-btn slider-prev" aria-label="Previous slide"><i class="fa-solid fa-angle-left"></i></button>
         <button class="slider-btn slider-next" aria-label="Next slide"><i class="fa-solid fa-angle-right"></i></button>
 
@@ -14,7 +18,7 @@
         </div>
     </header>
 
-<main class="container about-content">
+    <main class="container about-content">
         <div style="text-align: center; margin-bottom: 60px;">
             <img src="https://static.wixstatic.com/media/cff65f_9a08160b9a564c9aa3f8506f9d4cf5fa~mv2.png/v1/crop/x_2,y_0,w_1609,h_508/fill/w_536,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/lamec.png" alt="LaMeC-UFPI logo" style="width: 100%; max-width: 400px; border-radius: 8px; margin-bottom: 20px;">
             <h2 style="color: var(--color-primary); font-size: 2rem; margin-bottom: 10px;">Computational Modeling Methods Lab (LaMeC)</h2>

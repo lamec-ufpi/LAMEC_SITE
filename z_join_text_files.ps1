@@ -1,11 +1,11 @@
 # Nome do arquivo final que será gerado
-$OutputFile = "z_codigo_completo.md"
+$OutputFile = "zz_codigo_completo.md"
 
 # Apaga o arquivo anterior se ele já existir na pasta
 if (Test-Path $OutputFile) { Remove-Item $OutputFile }
 
 # Busca recursivamente todos os arquivos HTML, CSS e JS
-$Files = Get-ChildItem -Path . -Include *.html, *.css, *.js, *.py, *.json -Recurse -File
+$Files = Get-ChildItem -Path . -Include *.html, *.css, *.js, *.py, *.json, *.yaml, *.md, *.toml -Recurse -File
 
 foreach ($File in $Files) {
     # Pega o caminho relativo do arquivo (ex: .\src\index.html)

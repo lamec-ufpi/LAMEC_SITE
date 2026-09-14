@@ -1,0 +1,11 @@
+{% extends "components/base.html" %}
+{% block title %}LAMEC - Página não encontrada{% endblock %}
+
+{% block content %}
+<main class="container" style="text-align: center; padding: 100px 20px; min-height: 60vh;">
+    <h1 style="font-size: 5rem; color: var(--color-primary); margin-bottom: 10px;">404</h1>
+    <h2 style="color: var(--color-secondary); margin-bottom: 30px;">Página não encontrada</h2>
+    <p style="margin-bottom: 40px; font-size: 1.1rem;">A página que você tentou acessar não existe ou foi movida.</p>
+    <a href="{{ url_for('main.index') }}" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> Voltar para a Home</a>
+</main>
+{% endblock %}

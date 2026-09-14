@@ -8,42 +8,52 @@
     <link rel="stylesheet" href="../static/style.css">
     <link rel="icon" href="../static/images/brand/lamec-logo.png">
     <script>
-        window.STATIC_ROOT = "../static/style.css".replace('style.css', '');
-        window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../static/style.css".replace('style.css', ''),
+            baseUrl: "../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../api/proceedings.json"
+        };
     </script>
 </head>
 <body>
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="../index.html" class="logo-text">
-                    <img src="../static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
-                </a>
-            </div>
-            <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-            <ul class="nav-links">
-                <li><a href="../index.html" class="">HOME</a></li>
-                <li><a href="../publications/index.html" class="">PUBLICATIONS</a></li>
-                <li class="dropdown"><a href="../research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../research-team/index.html" class="">RESEARCH TEAM</a></li>
-                        <li><a href="../alumni/index.html" class="">ALUMNI</a></li>
-                    </ul>
-                </li>
-                <li><a href="../simcompi/index.html">SIMCOMPI</a></li>
-                <li class="dropdown"><a href="../extension/faisca/index.html" class="">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="../extension/bull-racing/index.html" class="">BULL RACING</a></li>
-                        <li><a href="../extension/faisca/index.html" class="">FAÍSCA</a></li>
-                    </ul>
-                </li>
-                <li><a href="index.html" class="active">ABOUT</a></li>
-            </ul>
+    
+
+
+
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="../index.html" class="logo-text">
+                <img src="../static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
+            </a>
         </div>
-    </nav>
+        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="../index.html" class="">HOME</a></li>
+            <li><a href="../publications/index.html" class="">PUBLICATIONS</a></li>
+            <li class="dropdown"><a href="../research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../research-team/index.html" class="">RESEARCH TEAM</a></li>
+                    <li><a href="../alumni/index.html" class="">ALUMNI</a></li>
+                </ul>
+            </li>
+            <li><a href="../simcompi/index.html">SIMCOMPI</a></li>
+            <li class="dropdown"><a href="../extension/faisca/index.html" class="">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../extension/bull-racing/index.html" class="">BULL RACING</a></li>
+                    <li><a href="../extension/faisca/index.html" class="">FAÍSCA</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html" class="active">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
 
     
-    <header class="about-hero" id="about-slider" style="transition: background-image 0.5s ease-in-out;">
+    
+    <header class="about-hero" id="about-slider" data-slides='["../static/images/backgrounds/about/horizontal-banner-lamec-foto.jpeg", "../static/images/backgrounds/about/horizontal-banner-lamec-foto-2.jpeg"]' style="transition: background-image 0.5s ease-in-out;">
         <button class="slider-btn slider-prev" aria-label="Previous slide"><i class="fa-solid fa-angle-left"></i></button>
         <button class="slider-btn slider-next" aria-label="Next slide"><i class="fa-solid fa-angle-right"></i></button>
 
@@ -55,7 +65,7 @@
         </div>
     </header>
 
-<main class="container about-content">
+    <main class="container about-content">
         <div style="text-align: center; margin-bottom: 60px;">
             <img src="https://static.wixstatic.com/media/cff65f_9a08160b9a564c9aa3f8506f9d4cf5fa~mv2.png/v1/crop/x_2,y_0,w_1609,h_508/fill/w_536,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/lamec.png" alt="LaMeC-UFPI logo" style="width: 100%; max-width: 400px; border-radius: 8px; margin-bottom: 20px;">
             <h2 style="color: var(--color-primary); font-size: 2rem; margin-bottom: 10px;">Computational Modeling Methods Lab (LaMeC)</h2>
@@ -93,15 +103,16 @@
 
 
     <footer>
-        <div class="container footer-content">
-            <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-        </div>
-    </footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>
     </a>
 
     <script src="../static/main.js"></script>
+    
 </body>
 </html>

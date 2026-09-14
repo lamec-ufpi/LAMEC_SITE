@@ -7,25 +7,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../../static/style.css">
     <link rel="icon" href="../../../static/images/brand/lamec-logo.png">
-<script>
-    window.STATIC_ROOT = "../../../static/style.css".replace('style.css', '');
-    window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
-</script>
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../../api/proceedings.json"
+        };
+    </script>
 </head>
 <body>
     
-    <nav class="navbar navbar-simcompi navbar-proceedings" id="navbar">
-      <div class="container nav-container">
-        <div class="logo">
-          <a href="../index.html" class="logo-text" style="font-size:x-large;">Anais do Simpósio de Modelagem <br>Computacional em Ciência e Tecnologia do Piauí</a>
-        </div>
-        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-        <ul class="nav-links">          
-            <li><a href="../../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> VOLTAR PARA O SIMCOMPI</a></li>
-            <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
-        </ul>
-      </div>
-    </nav>
+
+
+
+<nav class="navbar navbar-simcompi navbar-proceedings" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <a href="../index.html" class="logo-text" style="font-size:x-large;">Anais do Simpósio de Modelagem <br>Computacional em Ciência e Tecnologia do Piauí</a>
+    </div>
+    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links">          
+        <li><a href="../../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> VOLTAR PARA O SIMCOMPI</a></li>
+        <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 
     
     <main class="container proceedings-layout">
@@ -48,7 +57,7 @@
                         <li><a href="../expediente/index.html" class="">Corpo Editorial</a></li>
                         <li><a href="../normas/index.html" class="">Normas para Publicação</a></li>
                         <li><a href="index.html" class="active">Contato</a></li>
-                        <li><a href="../volume/vol_3/index.html">Volume atual: Vol. 3 2027</a></li>
+                        <li><a href="../volume/vol_3_2027/index.html">Volume atual: Vol. 3 2027</a></li>
                         <li><a href="../arquivo/index.html" class="">Arquivo Completo</a></li>
                     </ul>
                 </div>
@@ -91,8 +100,10 @@
 
 
     <footer>
+    <div class="container footer-content">
         <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-    </footer>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>

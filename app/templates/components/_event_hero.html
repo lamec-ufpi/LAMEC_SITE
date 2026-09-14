@@ -1,0 +1,11 @@
+<header class="simcompi-hero current-event-hero" style="background-image: linear-gradient(rgba(249, 252, 255, 0.6), rgba(179, 227, 255, 0.6)), url('{{ url_for('static', filename='images/backgrounds/rio-poty-fundo-banner-iii-simcompi.jpg') }}');">
+    <img src="{{ url_for('static', filename='images/simcompi/simcompi_3/logo-horizonta-iii-simcompi.png') }}" alt="SIMCOMPI Logo" class="logo-image" style="max-width: 900px;">
+    <!-- Injetando a data do Backend via Data-Attribute -->
+    <div class="countdown-container" data-target-date="{{ event.start_utc }}">
+        <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
+        <div class="countdown-box"><span id="hours">00</span><small>Horas</small></div>
+        <div class="countdown-box"><span id="minutes">00</span><small>Minutos</small></div>
+        <div class="countdown-box"><span id="seconds">00</span><small>Segundos</small></div>
+        <div class="countdown-info">{{ event.dates_label }}<br>Auditório do Centro de Tecnologia, UFPI</div>
+    </div>
+</header>

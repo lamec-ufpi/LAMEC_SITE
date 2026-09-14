@@ -1,4 +1,4 @@
-{% extends "components/base_lamec.html" %}
+{% extends "components/base.html" %}
 {% block title %}LAMEC - Research Team{% endblock %}
 
 {% block content %}
@@ -29,7 +29,7 @@
                 data-role="{{ member.role }}"
                 data-img="{{ url_for('static', filename=member.img) }}"
                 data-lattes="{{ member.lattes }}"
-                data-bio="">
+                data-bio="{{ member.bio | default('', true) }}">
                 
                 <div class="member-photo" style="background-image: url('{{ url_for('static', filename=member.img) }}')"></div>
                 <div class="member-name-banner">{{ member.name | upper }}</div>

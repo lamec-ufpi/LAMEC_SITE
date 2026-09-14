@@ -4,32 +4,8 @@ let allArticles = [];
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('data-container');
     if (!container) return;
-
-    try {
-        const scriptData = document.getElementById('proceedings-json-data');
-        if (scriptData) {
-            eventData = JSON.parse(scriptData.textContent);
-            allArticles = flattenArticles(eventData);
-            window.allArticles = allArticles;
-            
-            bindProceedingsControls();
-            
-            const urlParams = new URLSearchParams(window.location.search);
-            const query = urlParams.get('q');
-            
-            if (query) {
-                const input = document.getElementById('searchInput');
-                if (input) input.value = query;
-                performSearch(query);
-            } else if (window.location.pathname.includes('arquivo') && window.location.hash) {
-                handleHashFilter();
-            }
-        } else {
-            initializeProceedings();
-        }
-    } catch (error) {
-        console.error("Erro ao carregar anais:", error);
-    }
+    
+    initializeProceedings();
 });
 
 async function initializeProceedings() {
@@ -37,7 +13,8 @@ async function initializeProceedings() {
     if (!container) return;
 
     try {
-        const jsonPath = window.STATIC_ROOT + 'proceedings_data.json';
+        // Nova configuração injetada
+        const jsonPath = window.LAMEC_CONFIG.proceedingsApiUrl;
         const response = await fetch(jsonPath);
         if (!response.ok) throw new Error(`Status ${response.status}`);
 
@@ -54,11 +31,11 @@ async function initializeProceedings() {
             const input = document.getElementById('searchInput');
             if (input) input.value = query;
             performSearch(query);
-        } else if (window.location.pathname.includes('arquivo')) {
+        } else if (window.location.pathname.includes('arquivo') && window.location.hash) {
             handleHashFilter();
         }
     } catch (error) {
-        container.innerHTML = `<div class="loading-state" style="color:red;">Erro ao carregar anais. Verifique se proceedings_data.json está na pasta static.</div>`;
+        container.innerHTML = `<div class="loading-state" style="color:red;">Erro ao buscar dados dos anais. Verifique a API.</div>`;
     }
 }
 
@@ -109,11 +86,11 @@ function renderArchive() {
     container.innerHTML = eventData.volumes.map((volume) => `
         <article class="volume-section" id="${escapeHtml(volume.id)}">
             <div class="volume-summary">
-                <img class="volume-cover" src="${window.STATIC_ROOT}${escapeHtml(volume.cover_img)}" alt="Capa">
+                <img class="volume-cover" src="${window.LAMEC_CONFIG.staticRoot}${escapeHtml(volume.cover_img)}" alt="Capa">
                 <div class="volume-details">
                     <h1>${escapeHtml(volume.title)}</h1>
                     <p class="volume-year">Ano: ${escapeHtml(volume.year)}</p>
-                    <a href="${window.BASE_URL}simcompi/proceedings/volume/${escapeHtml(volume.id)}/index.html" class="btn btn-outline">
+                    <a href="${window.LAMEC_CONFIG.baseUrl}simcompi/proceedings/volume/${escapeHtml(volume.id)}/index.html" class="btn btn-outline">
                         Acessar artigos deste volume
                     </a>
                 </div>
@@ -145,33 +122,47 @@ function renderArticlesList(articles, grouped = false) {
 }
 
 function renderArticleCard(article) {
-    const abstract = article.abstract || 'Não informado.';
+    const template = document.getElementById('article-card-template');
+    if (!template) return '';
     
-    // Agora o doi já vem null do Python se estiver vazio
-    const doiHtml = article.doi 
-        ? ` | <strong>DOI:</strong> <a href="https://doi.org/${escapeHtml(article.doi)}" target="_blank">${escapeHtml(article.doi)}</a>` 
-        : '';
-
-    return `
-        <div class="article-card">
-            <h3 class="article-title">${escapeHtml(article.title)}</h3>
-            <p class="article-authors">${escapeHtml(article.authors)}</p>
-            <p class="article-doi"><strong>Volume:</strong> ${escapeHtml(article.volumeTitle)} (${escapeHtml(article.volumeYear)})${doiHtml}</p>
-            
-            <div class="article-actions">
-                <!-- Consume pdf_path limpo gerado no Python -->
-                <a href="${window.STATIC_ROOT}${escapeHtml(article.pdf_path)}" class="btn btn-primary" target="_blank" rel="noopener">
-                    <i class="fa-solid fa-file-pdf"></i> PDF
-                </a>
-            </div>
-            
-            <div class="article-details-container">
-                <div class="abstract-text collapsed">
-                    <strong>Abstract:</strong> ${escapeHtml(abstract)}
-                </div>
-                <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
-            </div>
-        </div>`;
+    // Clona o HTML pronto do Jinja
+    const clone = template.content.cloneNode(true);
+    
+    // Substitui os textos com segurança
+    clone.querySelector('.js-title').textContent = article.title;
+    clone.querySelector('.js-authors i').textContent = article.authors;
+    
+    const abstract = article.abstract || 'Não informado.';
+    clone.querySelector('.js-abstract').innerHTML = `<strong>Abstract:</strong> ${escapeHtml(abstract)}`;
+    
+    // Exibe ou oculta Volume
+    if (article.volumeTitle) {
+        clone.querySelector('.js-volume').style.display = '';
+        clone.querySelector('.js-vol-text').textContent = `${article.volumeTitle} (${article.volumeYear})`;
+    }
+    
+    // Exibe ou oculta Link
+    if (article.doi) {
+        const linkWrapper = clone.querySelector('.js-link-wrapper');
+        linkWrapper.style.display = '';
+        const linkObj = linkWrapper.querySelector('.js-link');
+        linkObj.href = article.doi;
+        linkObj.textContent = article.doi;
+    }
+    
+    // Regula o botão de PDF
+    if (article.pdf_path && article.pdf_path !== '#') {
+        const pdfBtn = clone.querySelector('.js-pdf');
+        pdfBtn.style.display = '';
+        pdfBtn.href = window.LAMEC_CONFIG.staticRoot + article.pdf_path;
+    } else {
+        clone.querySelector('.js-no-pdf').style.display = '';
+    }
+    
+    // Transforma o Node de volta pra string pra caber no map().join('') do JS atual
+    const div = document.createElement('div');
+    div.appendChild(clone);
+    return div.innerHTML;
 }
 
 function bindProceedingsControls() {

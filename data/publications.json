@@ -40,7 +40,7 @@
             "pdf_link": "publications/reis-hoefel-labaki-2025-influence-of-buried-foundations-on-the-ground-vibration-attenuation-performance-of-surface-walls.pdf",
             "authors": "Jenario dos Santos Reis Junior, Simone dos Santos, Josue Labaki",
             "abstract": "This paper investigates the influence of buried foundations on the ground vibration attenuation performance of surface walls. Using a coupled IBEM-FEM model, we analyze the effects of a partially buried wall subjected to surface waves. The results show that embedding the wall alters its vibration attenuation performance by affecting its ability to scatter surface waves into bulk waves. These findings provide valuable insights for designing vibration mitigation solutions in environments where ground vibration is a concern.",
-            "doi": "10.26678/ABCM.DINAME2025.DIN2025-0072"
+            "doi": "https://doi.org/10.26678/ABCM.DINAME2025.DIN2025-0072"
         },
         {
             "title": "Flexural Wave Propagation Analysis of a Locally Resonant Beam.",
@@ -48,7 +48,7 @@
             "pdf_link": "publications/reis-rodrigues-hoefel-2024-flexural-wave-propagation-analysis-of-a-locally-resonant-beam.pdf",
             "authors": "Jenario Souza dos Reis Júnior, Isadora Rodrigues de Souza, Simone dos Santos Hoefel",
             "abstract": "Metamaterials have become a topic of considerable interest in the scientific and engineering communities in recent decades. Such artificially designed structures offer innovative solutions to complex problems related to wave propagation and vibration control, and have enormous potential for applications in various engineering fields. A topic that has received considerable attention in recent years is the ability to enhance emerging bandgaps due to Bragg scattering and local resonance, and thus improve the wave filtering ability of metamaterials. The present article proposes to analyze a locally resonant Euler-Bernoulli beam that is coupled to a large number of resonators with multiple degrees of freedom that are periodically distributed throughout the structure in order to increase the areas where wave attenuation is observed. Wave and Finite Element Method is applied in order to obtain the dispersion relation for wave propagation for the analysis of wave attenuation mechanisms. The results indicate the pronounced presence of Bragg scattering bandgaps and local resonance bandgaps. The influence of increasing the number of resonators is analyzed, resulting in an increase in the number of bandgaps. Effects of varying the length of the periodic unit on the attenuation property are also investigated. An increase of this parameter leads to an increment of the maximum attenuation coefficient and a new bandgap of the Bragg scattering is observed. In addition, the bandgap behavior is examined when the periodicity due to the presence of resonators is harmonized with the material periodicity, resulting from the use of two materials per unit cell. Finally, the vibration transmittance is determined by means of the classical Finite Element Method. The results of the vibration transmission show that the wave attenuation appears in the same frequency bands as those obtained by the Wave and Finite Element Method, which corroborates the efficient wave filtering performance of the locally resonant metamaterial beam.",
-            "doi": "10.26678/ABCM.CONEM2024.CON24-1502"
+            "doi": "https://doi.org/10.26678/ABCM.CONEM2024.CON24-1502"
         },
         {
             "title": "Analysis Comparing the Pierson-Moskowitz and Bretschneider Spectra for the Morison Equation.",
@@ -64,7 +64,7 @@
             "pdf_link": "publications/siqueira-cortez-hoefel-2022-dynamic-behavior-of-an-axially-loaded-timoshenko-beam-on-elastic-foundation-and-second-spectrum-analysis.pdf",
             "authors": "Lucas Oliveira Siqueira, Romulo Luz Cortez, Simone dos Santos Hoefel",
             "abstract": "The dynamic behavior of systems subject to soil-structure interaction is of great importance in civil engineering. Among the applications of this multiphysics problem can be highlighted railroad tracks, highway pavement, continuously supported pipelines and strip foundations. In this context, the aim of this paper is to use the vibration analysis by finite element method to study the behavior and the second spectrum of uniform beams supported on two-parameter elastic foundation. The first foundation parameter is modeled using linear springs similar to the Winkler foundation and the second foundation parameter is modeled as a shear layer as a function of the total slope of the beam. The effects of axial force, foundation stiffness parameters, transverse shear deformation and rotatory inertia are incorporated into the accurate vibration analysis. The motion equation is derived using Hamilton’s variational principle based on the finite element Method (FEM). A finite element is developed by means of the Rayleigh-Ritz using a cubic and quadratic approximated polynomial. The finite element and the analytic solutions are compared to verify the accuracy of the method in this kind of problem. The results obtained are discussed and compared with results obtained by other researchers. The rotary inertia parameter, the axial load parameter and the foundation stiffness influence in the frequency parameter are investigated. The results showed that the axial load decrease the frequency parameter and the foundation increase the frequency parameter. The second spectrum was studied for the hinged-hinged beam presenting a tiny difference for the addition of the foundation and the axial load. In addition, the second spectrum was not verified for the clamped-clamped beam, as expected. Finally, the finite element results present well agreement with the other researches results.",
-            "doi": "10.26678/ABCM.CONEM2022.CON22-0330"
+            "doi": "https://doi.org/10.26678/ABCM.CONEM2022.CON22-0330"
         },
         {
             "title": "Free Vibration Analysis of a Tension Leg Platform Tendon.",
@@ -72,7 +72,7 @@
             "pdf_link": "publications/pereira-abreu-hoefel-2022-free-vibration-analysis-of-a-tension-leg-platform-tendon.pdf",
             "authors": "José Pereira Ramos Junior, Brendon Menezes de Abreu, Simone dos Santos Hoefel",
             "abstract": "The dynamic behavior in offshore structures is of great importance in the design, conception and operation phase, in order to predict failures, guarantee stability, safety and avoid environmental and financial impacts. An offshore structure consists of a fixing or support plot that departs from the sea soil to the surface of the water and connects to superstructures such as wind turbines, oil and natural gas platforms. In this article, the free vibration of a free-clamped uniform beam, similar to the tendons of a tension leg platform, is studied. Are evaluated beams not immersed and immersed in water, the influence of the dimensions of the cross-sectional and the contribution of the deck as an axial force applied at the free end. Four beam models, Euler-Bernoulli, Rayleigh's, Shear and Timoshenko are used to evaluate natural frequencies using the finite element method. To investigate the influence of axial load, natural frequencies are calculated for various percentages of critical load. The same material parameters are considered in the numerical examples. The results demonstrate that the frequencies obtained by Euler-Bernoulli, Rayleigh and shear surpass those obtained by the Timoshenko theory. In addition, the results indicate that the reduction of the cable cross-section, the influence of water and the contribution of the deck, decrease the natural frequencies of the tendons.",
-            "doi": "10.26678/ABCM.CONEM2022.CON22-0455"
+            "doi": "https://doi.org/10.26678/ABCM.CONEM2022.CON22-0455"
         },
         {
             "title": "Fatigue Analysis of a Clamped Structure.",
@@ -80,7 +80,7 @@
             "pdf_link": "publications/pereira-hoefel-rodriguez-2022-fatigue-analysis-of-a-clamped-structure.pdf",
             "authors": "José Pereira, Simone S. Hoefel, René Q. Rodriguez",
             "abstract": "In engineering projects, specifically in the mechanical area, it is indispensable to consider how the loads act on the components, because they can present themselves in different ways and cause abrupt failures. Therefore, the study that promotes the development of safe structures and with a longer useful life, is of significant importance. In this work, using the modified Goodman criterion, fatigue damage is evaluated in a cantilever beam with a hole in the domain subjected to different load conditions. The formulation of the finite element method and the mentioned failure criterion are presented. The stress field is obtained using a linear quadrilateral element, with four nodes per element and two degrees of freedom per node. The results obtained in computer programming, show the effect of fatigue in the structure for three different load conditions, it is evidenced greater resistance to failure in application of distributed load and lesser resistance under oblique point load.",
-            "doi": "10.26678/ABCM.CREEM2022.CRE2022-0117"
+            "doi": "https://doi.org/10.26678/ABCM.CREEM2022.CRE2022-0117"
         },
         {
             "title": "Fatigue Analysis Using the Finite Element Method.",
@@ -208,7 +208,7 @@
             "pdf_link": "publications/vasconcelos-azevedo-hoefel-2016-the-second-spectrum-of-timoshenko-beam.pdf",
             "authors": "Ana Carolina Azevedo Vasconcelos, Anderson Soares da Costa Azevêdo, Simone dos Santos Hoefel",
             "abstract": "Early researchers reported that for hinged-hinged beam, two distinct natural frequencies correspond to the same spatial mode shape and that it establish the existence of a second distinct frequency spectrum. This phenomenon was received the terminology of the \"Second Spectrum of Timoshenko Beam\". However, some investigators reported that the single frequency spectrum interpretation has the same sets of frequencies calculated from the \"two spectra\". The objective of this paper is to provide an analysis of the solution of Timoshenko beam equations for higher modes and discuss their complex dynamical behavior. A numerical example presented in literature is re-examined.",
-            "doi": "10.20906/CPS/CON-2016-1050"
+            "doi": "https://doi.org/10.20906/CPS/CON-2016-1050"
         },
         {
             "title": "Modal Analysis of Four Beam Theories.",

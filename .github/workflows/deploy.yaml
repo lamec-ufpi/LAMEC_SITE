@@ -1,0 +1,47 @@
+name: Build and Deploy LAMEC Site
+
+on:
+  push:
+    branches:
+      - main
+      - master
+  pull_request:
+
+# Essencial para o GitHub Actions ter permissão de publicar no gh-pages
+permissions:
+  contents: write
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout do Código
+        uses: actions/checkout@v4
+
+      - name: 🐍 Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Instalar Dependências
+        run: pip install -r requirements.txt
+
+      - name: 🧪 Rodar Testes de Integridade
+        run: pytest app/tests/test_integrity.py -v
+
+      - name: 🏗️ Construir o Site Estático
+        run: python build.py
+
+      - name: 📝 Criar bypass para o Jekyll do GitHub
+        run: touch dist/.nojekyll
+
+      - name: 🚀 Deploy para o GitHub Pages
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          force_orphan: true
+          cname: ''

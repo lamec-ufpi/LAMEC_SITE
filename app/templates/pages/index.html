@@ -1,4 +1,4 @@
-{% extends "components/base_lamec.html" %}
+{% extends "components/base.html" %}
 {% block title %}LAMEC - Laboratório de Métodos de Modelagem Computacional{% endblock %}
 
 {% block content %}
@@ -51,7 +51,6 @@
             <div class="feature-text dark-card">
                 <h3>About LAMEC</h3>
                 <p>The LAMEC - Laboratory of Computational Modeling Methods is a space dedicated to the academic and scientific training of undergraduate students, linked to the Technology Center at the Federal University of Piauí (UFPI)...</p>
-                <a href="{{ url_for('main.about') }}" class="btn btn-outline">Read More ></a>
             </div>
         </div>
         <div class="feature-row reverse">
@@ -59,7 +58,6 @@
             <div class="feature-text dark-card">
                 <h3>Research Topics</h3>
                 <p>LAMEC develops projects in areas such as dynamic analysis of offshore structures, soil-structure interaction, and fluid-structure interaction. Furthermore, the lab strongly encourages scientific production...</p>
-                <a href="{{ url_for('people.research_team') }}" class="btn btn-outline">Read More ></a>
             </div>
         </div>
         <div class="feature-row">
@@ -91,7 +89,7 @@
         <div class="project-card" style="background-image: url('{{ url_for('static', filename='images/backgrounds/home/fem-mesh-background.png') }}');">
             <div class="project-content">
                 <h2>III SIMCOMPI</h2>
-                <p class="small">The next edition of the Symposium on Computational Modeling in Science and Technology in Piauí will take place from 22 to 24 March 2027.</p>
+                <p class="small">The next edition of the Symposium on Computational Modeling in Science and Technology in Piauí will take place from {{ event.dates_label }}.</p>
                 <a href="{{ url_for('proceedings.simcompi') }}" class="btn btn-primary">Read More ></a>
             </div>
         </div>
@@ -106,7 +104,7 @@
 
     <br>
 
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="contact-grid">
             <div class="contact-info dark-card">
                 <p>We are here to assist you with any questions or information you may need. Please feel free to reach out to us through any of the contact methods below.</p>

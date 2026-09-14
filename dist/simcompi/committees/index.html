@@ -7,35 +7,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="../../static/style.css">
     <link rel="icon" href="../../static/images/brand/lamec-logo.png">
-<script>
-    window.STATIC_ROOT = "../../static/style.css".replace('style.css', '');
-    window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
-</script>
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../api/proceedings.json"
+        };
+    </script>
 </head>
 <body>
-    <nav class="navbar navbar-simcompi" id="navbar">
-      <div class="container nav-container">
-        <div class="logo">
-            <a href="../index.html" class="logo-text">
-                <img src="../../static/images/brand/logo-simcompi-navbar-white.png" alt="SIMCOMPI" class="navbar-brand-img">
-            </a>
-        </div>
-        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
-        <ul class="nav-links">
-          <li><a href="../submissions/index.html" class="">SUBMISSÕES</a></li>
-          <li><a href="../proceedings/index.html" class="">ANAIS DO EVENTO</a></li>
-          <li class="dropdown"><a href="#" class="">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-                <li><a href="../edicoes-anteriores/i-simcompi/index.html" class="">I SIMCOMPI</a></li>
-                <li><a href="../edicoes-anteriores/ii-simcompi/index.html" class="">II SIMCOMPI</a></li>
-            </ul>
-          </li>
-          <li><a href="index.html" class="active">COMISSÕES</a></li>
-          <li><a href="../contact-us/index.html" class="">CONTATO</a></li>
-          <li><a href="../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    
+
+
+
+<nav class="navbar navbar-simcompi" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+        <a href="../index.html" class="logo-text">
+            <img src="../../static/images/brand/logo-simcompi-navbar-white.png" alt="SIMCOMPI" class="navbar-brand-img">
+        </a>
+    </div>
+    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links">
+      <li><a href="../submissions/index.html" class="">SUBMISSÕES</a></li>
+      <li><a href="../proceedings/index.html" class="">ANAIS DO EVENTO</a></li>
+      <li class="dropdown"><a href="#" class="">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="../edicoes-anteriores/i-simcompi/index.html" class="">I SIMCOMPI</a></li>
+            <li><a href="../edicoes-anteriores/ii-simcompi/index.html" class="">II SIMCOMPI</a></li>
         </ul>
-      </div>
-    </nav>
+      </li>
+      <li><a href="index.html" class="active">COMISSÕES</a></li>
+      <li><a href="../contact-us/index.html" class="">CONTATO</a></li>
+      <li><a href="../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    </ul>
+  </div>
+</nav>
+
+
 
     
     <header class="page-header">
@@ -64,57 +74,65 @@
             </div>
         </div>
 
+        
+
         <h2 class="section-title">Comissão organizadora</h2>
-        <div class="table-responsive">
-            <table class="styled-table">
-                <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
-                <tbody>
-                    
-                    <tr><td><strong>Simone dos Santos Hoefel</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Bruna Silveira Lira</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Wallison Angelim Medeiros</strong></td><td>UFPI</td></tr>
-                    
-                </tbody>
-            </table>
-        </div>
+        
+<div class="table-responsive">
+    <table class="styled-table">
+        <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
+        <tbody>
+            
+            <tr><td><strong>Simone dos Santos Hoefel</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Bruna Silveira Lira</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Wallison Angelim Medeiros</strong></td><td>UFPI</td></tr>
+            
+        </tbody>
+    </table>
+</div>
+
 
         <h2 class="section-title">Comissão científica</h2>
-        <div class="table-responsive">
-            <table class="styled-table">
-                <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
-                <tbody>
-                    
-                    <tr><td><strong>Adriano Todorovic Fabro</strong></td><td>UNB</td></tr>
-                    
-                    <tr><td><strong>Anderson Soares da Costa Azevêdo</strong></td><td>USP</td></tr>
-                    
-                    <tr><td><strong>Daniel Candeloro Cunha</strong></td><td>UNICAMP</td></tr>
-                    
-                    <tr><td><strong>Ediman Dias Novo</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Eduardo Martins Fontes Do Rêgo</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Francisco Wellington Dourado Rebelo</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Hélio De Paula Barbosa</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Laís Bittencourt Visnadi</strong></td><td>UNB</td></tr>
-                    
-                    <tr><td><strong>Márcio Davi Tenório Correia Alves</strong></td><td>UFPI</td></tr>
-                    
-                    <tr><td><strong>Waydson Martins Ferreira</strong></td><td>UFPI</td></tr>
-                    
-                </tbody>
-            </table>
-        </div>
+        
+<div class="table-responsive">
+    <table class="styled-table">
+        <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
+        <tbody>
+            
+            <tr><td><strong>Adriano Todorovic Fabro</strong></td><td>UNB</td></tr>
+            
+            <tr><td><strong>Anderson Soares da Costa Azevêdo</strong></td><td>USP</td></tr>
+            
+            <tr><td><strong>Daniel Candeloro Cunha</strong></td><td>UNICAMP</td></tr>
+            
+            <tr><td><strong>Ediman Dias Novo</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Eduardo Martins Fontes Do Rêgo</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Francisco Wellington Dourado Rebelo</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Hélio De Paula Barbosa</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Laís Bittencourt Visnadi</strong></td><td>UNB</td></tr>
+            
+            <tr><td><strong>Márcio Davi Tenório Correia Alves</strong></td><td>UFPI</td></tr>
+            
+            <tr><td><strong>Waydson Martins Ferreira</strong></td><td>UFPI</td></tr>
+            
+        </tbody>
+    </table>
+</div>
+
     </main>
 
 
     <footer>
+    <div class="container footer-content">
         <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
-    </footer>
+    </div>
+</footer>
 
     <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
         <i class="fa-solid fa-chevron-up"></i>
