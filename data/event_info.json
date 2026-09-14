@@ -1,0 +1,33 @@
+{
+  "dates": {
+    "abstract_deadline": "15/06/2026",
+    "abstract_acceptance": "20/07/2026",
+    "full_paper_open": "21/07/2026",
+    "full_paper_deadline": "10/10/2026",
+    "full_paper_acceptance": "01/12/2026",
+    "revised_version": "15/12/2026",
+    "symposium": "22 a 24 de março de 2027"
+  },
+  "committees": {
+    "general": [
+      {"name": "Simone dos Santos Hoefel", "institution": "UFPI"}
+    ],
+    "organizing": [
+      {"name": "Simone dos Santos Hoefel", "institution": "UFPI"},
+      {"name": "Bruna Silveira Lira", "institution": "UFPI"},
+      {"name": "Wallison Angelim Medeiros", "institution": "UFPI"}
+    ],
+    "scientific": [
+      {"name": "Adriano Todorovic Fabro", "institution": "UNB"},
+      {"name": "Anderson Soares da Costa Azevêdo", "institution": "USP"},
+      {"name": "Daniel Candeloro Cunha", "institution": "UNICAMP"},
+      {"name": "Ediman Dias Novo", "institution": "UFPI"},
+      {"name": "Eduardo Martins Fontes Do Rêgo", "institution": "UFPI"},
+      {"name": "Francisco Wellington Dourado Rebelo", "institution": "UFPI"},
+      {"name": "Hélio De Paula Barbosa", "institution": "UFPI"},
+      {"name": "Laís Bittencourt Visnadi", "institution": "UNB"},
+      {"name": "Márcio Davi Tenório Correia Alves", "institution": "UFPI"},
+      {"name": "Waydson Martins Ferreira", "institution": "UFPI"}
+    ]
+  }
+}

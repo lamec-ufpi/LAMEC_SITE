@@ -1,0 +1,183 @@
+{
+  "research_team": [
+    {
+      "name": "Henrique Ezequiel",
+      "role": "Integrante",
+      "img": "images/team/henrique-ezequiel.jpg",
+      "lattes": "https://lattes.cnpq.br/3522901624610798"
+    },
+    {
+      "name": "Thierry Miqueias",
+      "role": "Integrante",
+      "img": "images/team/thierry-miqueias.jpeg",
+      "lattes": "https://lattes.cnpq.br/1813366880479323"
+    },
+    {
+      "name": "Clenilson Willames",
+      "role": "Integrante",
+      "img": "images/team/clenilson-willams.jpeg",
+      "lattes": "https://lattes.cnpq.br/3553331624610798"    
+    },
+    {
+      "name": "Natan Pereira",
+      "role": "Integrante",
+      "img": "images/team/natan-pereira.jpg",
+      "lattes": "https://lattes.cnpq.br/3554901624610798"
+    },
+    {
+      "name": "José Fernando",
+      "role": "Integrante",
+      "img": "images/team/jose-fernando.jpg",
+      "lattes": "https://lattes.cnpq.br/7941934147627776"
+    },
+    {
+      "name": "Camile Ximenes",
+      "role": "Integrante",
+      "img": "images/team/camille-ximenes.jpeg",
+      "lattes": "https://lattes.cnpq.br/8871321192624079"
+    },    
+    {
+      "name": "Gabriel Garrett",
+      "role": "Integrante",
+      "img": "images/team/gabriel-garrett.jpeg",
+      "lattes": "https://lattes.cnpq.br/5918209777651902"
+    },
+    {
+      "name": "Luis (Calouro) Gustavo",
+      "role": "Integrante",
+      "img": "images/team/luiz-gustavo.jpeg",
+      "lattes": "https://lattes.cnpq.br/1535344358224533"    
+    },
+    {
+      "name": "Álvaro Francisco",
+      "role": "Integrante",
+      "img": "images/team/placeholder1.jpg",
+      "lattes": "https://lattes.cnpq.br/3554444424610798"   
+    }
+  ],
+  "alumni": [
+    {
+      "name": "ANA CAROLINA AZEVEDO VASCONCELOS",
+      "role": "TU Delft",
+      "img": "images/team/alumni/ana_azevedo.jpg",
+      "lattes": "https://lattes.cnpq.br/9951249526205379",
+      "bio": "<b>Current Position:</b> Ph.D. at Department of Maritime and Transport Technology, Delft University of Technology, Netherlands<br><br><b>Current Research Topic:</b> Design of a large-scale acoustic/elastic metamaterial for structural vibration control."
+    },
+    {
+      "name": "ALDEMAR PONTES DE SIQUEIRA NETO",
+      "role": "UNICAMP",
+      "img": "images/team/alumni/aldemar-siqueira.png",
+      "lattes": "https://lattes.cnpq.br/6028170655837066",
+      "bio": "<b>Current Position:</b> Ph.D. student in Mechanical Engineering at the School of Mechanical Engineering of the University of Campinas.<br><br><b>Current Research Topic:</b> Topology optimization of buried structures"
+    },
+    {
+      "name": "ANDERSON SOARES DA COSTA AZEVÊDO",
+      "role": "USP",
+      "img": "images/team/alumni/anderson-soares.jpg",
+      "lattes": "https://lattes.cnpq.br/6094128754683896",
+      "bio": "<b>Current Position:</b> Postdoctoral researcher at the Polytechnic School of the University of São Paulo (POLI-USP)<br><br><b>Current Research Topic:</b> Topology optimization in fluid flow and fluid-structure interaction problems."
+    },
+    {
+      "name": "BRUNO RICARDO DE MELO CAVALCANTE",
+      "role": "Politecnico di Bari",
+      "img": "images/team/alumni/bruno_cavalcante.jpg",
+      "lattes": "https://lattes.cnpq.br/7339036860988217",
+      "bio": "<b>Current Position:</b> Postdoctoral researcher at the Department of Mechanics, Mathematics, and Management (DMMM), Politecnico di Bari, Italy.<br><br><b>Current Research Topic:</b> Postdoctoral researcher at the Department of Mechanics, Mathematics, and Management (DMMM), Politecnico di Bari, Italy."
+    },
+    {
+      "name": "DAVID ANDRADE SOARES CARNEIRO",
+      "role": "KU Leuven",
+      "img": "images/team/alumni/david-carneiro.jpg",
+      "lattes": "https://lattes.cnpq.br/3371715889014722",
+      "bio": "<b>Current Position:</b> Ph.D. student at KU Leuven (Belgium), MSc from UNICAMP.<br><br><b>Current Research Topic:</b> Ground vibration attenuation by heavy surface structures."
+    },
+    {
+      "name": "IAGO CAVALCANTE GERALDO",
+      "role": "UNICAMP",
+      "img": "images/team/alumni/iago-cavalcante.jpg",
+      "lattes": "https://lattes.cnpq.br/2298476587779658",
+      "bio": "<b>Current Position:</b> Ph.D. student in Mechanical Engineering at the School of Mechanical Engineering of the Universit of Campinas.<br><br><b>Current Research Topic:</b> Currently working on 3D topology optimization in soil-structure interaction problems."
+    },
+    {
+      "name": "KEALANÃ MOURA DE ARAÚJO",
+      "role": "USP",
+      "img": "images/team/alumni/kaelana-moura.jpg",
+      "lattes": "https://lattes.cnpq.br/5226009662750354",
+      "bio": "<b>Current Position:</b> MSc in Mining and Petroleum Engineering at the Polytechnic School of the University of São Paulo (POLI-USP).<br><br><b>Current Research Topic:</b> Oil well/fluid interaction from the hydraulic fracturing technique."
+    },
+    {
+      "name": "LUCAS OLIVEIRA SIQUEIRA",
+      "role": "USP",
+      "img": "images/team/alumni/lucas-siqueira.jpeg",
+      "lattes": "https://lattes.cnpq.br/6080651189096179",
+      "bio": "<b>Current Position:</b> Ph.D student in Mechanical Engineering at the Polytechnic School of the University of São Paulo - POLI USP. MSc in Aerospace Engineering by UFPE.<br><br><b>Current Research Topic:</b> Brazing of austenitic stainless steels using silver-based filler metals."
+    },
+    {
+      "name": "RÔMULO LUZ CORTEZ",
+      "role": "USP",
+      "img": "images/team/alumni/romulo-cortez.jpg",
+      "lattes": "https://lattes.cnpq.br/5123675321151394",
+      "bio": "<b>Current Position:</b> Ph.D in Mechanical Engineering at the Polytechnic School of the University of São Paulo - POLI USP.<br><br><b>Current Research Topic:</b> Topology optimization applied to multiphysics problems."
+    },
+    {
+      "name": "JOSÉ PEREIRA RAMOS JUNIOR",
+      "role": "USP",
+      "img": "images/team/alumni/jose_pereira.jpeg",
+      "lattes": "https://lattes.cnpq.br/5617751176275363",
+      "bio": "<b>Current Position:</b> PhD. Student in the Department of Naval Architecture and Ocean Engineering (PNV) at the Polytechnic School of the University of São Paulo (POLI-USP).<br><br><b>Current Research Topic:</b> Topology optimization in fluid flow and structural problems."
+    },
+    {
+      "name": "JENARIO SOUZA DOS REIS JUNIOR",
+      "role": "UNICAMP",
+      "img": "images/team/alumni/jenario-junior.jpeg",
+      "lattes": "https://lattes.cnpq.br/7775332265007392",
+      "bio": "<b>Current Position:</b> MSc. student in Mechanical Engineering at the School of Mechanical Engineering of the University of Campinas.<br><br><b>Current Research Topic:</b> Topology optimization in problems including interface and contact objective functions."
+    },
+    {
+      "name": "ISADORA RODRIGUES DE SOUZA",
+      "role": "UNICAMP",
+      "img": "images/team/alumni/isadora-rodrigues.jpeg",
+      "lattes": "https://lattes.cnpq.br/2300935877879392",
+      "bio": "<b>Current Position:</b> MSc. student in Mechanical Engineering at the School of Mechanical Engineering of the University of Campinas.<br><br><b>Current Research Topic:</b> Seismic metamaterials for ground vibration attenuation."
+    },
+    {
+      "name": "DÁRIO CARVALHO VIVEIROS",
+      "role": "UNICAMP",
+      "img": "images/team/alumni/dario-viveiros.jpg",
+      "lattes": "https://lattes.cnpq.br/1999769284850412",
+      "bio": "<b>Current Position:</b> MSc. student in Mechanical Engineering at the School of Mechanical Engineering of the University of Campinas.<br><br><b>Current Research Topic:</b> Dynamics of railway vehicles and railway components."
+    },
+    {
+      "name": "DAVI KAUÊ DE SOUSA GOMES",
+      "role": "USP",
+      "img": "images/team/alumni/davi-kaue.jpg",
+      "lattes": "https://lattes.cnpq.br/1999769284850412",
+      "bio": "<b>Current Position:</b> MSc. student in Mechanical Engineering at the School of Mechanical Engineering of the University of Campinas.<br><br><b>Current Research Topic:</b> Dynamics of railway vehicles and railway components."
+    }
+  ],
+  "professional_career": [
+    {
+      "name": "BRENDON MENEZES DE ABREU",
+      "role": "Heineken Company",
+      "img": "images/team/alumni/brendon-abreu.jpg",
+      "lattes": "https://www.linkedin.com/in/brendon-menezes-de-abreu-440117a7/",
+      "bio": "<b>Current Position:</b> Maintenance Engineer<br><br><b>Working Area:</b> Development and analysis of Projects such as 3D Printer, Automation and Instrumentation, and Control and Quality of Beer Production."
+    },
+    {
+      "name": "L'HAUÃ BARBOSA PEREIRA DE MIRANDA",
+      "role": "Codevasf",
+      "img": "images/team/alumni/lhaua-barbosa.jpg",
+      "lattes": "https://www.linkedin.com/in/l-hauã-miranda-b748b3115/",
+      "bio": "<b>Current Position:</b> Regional Development Analyst at Codevasf.<br><br>MSc. in Mechanical Engineering by UNICAMP, and graduated in Mechanical Engineering by UFPI."
+    }
+  ],
+  "in_memoriam": [
+    {
+      "name": "JUAN GABRIEL QUEIROZ BLANCHE",
+      "role": "In Memoriam",
+      "img": "images/team/alumni/juan-blanches.jpg",
+      "lattes": "https://lattes.cnpq.br/4066638612218564",
+      "bio": "<i><b>There is no departure for those who are eternal. ♥</b></i>"
+    }
+  ]
+}

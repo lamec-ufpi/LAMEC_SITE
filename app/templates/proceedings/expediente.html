@@ -1,0 +1,62 @@
+{% extends "components/layout.html" %}
+{% block title %}LAMEC - Expediente{% endblock %}
+
+{% block proceedings_content %}
+    <a href="{{ url_for('proceedings.proceedings_index') }}" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Voltar aos anais do evento</a>
+
+    <div class="info-card">
+        <div class="info-card-header">
+            <i class="fa-solid fa-circle-info"></i> COORDENAÇÃO
+        </div>
+        <div class="info-card-body">
+            <ul class="info-list">
+                <li><strong>Título:</strong> Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí</li>
+                <li><strong>Periodicidade:</strong> Bienal</li>
+                <li><strong>Idiomas aceitos:</strong> Português, Inglês</li>
+            </ul>
+            <ul class="info-list">
+                <li><strong>Responsável:</strong> Simone dos Santos Hoefel</li>
+                <li><strong>Endereço:</strong>
+                    Laboratório de Métodos de Modelagem Computacional<br>
+                    Universidade Federal do Piauí (UFPI)<br>
+                    Campus Universitário Ministro Petrônio Portella<br>
+                    Ininga, Teresina - PI, 64049-550. Brazil.</li>                
+                <li><strong><i class="fa-solid fa-envelope"></i> E-mail:</strong> simone.santos@ufpi.edu.br</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="section-title">Comissão organizadora</h2>
+    <div class="table-responsive">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Instituição</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for member in committees.organizing %}
+                <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <h2 class="section-title">Comissão científica</h2>
+    <div class="table-responsive">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Instituição</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for member in committees.scientific %}
+                <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

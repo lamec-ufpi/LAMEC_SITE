@@ -1,0 +1,56 @@
+{% extends "components/layout.html" %}
+{% block title %}LAMEC - {{ volume.title }}{% endblock %}
+
+{% block proceedings_content %}
+    <a href="{{ url_for('proceedings.proceedings_index') }}" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Voltar aos anais</a>
+    <a href="{{ url_for('proceedings.arquivo') }}" class="btn btn-outline" style="margin-bottom: 20px; margin-left: 10px;">&larr; Voltar para todos os volumes</a>
+
+    <div class="section-title">
+        <h1 style="font-size: 2rem;">{{ volume.title }} ({{ volume.year }})</h1>
+        {% if volume.full_pdf_link %}
+        <a href="{{ url_for('static', filename=volume.full_pdf_link) }}" class="btn btn-primary" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-pdf"></i> Download Complete Volume
+        </a>
+        {% endif %}
+    </div>
+
+    {% if volume.categories %}
+        {% for category in volume.categories %}
+            <h2 class="section-title-highlight">{{ category.name }}</h2>
+
+            {% for article in category.articles %}
+            <div class="article-card">
+                <h3 class="article-title">{{ article.title }}</h3>
+                <p class="article-authors">{{ article.authors }}</p>
+                
+                {% if article.doi %}
+                <p class="article-doi"><strong>DOI:</strong> <a href="https://doi.org/{{ article.doi }}" target="_blank">{{ article.doi }}</a></p>
+                {% endif %}
+                
+                <div class="article-actions">
+                    {% if article.pdf_path %}
+                    <a href="{{ url_for('static', filename=article.pdf_path) }}" class="btn btn-primary" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-file-pdf"></i> PDF
+                    </a>
+                    {% else %}
+                    <span class="btn btn-outline" style="cursor: not-allowed; opacity: 0.5;">
+                        <i class="fa-solid fa-file-pdf"></i> PDF Indisponível
+                    </span>
+                    {% endif %}
+                </div>
+                
+                <div class="article-details-container">
+                    <div class="abstract-text collapsed">
+                        <strong>Abstract:</strong> {{ article.abstract | default('Não informado', true) }}
+                    </div>
+                    <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+            </div>
+            {% endfor %}
+        {% endfor %}
+    {% else %}
+        <div class="loading-state">
+            <p>Os anais deste volume serão disponibilizados após o fim do evento.</p>
+        </div>
+    {% endif %}
+{% endblock %}

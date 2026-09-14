@@ -1,0 +1,55 @@
+{% extends "components/base_simcompi.html" %}
+{% block title %}LAMEC - SIMCOMPI{% endblock %}
+
+{% block content %}
+    <header class="simcompi-hero current-event-hero" style="background-image: linear-gradient(rgba(249, 252, 255, 0.6), rgba(179, 227, 255, 0.6)), url('{{ url_for('static', filename='images/backgrounds/rio-poty-fundo-banner-iii-simcompi.jpg') }}');">
+        <img src="{{ url_for('static', filename='images/simcompi/simcompi_3/logo-horizonta-iii-simcompi.png') }}" alt="SIMCOMPI Logo" class="logo-image" style="max-width: 900px;">
+        <div class="countdown-container">
+            <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
+            <div class="countdown-box"><span id="hours">00</span><small>Horas</small></div>
+            <div class="countdown-box"><span id="minutes">00</span><small>Minutos</small></div>
+            <div class="countdown-box"><span id="seconds">00</span><small>Segundos</small></div>
+            <div class="countdown-info">22 a 24 de março de 2027<br>Auditório do Centro de Tecnologia, UFPI</div>
+        </div>
+    </header>
+
+    <section class="simcompi-intro">
+        <p>A terceira edição do <strong>SIMCOMPI</strong> será realizada de <strong>22 a 24 de março de 2027</strong>, no <strong>Auditório do Centro de Tecnologia da Universidade Federal do Piauí</strong>. O SIMCOMPI é um evento nacional organizado pelo LAMEC que reúne especialistas para discutir avanços e desafios relacionados à aplicação de modelos computacionais.</p>
+        <br>
+        <p>Em sua terceira edição, o simpósio destaca a integração entre universidade e indústria, oferecendo um espaço dedicado a aproximar a pesquisa científica dos desafios reais do setor industrial. Esperamos por você!</p>
+        
+        <div class="subscribe-btn-container">
+            <a href="https://www.even3.com.br/iii-simcompi-687611" class="btn btn-primary">INSCREVA-SE AGORA</a>
+        </div>
+    </section>
+
+    <!-- Even3 Palestrantes -->
+    <div style="width: 100%; max-width: 1200px; margin: 40px auto; padding: 0 20px;">
+        <div id="even3-widget-speaker" style="height: auto"></div>
+        <script src="https://www.even3.com.br/widget/js?e={{ event.even3_slug }}&t=speaker&lang=pt"></script>
+    </div>
+
+    <div style="width: 100%; max-width: 1200px; margin: 40px auto; text-align: center; padding: 0 20px;">
+        <iframe src="https://instagram.com/simcompi/embed" width="100%" height="700px" style="border: none; max-width: 1200px; display: inline-block;" title="Convidados do Evento"></iframe>
+    </div>
+    
+    <section class="logos-wrapper">
+        <h3>Organizadores</h3>
+        <div class="logos-container">
+            <img src="{{ url_for('static', filename='images/brand/lamec-logo.png') }}" alt="LAMEC">
+            <img src="{{ url_for('static', filename='images/brand/crea-logo.jpg') }}" alt="CREA PI">
+        </div>
+
+        <h3>Parceiros institucionais</h3>
+        <div class="logos-container">
+            <img src="{{ url_for('static', filename='images/brand/prh-59-logo.jpg') }}" alt="PRHANP">
+            <img src="{{ url_for('static', filename='images/brand/ufpi-logo.png') }}" alt="Brasão da UFPI">
+        </div>
+
+        <h3>Patrocinadores</h3>
+        <div class="logos-container">
+            <img src="{{ url_for('static', filename='images/brand/fapepi-logo.png') }}" alt="FAPEPI">
+            <img src="{{ url_for('static', filename='images/brand/vida-verde-logo.png') }}" alt="Vida Verde">
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends "components/base_simcompi.html" %}
+{% block title %}LAMEC - Comissões do Evento{% endblock %}
+
+{% block content %}
+    <header class="page-header">
+        <h1>Comissões do Evento</h1>
+    </header>
+
+    <div class="container" style="text-align: left;">
+        <a href="{{ url_for('proceedings.simcompi') }}" class="btn btn-outline" style="margin: 20px 0;"><i class="fa-solid fa-arrow-left"></i> Voltar para a página do evento</a>
+    </div>
+
+    <main class="container" style="margin-bottom: 60px;">
+        <div class="info-card">
+            <div class="info-card-header">
+                <i class="fa-solid fa-circle-info"></i> COORDENAÇÃO GERAL
+            </div>
+            <div class="info-card-body">
+                <ul class="info-list">
+                    <li><strong>Responsável:</strong> Simone dos Santos Hoefel</li>
+                    <li><strong>Endereço:</strong>
+                    Laboratório de Métodos de Modelagem Computacional<br>
+                    Universidade Federal do Piauí (UFPI)<br>
+                    Campus Universitário Ministro Petrônio Portella<br>
+                    Ininga, Teresina - PI, 64049-550. Brazil.</li>   
+                    <li><strong><i class="fa-solid fa-envelope"></i> E-mail:</strong> simcompiaui@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 class="section-title">Comissão organizadora</h2>
+        <div class="table-responsive">
+            <table class="styled-table">
+                <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
+                <tbody>
+                    {% for member in committees.organizing %}
+                    <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+
+        <h2 class="section-title">Comissão científica</h2>
+        <div class="table-responsive">
+            <table class="styled-table">
+                <thead><tr><th>Nome</th><th>Instituição</th></tr></thead>
+                <tbody>
+                    {% for member in committees.scientific %}
+                    <tr><td><strong>{{ member.name }}</strong></td><td>{{ member.institution }}</td></tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </main>
+{% endblock %}

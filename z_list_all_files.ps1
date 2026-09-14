@@ -1,5 +1,5 @@
 # Nome do arquivo final
-$OutputFile = "lista_de_arquivos.md"
+$OutputFile = "z_lista_de_arquivos.md"
 
 # Apaga o arquivo anterior se ele já existir na pasta
 if (Test-Path $OutputFile) { Remove-Item $OutputFile }

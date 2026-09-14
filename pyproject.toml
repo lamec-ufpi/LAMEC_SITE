@@ -1,0 +1,9 @@
+[project]
+name = "lamec-site"
+version = "0.1.0"
+description = "Site Oficial do LAMEC UFPI e Evento SIMCOMPI"
+dependencies = [
+    "flask>=3.0.0",
+    "frozen-flask>=1.0.2",
+    "pytest>=7.0.0"
+]

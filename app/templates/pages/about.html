@@ -1,0 +1,52 @@
+{% extends "components/base_lamec.html" %}
+{% block title %}LAMEC - About{% endblock %}
+
+{% block content %}
+    <header class="about-hero" id="about-slider" style="transition: background-image 0.5s ease-in-out;">
+        <button class="slider-btn slider-prev" aria-label="Previous slide"><i class="fa-solid fa-angle-left"></i></button>
+        <button class="slider-btn slider-next" aria-label="Next slide"><i class="fa-solid fa-angle-right"></i></button>
+
+        <div class="hero-text-box">
+            <h1>About LAMEC</h1>
+            <p>Computer Modeling Methods Laboratory (LAMEC) is a research laboratory at UFPI.</p>
+            <p>The team develops projects and activities on real engineering problems using tools such as computational modeling, structural analysis, numerical simulations, and the development of innovative solutions.</p>
+            <p>LAMEC's mission goes far beyond technical training. The lab is also a space for personal growth, autonomy building, and the development of a scientific and critical mindset.</p>
+        </div>
+    </header>
+
+<main class="container about-content">
+        <div style="text-align: center; margin-bottom: 60px;">
+            <img src="https://static.wixstatic.com/media/cff65f_9a08160b9a564c9aa3f8506f9d4cf5fa~mv2.png/v1/crop/x_2,y_0,w_1609,h_508/fill/w_536,h_169,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/lamec.png" alt="LaMeC-UFPI logo" style="width: 100%; max-width: 400px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="color: var(--color-primary); font-size: 2rem; margin-bottom: 10px;">Computational Modeling Methods Lab (LaMeC)</h2>
+            <p style="font-size: 1.1rem; color: var(--color-primary); margin-bottom: 15px;"><b>Federal University of Piauí (UFPI) &bull; Teresina, Brazil</b></p>
+            <p class="about-text" style="text-align: center; max-width: 850px; margin: 0 auto 25px auto;">Advancing research by analyzing and solving complex engineering problems, with an emphasis on computational modeling and simulation applied to the railway and offshore industries.</p>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://www.researchgate.net/lab/LaMeC-lamec-ufpicom-Simone-dos-Santos" target="_blank" rel="noopener">
+                    <img src="https://img.shields.io/badge/ResearchGate-LaMeC%20Lab-00ccb1?style=for-the-badge&logo=researchgate&logoColor=white" alt="ResearchGate" style="border-radius: 4px;">
+                </a>
+                <a href="https://instagram.com/lamec.ufpi" target="_blank" rel="noopener">
+                    <img src="https://img.shields.io/badge/@lamec.ufpi-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" style="border-radius: 4px;">
+                </a>
+            </div>
+        </div>
+        <div class="section-title-highlight first">KNOWLEDGE<br>BUILDING</div>
+        <p class="about-text"><em>LAMEC</em> is dedicated to the construction and dissemination of knowledge through applied research. The laboratory promotes an environment of continuous learning, encouraging the exchange of ideas between students and researchers, participation in scientific conferences and the publication of scientific articles. In addition, <em>LAMEC</em> values interdisciplinary collaboration, connecting computational modeling to various areas of engineering and applied sciences. The development of academic and industrial projects reinforces the laboratory's commitment to innovation and technological advancement, preparing members for complex challenges in research and the job market.</p>
+        <div class="section-title-highlight">RESEARCH<br>TOPICS</div>
+        <ul class="about-list">
+            <li><strong>Multiphysics modeling</strong> – Analysis involving fluid and structural behavior simultaneously.</li>
+            <li><strong>Topological optimization</strong> – Development of algorithms to optimize material geometries and properties.</li>
+            <li><strong>Slope stability</strong> – Computational analysis and assessment of soil and rock mass behavior to prevent failures.</li>
+            <li><strong>Vibrations and metamaterials</strong> – Study and design of periodic structures for vibration attenuation and wave control.</li>
+            <li><strong>Numerical modeling of elastomers</strong> – Computational simulation of the mechanical behavior of hyperelastic and rubber-like materials.</li>
+        </ul>
+        <p class="about-text"><em>LAMEC</em> stands out for its use of cutting-edge computational methods to solve challenging engineering problems, contributing to the advancement of knowledge and the development of new technologies.</p>
+        <div class="section-title-highlight">ADMISSION</div>
+        <p class="about-text">At <em>LAMEC</em>, we believe that passion and perseverance are the key factors for success in research. Unlike traditional selection processes, we do not consider academic performance indexes (IRA) or grades as admission criteria. Instead, we look for students who are truly motivated, curious, and willing to dedicate themselves to the challenges of computational modeling. We value individuals who are eager to learn, experiment, and push the boundaries of knowledge. Research requires resilience, critical thinking, and the ability to persist through complex problems.</p>
+        <div class="section-title-highlight">COLLABORATION</div>
+        <p class="about-text"><em>LAMEC</em> maintains a network of strategic collaborations with leading researchers and laboratories, strengthening its presence in the academic and industrial scenarios. The laboratory has partnerships with professors and research leaders from <em>USP, UNICAMP, UnB, and UFSM, among others</em>.</p>
+        <p class="about-text"><em>LAMEC</em> is open to collaborations with professors, researchers, companies, and sponsors interested in advancing computational modeling in engineering. We believe that strong partnerships drive innovation, and we welcome opportunities for joint research projects, knowledge exchange, and industry applications.</p>
+        <div class="contact-action">
+            <a href="{{ url_for('main.index') }}#contact" class="btn btn-primary">CONTACT</a>
+        </div>
+    </main>
+{% endblock %}

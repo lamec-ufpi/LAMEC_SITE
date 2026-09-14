@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LAMEC - Anais{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/brand/lamec-logo.png') }}">
+<script>
+    window.STATIC_ROOT = "{{ url_for('static', filename='style.css') }}".replace('style.css', '');
+    window.BASE_URL = window.STATIC_ROOT.replace('static/', '');
+</script>
+</head>
+<body>
+    
+    <nav class="navbar navbar-simcompi navbar-proceedings" id="navbar">
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="{{ url_for('proceedings.proceedings_index') }}" class="logo-text" style="font-size:x-large;">Anais do Simpósio de Modelagem <br>Computacional em Ciência e Tecnologia do Piauí</a>
+        </div>
+        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">          
+            <li><a href="{{ url_for('proceedings.simcompi') }}" class="back-btn"><i class="fa-solid fa-arrow-left"></i> VOLTAR PARA O SIMCOMPI</a></li>
+            <li><a href="{{ url_for('main.index') }}" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, {{ current_year }}.</p>
+    </footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

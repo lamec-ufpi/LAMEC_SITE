@@ -1,0 +1,34 @@
+{% extends "components/layout.html" %}
+{% block title %}LAMEC - Anais do evento{% endblock %}
+
+{% block proceedings_content %}
+    <div class="cards-grid">
+        <div class="proc-card">
+            <h3>Apresentação</h3>
+            <p>Conheça nossa revista e nossos objetivos.</p>
+            <a href="{{ url_for('proceedings.apresentacao') }}" class="btn btn-primary">Acessar</a>
+        </div>
+        <div class="proc-card">
+            <h3>Corpo Editorial</h3>
+            <p>Conheça o expediente de editores.</p>
+            <a href="{{ url_for('proceedings.expediente') }}" class="btn btn-primary">Acessar</a>
+        </div>
+        <div class="proc-card">
+            <h3>Normas e Submissões</h3>
+            <p>Regras de formatação para os autores.</p>
+            <a href="{{ url_for('proceedings.normas') }}" class="btn btn-primary">Acessar</a>
+        </div>
+        <div class="proc-card">
+            <h3>Contato</h3>
+            <p>Fale com os editores dos anais.</p>
+            <a href="{{ url_for('proceedings.contato_anais') }}" class="btn btn-primary">Acessar</a>
+        </div>
+    </div>
+
+    <h2 class="section-title">III SIMCOMPI</h2>
+    <p>O presente volume apenas será publicado ao final do evento.</p>
+    <br>
+    <h4>Veja os volumes anteriores em nosso arquivo de anais:</h4>
+    <a href="{{ url_for('proceedings.arquivo') }}" class="btn btn-outline" style="margin-top: 10px;">Explorar volumes anteriores</a>
+    <a href="{{ url_for('proceedings.simcompi') }}" class="btn btn-outline" style="margin-top: 10px;">Ver página do evento</a>
+{% endblock %}

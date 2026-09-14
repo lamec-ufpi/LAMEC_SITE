@@ -1,0 +1,19 @@
+{% extends "components/layout.html" %}
+{% block title %}LAMEC - Normas de Publicação{% endblock %}
+
+{% block proceedings_content %}
+    <a href="{{ url_for('proceedings.proceedings_index') }}" class="btn btn-outline" style="margin-bottom: 20px;">← Voltar aos anais</a>
+
+    <h1 class="section-title">Diretrizes para autores</h1>
+    <p>Os autores devem seguir rigorosamente as diretrizes de formatação dos modelos oficiais para publicação nos anais do SIMCOMPI. O descumprimento das regras pode resultar em rejeição automática pelo comitê científico.</p>
+    
+    <div class="resources-section" style="padding: 20px 0; background: transparent;">
+        <div class="resource-block">
+            <h3>Pacote de Templates (Word e LaTeX)</h3>
+            <p>Baixe o pacote completo contendo as diretrizes de formatação e os templates oficiais para publicação nos anais do evento.</p>
+            <a href="{{ url_for('static', filename='simcompi-templates/TEMPLATES_SIMCOMPI27.zip') }}" class="btn btn-outline" style="margin-top: 10px;" download>
+                <i class="fa-solid fa-download"></i> Baixar Pacote Completo (.zip)
+            </a>
+        </div>        
+    </div>
+{% endblock %}

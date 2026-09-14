@@ -1,0 +1,58 @@
+{% extends "components/base_lamec.html" %}
+{% block title %}LAMEC - Research Team{% endblock %}
+
+{% block content %}
+    <header class="page-header">
+        <h1>Research Team</h1>
+    </header>
+
+    <main class="container" style="margin-top: 40px;">
+        <section class="head-section modal-trigger" 
+                 data-name="Simone dos Santos Hoefel, PhD." 
+                 data-role="Laboratory Head"
+                 data-img="{{ url_for('static', filename='images/team/simone_dona.JPG') }}"
+                 data-lattes="https://lattes.cnpq.br/1096142351022318"
+                 data-bio="Professora Titular na Universidade Federal do Piauí e fundadora do Laboratório de Métodos de Modelagem Computacional (LAMEC). Desenvolve projetos e atividades relacionadas ao uso de métodos numéricos, em particular na mecânica dos sólidos e fluidos, estruturas, solos e interação fluido-estrutura.">
+            
+            <div class="head-img" data-background-image="url('{{ url_for('static', filename='images/team/simone_dona.JPG') }}')"></div>
+            <div class="head-info">
+                <div class="head-title">Laboratory Head</div>
+                <h2 style="border:none; margin-bottom: 20px;">Simone dos Santos Hoefel, PhD.</h2>
+                <p>Graduada em Engenharia Civil, Mestre em Métodos Numéricos em Engenharia e Doutora em Engenharia Mecânica. Atualmente é professora na Universidade Federal do Piauí e fundadora do LAMEC...</p>
+            </div>
+        </section>
+
+        <section class="team-grid">
+            {% for member in team %}
+            <div class="member-card modal-trigger" 
+                data-name="{{ member.name }}" 
+                data-role="{{ member.role }}"
+                data-img="{{ url_for('static', filename=member.img) }}"
+                data-lattes="{{ member.lattes }}"
+                data-bio="">
+                
+                <div class="member-photo" style="background-image: url('{{ url_for('static', filename=member.img) }}')"></div>
+                <div class="member-name-banner">{{ member.name | upper }}</div>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+
+    <!-- Modal Pessoas -->
+    <div class="modal-overlay" id="teamModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img-container" id="modalImg"></div>
+                <div class="modal-text">
+                    <h3 id="modalName">Nome do Pesquisador</h3>
+                    <div class="modal-role" id="modalRole">Função</div>
+                    <div class="modal-bio" id="modalBio"></div>
+                    <a target="_blank" class="btn btn-primary" id="modalLattes">
+                        <i class="fa-solid fa-link"></i> Currículo Lattes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

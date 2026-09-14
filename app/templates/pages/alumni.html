@@ -1,0 +1,75 @@
+{% extends "components/base_lamec.html" %}
+{% block title %}LAMEC - Alumni{% endblock %}
+
+{% block content %}
+    <header class="page-header">
+        <h1>Alumni & Career</h1>
+    </header>
+
+    <main class="container" style="margin-top: 60px;">
+        
+        <h2 class="section-title"><span>ALUMNI</span></h2>
+        <section class="team-grid">
+            {% for member in alumni %}
+            <div class="member-card modal-trigger" 
+                 data-name="{{ member.name }}" 
+                 data-role="{{ member.role }}"
+                 data-img="{{ url_for('static', filename=member.img) }}"
+                 data-lattes="{{ member.lattes }}"
+                 data-bio="{{ member.bio }}">
+                <div class="member-photo" style="background-image: url('{{ url_for('static', filename=member.img) }}');"></div>
+                <div class="member-name-banner">{{ member.name }}</div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <h2 class="section-title"><span>PROFESSIONAL CAREER</span></h2>
+        <section class="team-grid">
+            {% for member in professional %}
+            <div class="member-card modal-trigger" 
+                 data-name="{{ member.name }}" 
+                 data-role="{{ member.role }}"
+                 data-img="{{ url_for('static', filename=member.img) }}"
+                 data-lattes="{{ member.lattes }}"
+                 data-bio="{{ member.bio }}">
+                <div class="member-photo" style="background-image: url('{{ url_for('static', filename=member.img) }}');"></div>
+                <div class="member-name-banner">{{ member.name }}</div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <h2 class="section-title"><span>IN MEMORIAM</span></h2>
+        <section class="team-grid">
+            {% for member in memoriam %}
+            <div class="member-card modal-trigger" 
+                 data-name="{{ member.name }}" 
+                 data-role="{{ member.role }}"
+                 data-img="{{ url_for('static', filename=member.img) }}"
+                 data-lattes="{{ member.lattes }}"
+                 data-bio="{{ member.bio }}">
+                <div class="member-photo" style="background-image: url('{{ url_for('static', filename=member.img) }}');"></div>
+                <div class="member-name-banner">{{ member.name }}</div>
+            </div>
+            {% endfor %}
+        </section>
+
+    </main>
+
+    <!-- Modal Pessoas -->
+    <div class="modal-overlay" id="teamModal">
+        <div class="modal-content">
+            <button class="close-btn" id="closeModal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-img-container" id="modalImg"></div>
+                <div class="modal-text">
+                    <h3 id="modalName">Nome</h3>
+                    <div class="modal-role" id="modalRole">Função</div>
+                    <div class="modal-bio" id="modalBio">Resumo</div>
+                    <a target="_blank" class="btn btn-primary" id="modalLattes">
+                        <i class="fa-solid fa-link"></i> Acessar Perfil / Lattes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

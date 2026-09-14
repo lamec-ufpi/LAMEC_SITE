@@ -1,0 +1,54 @@
+{% extends "components/base_simcompi.html" %}
+{% block title %}LAMEC - SIMCOMPI Submissions{% endblock %}
+
+{% block content %}
+    <header class="simcompi-hero current-event-hero" style="background-image: linear-gradient(rgba(249, 252, 255, 0.6), rgba(179, 227, 255, 0.6)), url('{{ url_for('static', filename='images/backgrounds/rio-poty-fundo-banner-iii-simcompi.jpg') }}');">
+        <img src="{{ url_for('static', filename='images/simcompi/simcompi_3/logo-horizonta-iii-simcompi.png') }}" alt="SIMCOMPI Logo" class="logo-image" style="max-width: 900px;">
+        <div class="countdown-container">
+            <div class="countdown-box"><span id="days">00</span><small>Dias</small></div>
+            <div class="countdown-box"><span id="hours">00</span><small>Horas</small></div>
+            <div class="countdown-box"><span id="minutes">00</span><small>Minutos</small></div>
+            <div class="countdown-box"><span id="seconds">00</span><small>Segundos</small></div>
+            <div class="countdown-info">22 a 24 de março de 2027<br>Auditório do Centro de Tecnologia, UFPI</div>
+        </div>
+    </header>
+
+    <section class="important-dates container">
+        <h2 class="section-title">Datas importantes</h2>
+        <ul class="dates-list">
+            <li>Prazo para submissão de resumo: <strong>{{ event.dates_label }}</strong></li>
+            <!-- Adapte os items abaixo se as datas do event.json estiverem disponíveis -->
+            <li>Aceite dos resumos: <strong>A Definir</strong></li>
+            <li>Abertura da submissão de artigo completo: <strong>A Definir</strong></li>
+            <li>Prazo para submissão de artigo completo: <strong>A Definir</strong></li>
+            <li>Aceite dos artigos completos: <strong>A Definir</strong></li>
+            <li>Prazo para submissão da versão revisada: <strong>A Definir</strong></li>
+            <li>Simpósio: <strong>{{ event.dates_label }}</strong></li>
+        </ul>
+    </section>
+
+    <section class="bg-light-blue submission-section" id="guidelines" style="padding-bottom: 60px;">
+        <div id="even3-widget-submission" class="even3-embed-container" height="auto"></div>
+        <script src="https://www.even3.com.br/widget/js?e={{ event.even3_slug }}&t=submission&lang=pt"></script>
+        
+        <div class="container" style="text-align: center; margin-top: 40px;">
+            <a href="{{ url_for('proceedings.proceedings_index') }}" class="btn btn-primary" style="margin-bottom: 40px;">Ver anais do evento</a>
+            
+            <div style="text-align: left; background: white; padding: 30px; border-radius: 8px;">
+                <h2 class="section-title-highlight">Normas e Templates</h2>
+                <p style="margin-bottom: 20px;">Acesse a página exclusiva de normas dos anais para obter os modelos obrigatórios (LaTeX e Word) e as regras de formatação completas.</p>
+                <a href="{{ url_for('proceedings.normas') }}" class="btn btn-outline" style="margin-bottom: 20px;">Ver Normas de Submissão Completas</a>
+                
+                <div class="resources-section" style="padding: 20px 0 0 0; background: transparent; border-top: 1px solid #eee; margin-top: 10px;">
+                    <div class="resource-block">
+                        <h3 style="color: var(--color-primary); font-size: 1.4rem; margin-bottom: 8px;">Pacote de Templates (Word e LaTeX)</h3>
+                        <p>Baixe o pacote completo contendo as diretrizes de formatação e os templates oficiais para submissão no evento.</p>
+                        <a href="{{ url_for('static', filename='simcompi-templates/TEMPLATES_SIMCOMPI27.zip') }}" class="btn btn-outline" style="margin-top: 10px;" download>
+                            <i class="fa-solid fa-download"></i> Baixar Pacote Completo (.zip)
+                        </a>
+                    </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
