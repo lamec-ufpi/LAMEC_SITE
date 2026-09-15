@@ -4,11 +4,11 @@
 {% block proceedings_content %}
     <a href="{{ url_for('proceedings.proceedings_index') }}" class="btn btn-outline" style="margin-bottom: 20px;">&larr; Voltar aos anais do evento</a>
 
-    <h1 class="section-title">Expediente</h1>
+    <h1 class="section-title">Expediente e Corpo Editorial</h1>
 
     <div class="info-card">
         <div class="info-card-header">
-            <i class="fa-solid fa-circle-info"></i> COORDENAÇÃO
+            <i class="fa-solid fa-circle-info"></i> Editor-Chefe
         </div>
         <div class="info-card-body">
             <ul class="info-list">
@@ -30,7 +30,7 @@
 
     {% from "components/macros.html" import render_committee_table %}
 
-    <h2 class="section-title">Comissão organizadora</h2>
+    <h2 class="section-title">Conselho Editorial</h2>
     {{ render_committee_table(committees.organizing) }}
 
     <h2 class="section-title">Comissão científica</h2>

@@ -1,6 +1,6 @@
 # LAMEC & SIMCOMPI - Static Site Generator
 
-> Plataforma web oficial do **Laboratório de Métodos de Modelagem Computacional (LAMEC)** da Universidade Federal do Piauí (UFPI) e portal principal do **Simpósio Internacional de Modelagem Computacional em Ciência e Tecnologia (SIMCOMPI)**.
+> Plataforma web oficial do **Laboratório de Métodos de Modelagem Computacional (LAMEC)** da Universidade Federal do Piauí (UFPI) e portal principal do **Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí (SIMCOMPI)**.
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-3.0.2-black?logo=flask&logoColor=white)

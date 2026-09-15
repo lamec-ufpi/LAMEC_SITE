@@ -12,6 +12,8 @@
 {% endmacro %}
 
 {% macro render_article_card(article, is_js_template=False) %}
+    {% set is_pubs = 'publications' in request.path %}
+    {% set abstract_label = 'Abstract:' if is_pubs else 'Resumo:' %}
 <div class="article-card">
     <h3 class="article-title js-title">{{ '__TITLE__' if is_js_template else article.title }}</h3>
     <p class="article-authors js-authors"><i>{{ '__AUTHORS__' if is_js_template else article.authors }}</i></p>
@@ -52,7 +54,7 @@
     
     <div class="article-details-container">
         <div class="abstract-text collapsed js-abstract">
-            <strong>Abstract:</strong> {{ '__ABSTRACT__' if is_js_template else (article.abstract | default('Não informado', true)) }}
+            <strong>{{ abstract_label }}</strong> {{ '__ABSTRACT__' if is_js_template else (article.abstract | default('Não informado', true)) }}
         </div>
         <button type="button" class="btn btn-text btn-read-more">Read More <i class="fa-solid fa-chevron-down"></i></button>
     </div>

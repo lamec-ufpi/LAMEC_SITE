@@ -2,57 +2,57 @@
   "research_team": [
     {
       "name": "Henrique Ezequiel",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/henrique-ezequiel.jpg",
-      "lattes": "https://lattes.cnpq.br/3522901624610798"
+      "lattes": "https://lattes.cnpq.br/6235095559529771"
     },
     {
       "name": "Thierry Miqueias",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/thierry-miqueias.jpeg",
       "lattes": "https://lattes.cnpq.br/1813366880479323"
     },
     {
       "name": "Clenilson Willames",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/clenilson-willams.jpeg",
-      "lattes": "https://lattes.cnpq.br/3553331624610798"    
+      "lattes": "https://lattes.cnpq.br/6647122618998177"    
     },
     {
       "name": "Natan Pereira",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/natan-pereira.jpg",
       "lattes": "https://lattes.cnpq.br/3554901624610798"
     },
     {
       "name": "José Fernando",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/jose-fernando.jpg",
       "lattes": "https://lattes.cnpq.br/7941934147627776"
     },
     {
       "name": "Camile Ximenes",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/camille-ximenes.jpeg",
       "lattes": "https://lattes.cnpq.br/8871321192624079"
     },    
     {
       "name": "Gabriel Garrett",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/gabriel-garrett.jpeg",
       "lattes": "https://lattes.cnpq.br/5918209777651902"
     },
     {
       "name": "Luis (Calouro) Gustavo",
-      "role": "Integrante",
+      "role": "Member",
       "img": "images/team/luiz-gustavo.jpeg",
       "lattes": "https://lattes.cnpq.br/1535344358224533"    
     },
     {
       "name": "Álvaro Francisco",
-      "role": "Integrante",
-      "img": "images/team/placeholder1.jpg",
-      "lattes": "https://lattes.cnpq.br/3554444424610798"   
+      "role": "Member",
+      "img": "images/team/alvaro-francisco.jpeg",
+      "lattes": "https://lattes.cnpq.br/2004547555402045"   
     }
   ],
   "alumni": [

@@ -127,18 +127,20 @@ function renderArticleCard(article) {
     
     // Clona o HTML pronto do Jinja
     const clone = template.content.cloneNode(true);
+    const isPubs = window.location.pathname.includes('publications');
+    const abstractLabel = isPubs ? 'Abstract:' : 'Resumo:';
     
     // Substitui os textos com segurança
     clone.querySelector('.js-title').textContent = article.title;
     clone.querySelector('.js-authors i').textContent = article.authors;
     
     const abstract = article.abstract || 'Não informado.';
-    clone.querySelector('.js-abstract').innerHTML = `<strong>Abstract:</strong> ${escapeHtml(abstract)}`;
+    clone.querySelector('.js-abstract').innerHTML = `<strong>${abstractLabel}</strong> ${escapeHtml(abstract)}`;
     
     // Exibe ou oculta Volume
     if (article.volumeTitle) {
         clone.querySelector('.js-volume').style.display = '';
-        clone.querySelector('.js-vol-text').textContent = `${article.volumeTitle} (${article.volumeYear})`;
+        clone.querySelector('.js-vol-text').textContent = `${article.volumeTitle}`;
     }
     
     // Exibe ou oculta Link
