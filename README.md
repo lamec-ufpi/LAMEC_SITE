@@ -7,6 +7,8 @@
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Produção-success)
 
+https://lamec-ufpi.github.io/LAMEC_SITE/
+
 ## 📌 Sobre o Projeto
 Este repositório contém o código-fonte e o pipeline de infraestrutura do site do LAMEC. Arquitetura moderna de **Static Site Generator (SSG)** construída do zero utilizando Python. O objetivo principal foi eliminar dívidas técnicas, melhorar drasticamente a performance, aplicar acessibilidade e zerar os custos de hospedagem mantendo a resiliência a picos de tráfego.
 
