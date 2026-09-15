@@ -34,7 +34,7 @@ def proceedings_api():
 
 @bp.route('/robots.txt')
 def robots():
-    content = "User-agent: *\nAllow: /\nSitemap: https://lamec-ufpi.github.io/LAMEC_SITE/sitemap.xml"
+    content = "User-agent: *\nAllow: /\nSitemap: https://lamec-ufpi.com.br/sitemap.xml"
     return Response(content, mimetype="text/plain")
 
 @bp.route('/sitemap.xml')
