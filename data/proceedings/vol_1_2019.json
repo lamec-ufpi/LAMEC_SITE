@@ -120,7 +120,7 @@
       "name": "Método dos Elementos de Contorno",
       "articles": [
         {
-          "title": "Formulação pelo método dos elementos de contorno para modelagem do fenômeno de cone de gás em poços de petróleo",
+          "title": "A boundary element method formulation to modeling the gas coning phenomenon in oil wells",
           "authors": "Pedro Lucas Sanches Fonseca Silva, Jennifer Slayder Santos Sousa, Prof. Dr. Luís Jorge Mesquita de Jesus",
           "doi": null,
           "abstract": "For years the water/gas coning phenomenon in oil reservoirs has been a big challenge for the upstream industry. It happens because the conification causes serious limitations on the well productivity, increasing the production costs.",
@@ -133,7 +133,7 @@
       "name": "Método dos Elementos Finitos",
       "articles": [
         {
-          "title": "Análise de vibração livre de uma viga cônica rotativa",
+          "title": "Free vibration of a rotating tapered beam",
           "authors": "Juan Gabriel Queiroz Blanche, Simone dos Santos Hoefel",
           "doi": null,
           "abstract": "Rotating beams are widely found in several engineering structures such as wind turbine blades, industrial fans and gas turbine engine. Blade is one of the most critical mechanical component in rotating machines, as result, the behavior of rotating beams structures has received a lot of attention. Therefore, different configurations of blades was investigated with classical theory of beam by many researchers, such as Euler-Bernoulli and Timoshenko. Since blades rarely has uniform area along the length, a non-prismatic analysis becomes more accurate and reliable motivating several authors to investigate the effect of tapering on rotating beams. In this paper, the vibration frequency of a tapered rotating beam is investigated. The finite element method is used, a non-constant flexural rigidity and mass per unit over the element is developed using a cubic polynomial. The effects of taper ratio and rotational speed are analyzed and the mode shapes are determined for some values of taper parameters. The results obtained shown that Rayleigh-Ritz method for Finite Elements finds the natural frequencies of a rotating tapered cantilever Euler-Bernoulli beam with high precision.",
@@ -141,12 +141,12 @@
           "pdf": "vol1/blanche-hoefel-2019-free-vibration-of-a-rotating-tapered-beam.pdf"
         },
         {
-          "title": "Vibração livre de uma viga-coluna sobre fundação elástica de dois parâmetros",
+          "title": "Free vibration of a beam-column on two-parameter elastic foundation",
           "authors": "Lucas Oliveira Siqueira, Rômulo Luz Cortez, Profa. Dra. Simone dos Santos Hoefel",
           "doi": null,
           "abstract": "The behavior of the Euler-Bernoulli beam on elastic foundation has been extensively studied in the modern engineering. There are many applications for beam on elastic foundation mainly in mechanical and civil engineering, like shafts supported on ball, roller, or journal bearings, vibrating machines on elastic foundations, network of beams in the construction of floor systems for ships, buildings, submerged floating tunnels, buried pipelines, railroad tracks etc. The purpose of this work is to analyze the influence of the axial load on the dynamic response of an axial-loaded Euler-Bernoulli beam resting on two-parameter foundation. Some examples presents the influence of the axial load and the foundation in the natural frequencies of the beam. Also, mode shapes were determined for some classical boundary conditions. The results obtained by FEM are discussed and compared with the exact solution.",
           "keywords": "Não informadas",
-          "pdf": "vol1/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf"
+          "pdf": "vol1/siqueira-cortez-hoefel-2019-free-vibration-of-a-beam-column-on-two-parameter-elastic-foundation.pdf"
         },
         {
           "title": "Modelagem numérica de Contact Problem",
@@ -173,7 +173,7 @@
           "pdf": "vol1/melo-lisboa-souza-2019-simulacao-numerica-para-analise-estrutural-dos-cavaletes-suporte-de-viradores-de-vagao-por-meio-do-metododos-elementos-finitos.pdf"
         },
         {
-          "title": "Resposta vibratória de a Beam-Column on Pasternack Foundation",
+          "title": "Vibration response of a beam-column on a Pasternak foundation",
           "authors": "Rômulo Luz Cortez, Lucas Oliveira Siqueira, Prof. Dra. Simone dos Santos Hoefel",
           "doi": null,
           "abstract": "Several researchers over the years have sought describe and analyze problems of soil-structure interaction. For example, Arboleda-Monsalve et al. (2008) used the finite element method (FEM) to analyze the dynamic of a Timoshenko beam-column resting on elastic foundation with general constraints ends, and Abohadima et al. (2015) investigated the free and forced vibration of an axial-loaded Timoshenko beam resting on a elastic foundation using the Recursive Differentiation Method (RDM). Further, Soares et al. (2017), also using the FEM, investigated the dynamic behave of a Timoshenko beam resting on a Pasternak foundation. In this context, the purpose of this work is investigate the dynamic behavior of an axial-loaded Timoshenko beam resting on a two-parameter elastic foundation. FEM is developed and compared with the analytical solution. Foundation parameters and the axial load contributions are investigated in several numerical examples for beams with different end restraints.",
@@ -231,7 +231,7 @@
           "pdf": "vol1/sobrinho-virgens-jesus-2019-avancos-da-nanotecnologia-farmaceutica-aplicados-ao-desenvolvimento_uma-prospeccao-tecnologica.pdf"
         },
         {
-          "title": "Propriedades eletrônicas de Nitrogen Doped Graphene Nanowiggles",
+          "title": "Electronic Properties of Nitrogen-Doped Graphene Nanowiggles",
           "authors": "Anderson Soares da Costa Azevêdo, Eduardo Costa Girão",
           "doi": null,
           "abstract": "Early researchers demonstrated considerably interest in investigating nanoscale carbon materials. This is due to their remarkable properties and promising potential applications in novel nanoelectronic devices (Son et al., 2006). These materials include: fullerenes, carbon nanotubes and graphene nanoflakes. In this work, we investigate the electronic properties and emergence of magnetic states in periodic nitrogen-doped graphene structures of complex geometry inspired into nanostructures fabricated and reported in the literature (Cai et al., 2010).",
@@ -239,7 +239,7 @@
           "pdf": "vol1/azevedo-girao-2019-electronic-properties-of-nitrogen-doped-graphene-nanowiggles.pdf"
         },
         {
-          "title": "Estrutura eletrônica de Carbon Nanocage with Bipartite Structure: A DFT study",
+          "title": "Eletronic structure of carbon nanocage with bipartite structure: a DFT study",
           "authors": "Fábio Nascimento de Sousa, Eduardo Costa Girão",
           "doi": null,
           "abstract": "The carbon is one of the chemical elements most found in nature. A of its main characteristics is the formation of polymorphs under various conditions of temperature and pressure. The figure. 1 shows some of the main forms allotropic of the carbon. Although nanotubes and graphene are the most studied elements of the carbon nanostructures family, cage-like structure, like fullerenes[1], are subject de constant interest in the area. Such structure have potencial applications drug delivery(fig. 2a)[2] or as elements in nanojunctions(fig. 2b). For exemple[3].",

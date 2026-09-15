@@ -59,7 +59,7 @@
                 </ul>
             </li>
             <li><a href="{{ url_for('proceedings.simcompi') }}">SIMCOMPI</a></li>
-            <li class="dropdown"><a href="{{ url_for('main.faisca') }}" class="{% if current_endpoint in ['main.bull_racing', 'main.faisca'] %}active{% endif %}">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+            <li class="dropdown"><a href="#" class="{% if current_endpoint in ['main.bull_racing', 'main.faisca'] %}active{% endif %}">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
                 <ul class="dropdown-menu">
                     <li><a href="{{ url_for('main.bull_racing') }}" class="{% if current_endpoint == 'main.bull_racing' %}active{% endif %}">BULL RACING</a></li>
                     <li><a href="{{ url_for('main.faisca') }}" class="{% if current_endpoint == 'main.faisca' %}active{% endif %}">FAÍSCA</a></li>

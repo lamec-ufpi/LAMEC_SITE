@@ -6,7 +6,7 @@
     <a href="{{ url_for('proceedings.arquivo') }}" class="btn btn-outline" style="margin-bottom: 20px; margin-left: 10px;">&larr; Voltar para todos os volumes</a>
 
     <div class="section-title">
-        <h1 style="font-size: 2rem;">{{ volume.title }} ({{ volume.year }})</h1>
+        <h1 style="font-size: 2rem;">{{ volume.title }}</h1>
         {% if volume.full_pdf_link %}
         <a href="{{ url_for('static', filename=volume.full_pdf_link) }}" class="btn btn-primary" target="_blank" rel="noopener">
             <i class="fa-solid fa-file-pdf"></i> Download Complete Volume

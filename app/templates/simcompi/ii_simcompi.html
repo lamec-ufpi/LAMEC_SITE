@@ -45,8 +45,8 @@
                 url_for('static', filename='images/simcompi/simcompi_2/slide/feira1.png'),
                 url_for('static', filename='images/simcompi/simcompi_2/slide/palestra-do-prof-fabro.png'),
                 url_for('static', filename='images/simcompi/simcompi_2/slide/professores-e-organizacao-no-encerramento.png')
-            ] %}
-            <img id="simcompi-2-slider" data-slides='{{ slides | tojson | safe }}' alt="Galeria de fotos" style="margin-bottom: 20px; max-width: 800px; width: 100%; height: 500px; object-fit: cover; border-radius: 8px; transition: opacity 0.3s;">
+            ] %}            
+            <img id="simcompi-2-slider" src="{{ slides[0] }}" data-slides='{{ slides | tojson | safe }}' alt="Galeria de fotos" style="margin-bottom: 20px; max-width: 800px; width: 100%; height: 500px; object-fit: cover; border-radius: 8px; transition: opacity 0.3s;">
             
             <button class="slider-btn slider-prev" style="left: 0; color: var(--color-primary);"><i class="fa-solid fa-angle-left"></i></button>
             <button class="slider-btn slider-next" style="right: 0; color: var(--color-primary);"><i class="fa-solid fa-angle-right"></i></button>
