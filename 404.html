@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - Página não encontrada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="icon" href="static/images/brand/lamec-logo.png">
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "static/style.css".replace('style.css', ''),
+            baseUrl: "index.html".replace('index.html', ''),
+            proceedingsApiUrl: "api/proceedings.json"
+        };
+    </script>
+</head>
+<body>
+    
+
+
+
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="index.html" class="logo-text">
+                <img src="static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
+            </a>
+        </div>
+        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html" class="">HOME</a></li>
+            <li><a href="publications/index.html" class="">PUBLICATIONS</a></li>
+            <li class="dropdown"><a href="research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="research-team/index.html" class="">RESEARCH TEAM</a></li>
+                    <li><a href="alumni/index.html" class="">ALUMNI</a></li>
+                </ul>
+            </li>
+            <li><a href="simcompi/index.html">SIMCOMPI</a></li>
+            <li class="dropdown"><a href="#" class="">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="extension/bull-racing/index.html" class="">BULL RACING</a></li>
+                    <li><a href="extension/faisca/index.html" class="">FAÍSCA</a></li>
+                </ul>
+            </li>
+            <li><a href="about/index.html" class="">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    
+<main class="container" style="text-align: center; padding: 100px 20px; min-height: 60vh;">
+    <h1 style="font-size: 5rem; color: var(--color-primary); margin-bottom: 10px;">404</h1>
+    <h2 style="color: var(--color-secondary); margin-bottom: 30px;">Página não encontrada</h2>
+    <p style="margin-bottom: 40px; font-size: 1.1rem;">A página que você tentou acessar não existe ou foi movida.</p>
+    <a href="index.html" class="btn btn-primary"><i class="fa-solid fa-arrow-left"></i> Voltar para a Home</a>
+</main>
+
+
+    <footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="static/main.js"></script>
+    
+</body>
+</html>
