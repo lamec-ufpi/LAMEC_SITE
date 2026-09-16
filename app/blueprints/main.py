@@ -25,13 +25,10 @@ def bull_racing():
 def faisca(): 
     return render_template('extension/faisca.html')
 
-# Nova Rota para a API (Sairá do HTML gigante)
 @bp.route('/api/proceedings.json')
 def proceedings_api():
     return jsonify(load_proceedings_all())
-
-    
-
+   
 @bp.route('/robots.txt')
 def robots():
     content = "User-agent: *\nAllow: /\nSitemap: https://lamec-ufpi.com.br/sitemap.xml"
@@ -63,7 +60,7 @@ def sitemap():
         })
 
     xml_template = render_template('components/sitemap.xml', pages=pages)
-    return Response(xml_template, mimetype="text/xml") # <-- CORRIGIDO AQUI DE application PARA text
+    return Response(xml_template, mimetype="text/xml") 
 
 # Rota especial de erro que o GitHub Pages reconhece nativamente
 @bp.route('/404.html')
