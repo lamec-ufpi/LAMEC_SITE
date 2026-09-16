@@ -215,7 +215,7 @@ a { color: inherit; text-decoration: none; }
 .modal-overlay.active .modal-content { transform: translateY(0); }
 .close-btn { position: absolute; top: 15px; right: 15px; background: var(--color-primary); color: white; border: none; width: 30px; height: 30px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; z-index: 10; }
 .modal-body { display: flex; flex-direction: column; }
-.modal-img-container { height: 300px; background-size: cover; background-position: top center; }
+.modal-img-container { height: 500px; background-size: cover; background-position: top center; }
 .modal-text { padding: 30px; }
 .modal-text h3 { margin: 0 0 10px 0; color: var(--color-primary); font-size: 1.3rem; line-height: 1.3; border: none; }
 .modal-role { color: var(--color-secondary); font-weight: bold; margin-bottom: 15px; font-size: 1.1rem;}
@@ -264,7 +264,7 @@ a { color: inherit; text-decoration: none; }
 .posters-column img { width: 100%; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
 .text-column { flex: 1.2; }
 .speaker-list { list-style: none; margin-bottom: 40px; }
-.speaker-list li { margin-bottom: 15px; }
+.speaker-list li { margin-bottom: 0px; }
 .speaker-list li strong { display: block; font-style: italic; color: #111; font-weight: 600; }
 .speaker-list li span { color: #555; font-size: 0.95rem; }
 .full-width-gallery { width: 100%; background-color: var(--color-primary); padding: 40px 0; text-align: center; overflow: hidden;}
