@@ -7,6 +7,7 @@
 ![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Produção-success)
 
+https://lamec-ufpi.com.br/
 https://lamec-ufpi.github.io/LAMEC_SITE/
 
 ## 📌 Sobre o Projeto

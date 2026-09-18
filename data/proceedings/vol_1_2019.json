@@ -1,8 +1,8 @@
 {
   "id": "vol_1_2019",
-  "title": "SIMCOMPI - Vol. 1 (2019)",
+  "title": "Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí (SIMCOMPI) Vol. 1 2019",
   "year": 2019,
-  "cover_img": "simcompi/simcompi_1/i-simcompi-banner.png",
+  "cover_img": "simcompi/simcompi_1/i-simcompi-capa-anais.png",
   "full_pdf_link": "vol1/vol1_complete_simcompi.pdf",
   "categories": [
     {
@@ -183,7 +183,7 @@
       ]
     },
     {
-      "name": "Modelagem e identificação de sistemas",
+      "name": "Modelagem e Identificação de Sistemas",
       "articles": [
         {
           "title": "Estudo e aplicação de sensor LIDAR em carros autônomos",

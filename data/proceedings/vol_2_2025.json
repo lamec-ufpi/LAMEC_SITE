@@ -1,8 +1,8 @@
 {
   "id": "vol_2_2025",
-  "title": "SIMCOMPI - Vol. 2 (2025)",
+  "title": "Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí (SIMCOMPI) Vol. 2 2025",
   "year": 2025,
-  "cover_img": "simcompi/simcompi_2/banner-ii-simcompi.png",
+  "cover_img": "simcompi/simcompi_2/ii-simcompi-capa-anais.png",
   "full_pdf_link": "vol2/vol2_complete_simcompi.pdf",
   "categories": [
     {
@@ -30,7 +30,7 @@
       "name": "Nanotecnologia",
       "articles": [
         {
-          "title": "Propriedades eletrônicas de Nitrogen-Doped Rectangular Tripentaphenes",
+          "title": "Propriedades eletrônicas de tripentafenos retangulares dopados com nitrogênio",
           "authors": "Lourdes Maria de Oliveira Santos, Eduardo Costa Girão",
           "doi": null,
           "abstract": "Nos últimos anos, o ramo da nanociência tem se desenvolvido substancialmente no mundo acadêmico, ganhando uma posição de destaque, sob a luz de grande interesse pela comunidade científica (Macédo, et al, 2022; Kumar, Yadav, Prasad, 2023; Silva, et al, 2020; Silva, et al, 2022; Van Noorden, 2011; Vega, Saillard, 2007; Zeng, et al, 2020) e de altos investimentos pelas industrias. As nanoetruturas apresentam aplicações em variadas áreas como medicina, eletrônica, ciência dos materiais, energia, aeroespacial, automotiva, ambiental e entre outros, uma vez que têm apresentado uma alta capacidade de otimizar processos nesses âmbitos. O conhecimento existente acerca das nanoestruturas já nos proporciona técnicas e procedimentos, bem como a criação de equipamentos como o microscópio de varredura por tunelamento, para a manipulação, produção e estudo das mesmas. No entanto, é necessário que mais conhecimento seja produzido na área a fim de proporcionar uma produção efetiva, em larga escala, baixo custo e sustentável de nanomateriais, assim como utiliza-los em aplicações específicas, como nos circuitos presentes em chips, de modo que possam competir comercialmente com outros materiais dominantes no mercado global, como o silício. Este trabalho tem como objetivo investigar alterações na estrutura eletrônica de um tripentafeno de rede retangular, alótropo do carbono bidimensional baseado na concatenação direta de moléculas de acepentaleno, mediante dopagens substitucionais com nitrogênio.",
