@@ -10,6 +10,8 @@ app.config['FREEZER_IGNORE_404_NOT_FOUND'] = False
 app.config["JSON_AS_ASCII"] = False
 app.config["FREEZER_DEFAULT_MIMETYPE"] = "text/html; charset=utf-8"
 
+app.config['FREEZER_BASE_URL'] = 'https://lamec-ufpi.com.br'
+
 freezer = Freezer(app)
 
 @freezer.register_generator
