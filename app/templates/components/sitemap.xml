@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for page in pages %}
     <url>
-        <loc>https://lamec-ufpi.github.io{{ page.loc }}</loc>
+        <loc>https://lamec-ufpi.com.br{{ page.loc }}</loc>
         <changefreq>{{ page.changefreq }}</changefreq>
         <priority>{{ page.priority }}</priority>
     </url>
