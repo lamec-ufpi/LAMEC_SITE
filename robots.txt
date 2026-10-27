@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lamec-ufpi.com.br/sitemap.xml
