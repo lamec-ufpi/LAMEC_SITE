@@ -2,17 +2,8 @@
 
 Este documento contém instruções rápidas para manter e atualizar o conteúdo do site sem precisar alterar a lógica de roteamento ou de build.
 
-## ⚠️ Regra de Ouro: Sempre rode os testes!
-Toda vez que você adicionar ou editar um arquivo JSON, imagem ou PDF, **você deve rodar os testes de integridade antes de fazer o push para o GitHub**. Isso previne erros de digitação, fotos duplicadas e links 404.
-
-No terminal, na raiz do projeto, rode:
-`pytest app/tests/test_integrity.py`
-
-Se passar, você pode commitar. Se quebrar, o GitHub Actions **vai bloquear** a atualização do site.
-
----
-
 ## 1. Adicionar um Novo Volume de Anais
+
 Quando o SIMCOMPI acabar e os PDFs forem gerados:
 1. Vá em `data/proceedings/` e crie um arquivo novo (ex: `vol_4_2029.json`).
 2. Siga exatamente esta estrutura (Nota: Não adicione comentários com `//` dentro do JSON, pois isso quebra o parser):
@@ -74,4 +65,25 @@ Para adicionar o carrossel de fotos (Slider): Utilize a variável slides injetan
   url_for('static', filename='images/simcompi/simcompi_4/slide/foto2.jpg')
 ] %}
 <img id="simcompi-4-slider" data-slides='{{ slides | tojson | safe }}' alt="Galeria">
+
+
 ```
+
+## 4. Adicionar informações numa página já existente
+
+A forma de adicionar conteúdo depende do tipo de página que você está editando. O site é dividido em **Páginas Estáticas** (textos fixos) e **Páginas Dinâmicas** (que puxam dados de listas).
+
+### 4.1. Editando Páginas Estáticas (Ex: Sobre, Apresentação, Extensão)
+Se você quiser alterar textos estruturais da página, adicionar novos parágrafos ou imagens:
+
+1. Acesse a pasta `app/templates/`.
+2. Navegue até a subpasta e abra o arquivo da página correspondente (ex: `app/templates/main/about.html`).
+3. Adicione o novo conteúdo usando tags HTML convencionais (`<p>` para textos, `<h3>` para subtítulos, `<ul> e <li>` para listas). De preferência copiar uma section/div já existente para evitar a quebra do estilo. 
+
+**Inserir imagens:**
+Primeiro, salve o arquivo da imagem na pasta `static/images/` (ou em uma subpasta específica lá dentro). Depois, adicione o código abaixo no seu HTML para que o Flask encontre a imagem corretamente:
+```html
+<img src="{{ url_for('static', filename='images/nome-da-sua-imagem.jpg') }}" alt="Descrição da imagem" class="img-fluid">
+
+**Inserir links**
+<a href="[https://site-externo.com.br](https://site-externo.com.br)" target="_blank">Texto clicável aqui</a>

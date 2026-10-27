@@ -15,6 +15,12 @@
             <li>Prazo para submissão da versão revisada: <strong>{{ event_info.dates.revised_version }}</strong></li>
             <li>Simpósio: <strong>{{ event_info.dates.symposium }}</strong></li>
         </ul>
+
+        <h2 class="section-title">Datas importantes para a III Feira de Extensão</h2>
+        <ul class="dates-list">
+            <li>Abertura das Inscrições das equipes: <strong>13/10/2026</strong></li>
+            <li>Prazo para Inscrição: <strong>31/10/2026</strong></li>
+        </ul>
     </section>
 
     <section class="bg-light-blue submission-section" id="guidelines" style="padding-bottom: 60px;">
@@ -25,7 +31,7 @@
             <a href="{{ url_for('proceedings.proceedings_index') }}" class="btn btn-primary" style="margin-bottom: 40px;">Ver anais do evento</a>
             
             <div style="text-align: left; background: white; padding: 30px; border-radius: 8px;">
-                <h2 class="section-title-highlight">Normas e Templates</h2>
+                <h2 class="section-title-highlight">Full Paper III SIMCOMPI</h2>
                 <p style="margin-bottom: 20px;">Acesse a página exclusiva de normas dos anais para obter os modelos obrigatórios (LaTeX e Word) e as regras de formatação completas.</p>
                 <a href="{{ url_for('proceedings.normas') }}" class="btn btn-outline" style="margin-bottom: 20px;">Ver Normas de Submissão Completas</a>
                 
@@ -39,6 +45,24 @@
                     </div>                
                 </div>
             </div>
+
+            <div style="text-align: left; background: white; padding: 30px; border-radius: 8px; margin-top: 30px;">
+                <h2 class="section-title-highlight">II Feira de Extensão do SIMCOMPI</h2>
+                <p style="margin-bottom: 20px;">Acesse a página (Google Forms) para inscrição:</p>
+                <a href="https://forms.gle/RDiUhAi4eT7bHH9E7" target="_blank" rel="noopener" class="btn btn-outline" style="margin-bottom: 20px;">Acessar o Formulário</a>
+            
+                <div class="resources-section" style="padding: 20px 0 0 0; background: transparent; border-top: 1px solid #eee; margin-top: 10px;">
+                    <div class="resource-block">
+                        <h3 style="color: var(--color-primary); font-size: 1.4rem; margin-bottom: 8px;">Edital de participação</h3>
+                        <p>Baixe o Edital de participação e confira as diretrizes para inscrição e participação.</p>
+                        <!-- Note que mudei o filename para o nome do PDF do edital -->
+                        <a href="{{ url_for('static', filename='simcompi-templates/EDITAL_FEIRA_EXTENSAO27.pdf') }}" class="btn btn-outline" style="margin-top: 10px;" download>
+                            <i class="fa-solid fa-download"></i> Baixar o Edital (.pdf)
+                        </a>
+                    </div>                
+                </div>
+            </div>
+
         </div>
     </section>
 {% endblock %}
