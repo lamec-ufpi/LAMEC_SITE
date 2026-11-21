@@ -49,10 +49,22 @@
       "lattes": "https://lattes.cnpq.br/1535344358224533"    
     },
     {
-      "name": "Álvaro Francisco",
+      "name": "Luis (Ronaldo) Fernando",
       "role": "Member",
-      "img": "images/team/alvaro-francisco.jpeg",
-      "lattes": "https://lattes.cnpq.br/2004547555402045"   
+      "img": "images/team/ronaldo.jpeg",
+      "lattes": "https://lattes.cnpq.br/1314452223448195"   
+    },
+    {
+      "name": "Heitor Tavares",
+      "role": "Member",
+      "img": "images/team/heitor.jpeg",
+      "lattes": "https://lattes.cnpq.br/0000000000000000"   
+    },
+    {
+      "name": "Francisco Paulo (Paixão)",
+      "role": "Member",
+      "img": "images/team/paulinho.jpeg",
+      "lattes": "https://lattes.cnpq.br/0000000000000000"   
     }
   ],
   "alumni": [
