@@ -218,5 +218,95 @@
             "abstract": "Beams are structural elements frequently used for support buildings, part of airplanes, ships, rotor blades and most engineering structures. In many projects it is assumed that these elements are subjected only to static loads, however dynamic loads induce vibrations, which changes the values of stresses and strains. Furthermore, these mechanical phenomenon cause noise, instabilities and may also develop resonance, which improves deflections and failure. Therefore study these structural behavior is fundamental in order to prevent the effects of vibration. The mechanical behavior of these structural elements may be described by differential equations, four widely used beam theories are Euler-Bernouli, Rayleigh, Shear and Timoshenko. This paper presents a comparison between these four beam theories for the free transverse vibration of uniform beam. Numerical examples are shown to beam models under classical boundary condition.",
             "doi": " https://www.researchgate.net/publication/315549591"
         }
+    ],
+    "conference_posters":[
+        {
+            "title": "Vibration Response of a Beam-Column on Pasternack Foudation",
+            "details": "In: Proceedings of SIMCOMP",
+            "pdf_link": "publications/cortez-siqueira-hoefel-2019-vibration-response-of-a-beam-column-on-a-pasternak-foundation.pdf",
+            "authors": "Rômulo Luz Cortez; Lucas Oliveira Siqueira; Simone dos Santos Hoefel",
+            "abstract": "Several researchers over the years have sought describe and analyze problems of soilstructure interaction. For example, Arboleda-Monsalve et al. (2008) used the finite element method (FEM) to analyze the dynamic of a Timoshenko beam-column resting on elastic foundation with general constraints ends, and Abohadima et al. (2015) investigated the free and forced vibration of an axial-loaded Timoshenko beam resting on a elastic foundation using the Recursive Differentiation Method (RDM). Further, Soares et al. (2017), also using the FEM, investigated the dynamic behave of a Timoshenko beam resting on a Pasternak foundation. In this context, the purpose of this work is investigate the dynamic behavior of an axial-loaded Timoshenko beam resting on a two-parameter elastic foundation. FEM is developed and compared with the analytical solution. Foundation parameters and the axial load contributions are investigated in several numerical examples for beams with different end restraints.",
+            "doi": ""
+        },
+        {
+            "title": "FREE VIBRATION OF A BEAM-COLUMN ON TWO PARAMETER ELASTIC FOUNDATION",
+            "details": "In: Proceedings of SIMCOMP",
+            "pdf_link": "publications/siqueira-cortez-hoefel-2019-free-vibration-of-a-beam-column-on-two-parameter-elastic-foundation.pdf",
+            "authors": "Lucas Oliveira Siqueira; Rômulo Luz Cortez; Simone dos Santos Hoefel",
+            "abstract": "The behavior of the Euler-Bernoulli beam on elastic foundation has been extensively studied in the modern engineering. There are many applications for beam on elastic foundation mainly in mechanical and civil engineering, like shafts supported on ball, roller, or journal bearings, vibrating machines on elastic foundations, network of beams in the construction of floor systems for ships, buildings, submerged floating tunnels, buried pipelines, railroad tracks etc. The purpose of this work is to analyze the influence of the axial load on the dynamic response of an axial-loaded Euler-Bernoulli beam resting on two-parameter foundation. Some examples presents the influence of the axial load and the foundation in the natural frequencies of the beam. Also, mode shapes were determined for some classical boundary conditions. The results obtained by FEM are discussed and compared with the exact solution.",
+            "doi": ""
+        },
+        {
+            "title": "FREE VIBRATION ANALYSIS OF A ROTATING TAPERED BEAM",
+            "details": "In: Proceedings of SIMCOMP",
+            "pdf_link": "publications/blanche-hoefel-2019-free-vibration-of-a-rotating-tapered-beam.pdf",
+            "authors": "Juan Gabriel Queiroz Blanche; Simone dos Santos Hoefel",
+            "abstract": "Rotating beams are widely found in several engineering structures such as wind turbine blades, industrial fans and gas turbine engine. Blade is one of the most critical mechanical component in rotating machines, as result, the behavior of rotating beams structures has received a lot of attention. Therefore, different configurations of blades was investigated with classical theory of beam by many researchers, such as Euler-Bernoulli and Timoshenko. Since blades rarely has uniform area along the length, a non-prismatic analysis becomes more accurate and reliable motivating several authors to investigate the effect of tapering on rotating beams. In this paper, the vibration frequency of a tapered rotating beam is investigated. The finite element method is used, a non-constant flexural rigidity and mass per unit over the element is developed using a cubic polynomial. The effects of taper ratio and rotational speed are analyzed and the mode shapes are determined for some values of taper parameters. The results obtained shown that Rayleigh-Ritz method for Finite Elements finds the natural frequencies of a rotating tapered cantilever Euler-Bernoulli beam with high precision.",
+            "doi": ""
+        },
+        {
+            "title": "NONLOCAL FINITE ELEMENT ANALISYS OF EULER-BERNOULLI NANOBEAMS",
+            "details": "In: Proceedings of SIMCOMP",
+            "pdf_link": "publications/siqueira-hoefel-2019-nonlocal-finite-element-analysis-of-euler-bernoulli-nanobeams.pdf",
+            "authors": "Aldemar Pontes de Siqueira Neto; Simone dos Santos Hoefel",
+            "abstract": "Nanostructured materials present outstanding features like elevated modulus of elasticity and yield strength, high flexibility and conductivity. This materials are widely applied to nanoelectronics, nanodevices, nanosensors and nanocomposites. Various nonclassical elasticity theories were developed to study the mechanical behaviour of nanostructures, among them, nonlocal elasticity theory (ERINGEN, 1983) is the most used. In this theory, a nonlocal parameter which accounts for small scale effects is included in the constitutive equations. Carbon nanotubes are an extensively studied nanostructure often modelled as an Euler-Bernoulli nanobeam. In the present work, governing equations for bending, buckling and free vibration of an Euler-Bernoulli nanobeam are presented. A finite element model is developed to investigate the influence of nonlocal parameter, slenderness, rotational inertia and boundary conditions on deflections, buckling loads and natural frequencies. Numerical results obtained are discussed and compared with results obtained by other researchers.",
+            "doi": ""
+        },
+        {
+            "title": "Passive Mitigation of Vibration Frequencies on Offshore Structures",
+            "details": "In: Proceedings of II SIMCOMPI",
+            "pdf_link": "publications/melo-viveiros-hoefel-2025-passive-mitigation-of-vibration-frequencies-on.pdf",
+            "authors": "Thierry Miqueias Melo Madeira; Dário Carvalho Viveiros; Simone dos Santos Hoefel",
+            "abstract": "Offshore platforms operate in environments subject to constant wave action, which induces dynamic loads on structural components, particularly the support legs or tendons. These loads propagate as mechanical vibrations throughout the structure and may compromise its integrity, performance, and service life.Among passive vibration mitigation strategies, periodic structures have attracted increasing interest due to their ability to generate band gaps—specific frequency ranges where the propagation of waves is naturally attenuated. This behavior is directly influenced by the geometry and material distribution along the structure. This study investigates the vibrational behavior of stepped and bimaterial periodic beams, focusing on how geometric variations influence wave attenuation.",
+            "doi": ""
+        },
+        {
+            "title": "Periodic Structures for Vibration Attenuation in Tracks",
+            "details": "In: Proceedings of II SIMCOMPI",
+            "pdf_link": "publications/brandao-reis-hoefel-2025-periodic-structures-for-vibration-attenuation-in-tracks.pdf",
+            "authors": "Iasmim Brandão Leal; Jenario Souza dos Reis Junior; Simone dos Santos Hoefel",
+            "abstract": "Railway tracks are subject to dynamic loads that generate vibrations in rails, ballast, and underlying structures. These vibrations can cause noise, accelerate maintenance needs, and affect nearby infrastructure. Periodic structures offer a passive solution by creating band gaps - frequency ranges where wave propagation is suppressed. In rail systems, such effects can be achieved using components like pads or dampers with varying mass and stiffness. This study analyzes how changes in the mass ratio between adjacent elements influence the formation and width of the first band gap, using analytical models and Wave Finite Element Method (WFEM) simulations.",
+            "doi": ""
+        },
+        {
+            "title": "Numerical Modeling Of Partially Submerged Beam-column",
+            "details": "In: Proceedings of II SIMCOMPI",
+            "pdf_link": "publications/gomes-hoefel-2025-numerical-modeling-of-partially-submerged-beam-column.pdf",
+            "authors": "Davi Kauê de Sousa Gomes; Simone dos Santos Hoefel",
+            "abstract": "The offshore industry often employs excessive structural material due to the unpredictable nature of the marine environment (Fig. 1). Submerged structures are subject to various hydrodynamic forces, including drag, inertia, added mass, diffraction, Froude-Krylov, and wave slamming forces. This study aims to contribute to reducing over-dimensioning, thereby lowering manufacturing costs and CO₂ emissions. The Morison equation is applied to estimate wave-induced forces, and the structure is modeled using a beam-column element",
+            "doi": ""
+        },
+        {
+            "title": "Periodic Surface Walls for Ground Vibration Attenuation",
+            "details": "In: Proceedings of II SIMCOMPI",
+            "pdf_link": "publications/reis-hoefel-labaki-2025-periodic-surface-walls-for-ground-vibration-attenuation.pdf",
+            "authors": "Jenario Souza dos Reis Junior; Simone dos Santos Hoefel; Josué Labaki",
+            "abstract": "Ground vibrations caused by construction, traffic, earthquakes, and other external sources can compromise structural integrity and disturb the operation of sensitive equipment, such as particle accelerators. These facilities demand efficient vibration mitigation strategies to ensure stability and precision. Among the proposed solutions, surface walls (Carneiro et al., 2022) and periodic walls stand out for their ability to reflect and absorb vibrational energy, increasing structural resilience to dynamic disturbances In this work, the interaction between a novel model of periodic walls and the soil is analyzed using a coupled formulation based on the Indirect Boundary Element Method (IBEM) and the Finite Element Method (FEM), the IBEM–FEM coupling scheme. FEM is used to model the walls and IBEM is employed to modeled the soil. To represent a substantial range of phenomena relevant to geotechnical and seismic engineering practice, the proposed models account for ground vibration induced by Rayleigh waves.",
+            "doi": ""
+        },
+        {
+            "title": "Wave Propagation in Periodic Railway Tracks",
+            "details": "In: Proceedings of II SIMCOMPI",
+            "pdf_link": "publications/rodrigues-hoefel-2025-wave-propagation-in-periodic-railway-tracks-lateral-and-vertical-bending-analysis.pdf",
+            "authors": "Isadora Rodrigues de Souza; Simone dos Santos Hoefel",
+            "abstract": "Vibrations in railway tracks, resulting from wheel–rail interactions, can lead to structural damage, passenger discomfort, and environmental disturbances. Periodic structures offer a promising solution by generating bandgaps - frequency ranges that inhibit wave propagation - which can be classified into two types: Bragg scattering bandgaps (BSBG) and local resonance bandgaps (LRBG). This work analyzes a periodic rail track with uniformly spaced supports, using the Wave and Finite Element Method, which combines finite element modeling with Floquet-Bloch theory to analyze periodic structures. The influence of variations in sleeper spacing and pad stiffness on the attenuation of vertical and lateral bending waves is investigated through dispersion curves, which describe the correlation between angular frequency and propagation constants (DOS REIS; DE SOUZA; HOEFEL, 2024).",
+            "doi": ""
+        },
+        {
+            "title": "ANÁLISE DE VIBRAÇÃO DESACOPLADA DE FLEXÃO DE UMA VIGA DE EULER-BERNOULLI EM ROTAÇÃO",
+            "details": "In: Proceedings of XXVII SEMINARIO DE INICIAÇÃO CIENTÍFICA-UFPI",
+            "pdf_link": "publications/ribeiro-hoefel-2019-analise-de-vibracao-desacoplada-de-flexao-de-uma-viga-de-euler-bernoulli-em-rotacao.pdf",
+            "authors": "Bruno Ribeiro da Luz; Simone dos Santos Hoefel",
+            "abstract": "Dentre os tipos de fontes de energia alternativas está a energia eólica, que possui impactos ambientais reduzidos em relação aos combustíveis fósseis e pode ser utilizada em combinação com outras formas de energia para os suprimento de demanda energética. As turbinas eólicas possuem diferentes configurações, porém é basicamente composta pelas pás, a nacele, que agrega diversos componentes , e a torre. Este trabalho tem por objetivo analisar o comportamento dinâmico de uma pá de um aerogerador. (PDF Recondicionado)",
+            "doi": ""
+        },
+        {
+            "title": "MODELAGEM DE ESTRUTURAS OFFSHORE",
+            "details": "In: Proceedings of XXVII SEMINARIO DE INICIAÇÃO CIENTÍFICA-UFPI",
+            "pdf_link": "publications/abreu-hoefel-2019-modelagem-de-estruturas-offshore.pdf",
+            "authors": "Brendon Menezes de Abreu; Simone dos Santos Hoefel",
+            "abstract": "Estruturas Offshore são usadas na indústria do petróleo para exploração, para produção e para o armaenamento de petróleo. Em geral, existem dois tipos de estruturas offshore: as estruturas fixas e as estruturas flutuantes. Estruturas fixas são projetas para resistir a forças ambientais sem deslocamentos substanciais. Já as estruturas flutuantes são projetas para permitir deformações e deflexões pequenas mas não negligenciáveis. No presente trabalho, dois tipos de estruturas offshore são analisados. A primeira estrutura, serefere ao tendão de uma plataforma flutuante. Tension Leg Platform (TLP), Figura 1. Já a segunda estrutura , trata-se de uma plataforma fixa, Auto Elevatória, Figura 2. A teoria clássica de viga de Euler-Bernoulli é apresentada e as frequências naturais são obtidas para os casossubmerso e não submerso considerando os dois tipos de estruturas. (PDF Recondicionado)",
+            "doi": ""
+        }
     ]
 }

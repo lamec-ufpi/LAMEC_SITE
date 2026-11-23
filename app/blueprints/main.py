@@ -15,7 +15,8 @@ def publications():
     data = load_publications()
     return render_template('pages/publications.html',
                            journal_papers=data.get('journal_papers', []),
-                           conference_papers=data.get('conference_papers', []))
+                           conference_papers=data.get('conference_papers', []),
+                           conference_posters=data.get('conference_posters', []))
 
 @bp.route('/extension/bull-racing/')
 def bull_racing(): 
