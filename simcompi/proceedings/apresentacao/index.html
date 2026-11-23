@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - Apresentação (Anais)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="icon" href="../../../static/images/brand/camaleao-solo.png">
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../../api/proceedings.json"
+        };
+    </script>
+</head>
+<body>
+    
+
+
+
+<nav class="navbar navbar-simcompi navbar-proceedings" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+      <!-- Procure a linha 7 e substitua por esta (repare que removi o <br> e adicionei a sigla): -->
+<a href="../index.html" class="logo-text" style="font-size:large;">Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí (SIMCOMPI)</br> <p style="font-size:medium; color:rgb(180, 180, 180); font-weight: normal;">ISSN: 3086-7940</p></a>
+    </div>
+    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links">          
+        <li><a href="../../index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> VOLTAR PARA O SIMCOMPI</a></li>
+        <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    
+    <main class="container proceedings-layout">
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Buscar nos Anais</div>
+                <div class="sidebar-content">
+                    <form action="../arquivo/index.html" method="GET" id="searchForm">
+                        <input type="text" id="searchInput" name="q" class="search-input" placeholder="Buscar artigos..." required>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Buscar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Navegação</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="index.html" class="active">Apresentação</a></li>
+                        <li><a href="../expediente/index.html" class="">Corpo Editorial</a></li>
+                        <li><a href="../normas/index.html" class="">Normas para Publicação</a></li>
+                        <li><a href="../contato/index.html" class="">Contato</a></li>
+                        <li><a href="../volume/vol_3_2027/index.html">Volume atual: Vol. 3 2027</a></li>
+                        <li><a href="../arquivo/index.html" class="">Arquivo Completo</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <div class="sidebar-title">Explorar Arquivo</div>
+                <div class="sidebar-content">
+                    <ul class="sidebar-menu">
+                        <li><a href="../arquivo/index.html#author" data-action="author">Por Autor</a></li>
+                        <li><a href="../arquivo/index.html#title" data-action="title">Por Título</a></li>
+                        <li><a href="../arquivo/index.html#category" data-action="category">Por Categoria</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class="main-content" id="data-container">
+            
+    <div class="text-content">
+        <a href="../index.html" class="btn btn-outline" style="margin-bottom: 20px;">Voltar aos anais do evento</a>
+        <h1>Apresentação</h1>
+        
+        <h2>Sobre os Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí (SIMCOMPI)</h2>
+        <p>Os Anais do Simpósio de Modelagem Computacional em Ciência e Tecnologia do Piauí (SIMCOMPI) consistem na publicação científica oficial do evento, organizado pelo Laboratório de Métodos de Modelagem Computacional (LAMEC) da Universidade Federal do Piauí (UFPI). A publicação é dedicada à divulgação de pesquisas acadêmicas e tecnológicas de alta qualidade relacionadas à aplicação de modelos computacionais.</p>
+
+        <h2>Missão</h2>
+        <p>Nossa missão é promover o avanço do conhecimento científico e tecnológico através da publicação de artigos completos. Buscamos aproximar a pesquisa científica dos desafios reais do setor industrial, contribuindo para o desenvolvimento acadêmico e profissional de pesquisadores, docentes e estudantes.</p>
+
+        <h2>Visão</h2>
+        <p>Ser reconhecida como uma das principais publicações de modelagem computacional do país, mantendo os mais altos padrões de qualidade editorial e contribuindo significativamente para o progresso da ciência, da engenharia e da forte integração entre universidade e indústria.</p>
+
+        <h2>Valores</h2>
+        <ul>
+            <li><strong>Excelência Acadêmica:</strong> Compromisso com a qualidade e rigor científico</li>
+            <li><strong>Integridade:</strong> Ética e transparência em todos os processos editoriais</li>
+            <li><strong>Inovação:</strong> Abertura a novas ideias, metodologias de pesquisa, ferramentas computacionais e tecnologias (como impressão 3D e metamateriais)</li>
+            <li><strong>Inclusão:</strong> Diversidade de perspectivas e democratização do conhecimento</li>
+            <li><strong>Responsabilidade Social:</strong> Contribuição para o desenvolvimento da sociedade</li>
+        </ul>
+
+        <h2>Escopo e Áreas de Interesse</h2>
+        <p>A publicação aceita submissões voltadas para avanços e desafios em modelos computacionais, destacando-se as seguintes áreas temáticas:</p>
+        <ul>
+            <li>Análise estrutural, dinâmica e fadiga de materiais</li>
+            <li> Otimização topológica, multifísica e multiescalar </li>
+            <li> Interação solo-estrutura </li>
+            <li> Engenharia térmica, termodinâmica, climatização e eficiência energética </li>
+            <li> Vibrações, acústica e vibroacústica </li>
+            <li> Aplicações numéricas na indústria (Método dos Elementos Finitos, Método dos Elementos de Contorno, etc.) </li>
+        </ul>
+
+        <h2>Público-Alvo</h2>
+        <p>Nossa publicação destina-se a:</p>
+        <ul>
+            <li>Pesquisadores e docentes universitários</li>
+            <li>Estudantes de graduação e pós-graduação</li>
+            <li>Profissionais das diversas áreas do conhecimento</li>
+            <li>Instituições de ensino e pesquisa</li>
+            <li>Sociedade acadêmica em geral</li>
+        </ul>
+
+        <h2>Compromisso com a Qualidade</h2>
+        <p>Todos os trabalhos submetidos passam por um rigoroso processo de avaliação por pares (peer review), garantindo a qualidade e a relevância científica das publicações. Nosso corpo avaliador é composto pela nossa Comissão Científica, formada por pesquisadores renomados e especialistas de excelência em suas respectivas áreas representando instituições de todo o país (UFPI, UNB, USP, UNICAMP, entre outras).</p>
+
+        <h2>Acesso Aberto</h2>
+        <p>Os Anais do SIMCOMPI adotam a política de acesso aberto, disponibilizando gratuitamente todo o conteúdo publicado. Dessa forma, contribuímos para a democratização do conhecimento científico e tecnológico, potencializando o aumento do impacto das pesquisas divulgadas na academia e na indústria.</p>
+
+        <h2>Normas e Contato</h2>
+        <p>Para submeter seu artigo ou falar com a organização do evento, acesse as páginas oficiais do SIMCOMPI:</p>
+        <div class="action-links">
+            <a href="../normas/index.html" class="btn btn-outline"><i class="fa-solid fa-file-arrow-up"></i> Diretrizes para Submissão</a>
+            <a href="../contato/index.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Entre em Contato</a>
+        </div>
+
+        <div class="info-box">
+            <h3><i class="fa-solid fa-circle-info"></i> Informações Importantes</h3>
+            <ul>
+                <li><strong>Periodicidade:</strong> Bienal</li>
+                <li><strong>Idiomas aceitos:</strong> Português, Inglês</li>
+                <li><strong>ISSN:</strong> 3086-7940</li>
+                <li><strong>Instituição Responsável:</strong> Laboratório de Métodos de Modelagem Computacional (LAMEC)</li>
+            </ul>
+        </div>
+    </div>
+
+        </section>
+    </main>
+
+
+    <footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="../../../static/main.js"></script>
+    
+</body>
+</html>

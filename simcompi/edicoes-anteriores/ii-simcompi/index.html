@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - II SIMCOMP (2025)</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../../static/style.css">
+    <link rel="icon" href="../../../static/images/brand/camaleao-solo.png">
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../../api/proceedings.json"
+        };
+    </script>
+</head>
+<body>
+    
+
+
+
+<nav class="navbar navbar-simcompi" id="navbar">
+  <div class="container nav-container">
+    <div class="logo">
+        <a href="../../index.html" class="logo-text">
+            <img src="../../../static/images/brand/logo-simcompi-navbar-white.png" alt="SIMCOMPI" class="navbar-brand-img">
+        </a>
+    </div>
+    <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+    <ul class="nav-links">
+      <li><a href="../../submissions/index.html" class="">SUBMISSÕES</a></li>
+      <li><a href="../../proceedings/index.html" class="">ANAIS DO EVENTO</a></li>
+      <li class="dropdown"><a href="#" class="active">EDIÇÕES ANTERIORES <i class="fa-solid fa-chevron-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="../i-simcompi/index.html" class="">I SIMCOMPI</a></li>
+            <li><a href="index.html" class="active">II SIMCOMPI</a></li>
+        </ul>
+      </li>
+      <li><a href="../../committees/index.html" class="">COMISSÕES</a></li>
+      <li><a href="../../contact-us/index.html" class="">CONTATO</a></li>
+      <li><a href="../../../index.html" class="back-btn"><i class="fa-solid fa-house"></i> LAMEC</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+    
+    <header class="past-edition-hero" style="background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(66, 207, 183, 1) 100%); display: flex; justify-content: center; align-items: center; height: 250px; padding: 20px;">
+        <img src="../../../static/images/simcompi/simcompi_2/ii-simcompi-horizontal-logo.png" alt="II SIMCOMPI" style="max-width: 900px; max-height: 100%; object-fit: contain;">
+    </header>
+
+    <p class="past-edition-description">A segunda edição do SIMCOMPI ocorreu de 14 a 17 de abril de 2025, no Auditório do Centro de Tecnologia da Universidade Federal do Piauí.</p>
+
+    <div class="container" style="text-align: left;">
+        <a href="../../index.html" class="btn btn-outline" style="margin: 20px 0;"><i class="fa-solid fa-arrow-left"></i> Voltar para a Edição Atual</a>
+    </div>
+    
+    <section class="schedule-section">
+        <div class="posters-column">
+            <img src="../../../static/images/simcompi/simcompi_2/banner-ii-simcompi.png" alt="SIMCOMP Poster">
+        </div>
+        <div class="text-column">
+            <h2 class="section-title-highlight">Palestras</h2>
+            <ul class="speaker-list">
+                <li><strong> Dinâmica de Veículos Ferroviários de Carga </strong><span> Paulo Kurka </span></li>
+                <li><strong> Fadiga por fretting em fios galvanizados de cabos de pontes: testes, modelagem e estimativa de vida </strong><span> Eduardo Martins </span></li>
+                <li><strong> Modelagem, análise e controle de vibrações em turbinas eólicas </strong><span> Laís Visnadi </span></li>
+                <li><strong> Interação Solo-Estrutura: Problemas de Grande Porte </strong><span> Josué Labaki </span></li>
+                <li><strong> Metamateriais e impressão 3D: caminhos para inovação na Engenharia Mecânica </strong><span> Adriano Fabro </span></li>       
+            </ul>
+            
+            <h2 class="section-title-highlight">Minicursos</h2>
+            <ul class="speaker-list">
+                <li><strong> Introdução a simulação de falha por fadiga </strong><span> Hélio Barbosa </span></li>
+                <li><strong> Engenharia de ar condicionado e as tendências do setor </strong><span> Wellington Rebelo </span></li>
+                <li><strong> Pyromat: Tabelas e propriedades termodinâmicas com Python </strong><span> Juan do Vale </span></li>
+                <li><strong> Otimização topológica: uma poderosa ferramenta de projeto </strong><span> Aldemar Siqueira </span></li>
+            </ul>
+
+        </div>
+    </section>
+
+    <div class="full-width-gallery" style="background: var(--simcompi-bg-light); padding: 40px 0;">
+        <div class="container" style="position: relative; text-align: center;">
+            
+                        
+            <img id="simcompi-2-slider" src="../../../static/images/simcompi/simcompi_2/slide/pessoas-assistindo-o-ii-simcompi.png" data-slides='["../../../static/images/simcompi/simcompi_2/slide/pessoas-assistindo-o-ii-simcompi.png", "../../../static/images/simcompi/simcompi_2/slide/feira1.png", "../../../static/images/simcompi/simcompi_2/slide/palestra-do-prof-fabro.png", "../../../static/images/simcompi/simcompi_2/slide/professores-e-organizacao-no-encerramento.png"]' alt="Galeria de fotos" style="margin-bottom: 20px; max-width: 800px; width: 100%; height: 500px; object-fit: cover; border-radius: 8px; transition: opacity 0.3s;">
+            
+            <button class="slider-btn slider-prev" style="left: 0; color: var(--color-primary);"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="slider-btn slider-next" style="right: 0; color: var(--color-primary);"><i class="fa-solid fa-angle-right"></i></button>
+            
+        </div>
+        <p style="text-align: center; margin-top: 20px;">
+            <a href="https://drive.google.com/drive/folders/1ldzZ7aEng5TXYjYCLAa523nnYtX0icgE" class="btn btn-primary" target="_blank" rel="noopener"><i class="fa-solid fa-images"></i> Ver Mais Fotos no Drive</a>
+        </p>
+    </div>
+
+
+    <footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="../../../static/main.js"></script>
+    
+</body>
+</html>

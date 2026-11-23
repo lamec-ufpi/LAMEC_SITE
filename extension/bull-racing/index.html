@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAMEC - Bull Racing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../static/style.css">
+    <link rel="icon" href="../../static/images/brand/camaleao-solo.png">
+    <script>
+        // Configuração injetada de forma segura (Enganando o Freezer com o truque do replace)
+        window.LAMEC_CONFIG = {
+            staticRoot: "../../static/style.css".replace('style.css', ''),
+            baseUrl: "../../index.html".replace('index.html', ''),
+            proceedingsApiUrl: "../../api/proceedings.json"
+        };
+    </script>
+</head>
+<body>
+    
+
+
+
+<nav class="navbar" id="navbar">
+    <div class="container nav-container">
+        <div class="logo">
+            <a href="../../index.html" class="logo-text">
+                <img src="../../static/images/brand/lamec-logo.png" alt="LAMEC" class="navbar-brand-img">
+            </a>
+        </div>
+        <button class="mobile-menu-toggle"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="../../index.html" class="">HOME</a></li>
+            <li><a href="../../publications/index.html" class="">PUBLICATIONS</a></li>
+            <li class="dropdown"><a href="../../research-team/index.html" class="">PEOPLE <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../../research-team/index.html" class="">RESEARCH TEAM</a></li>
+                    <li><a href="../../alumni/index.html" class="">ALUMNI</a></li>
+                </ul>
+            </li>
+            <li><a href="../../simcompi/index.html">SIMCOMPI</a></li>
+            <li class="dropdown"><a href="#" class="active">EXTENSION <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="index.html" class="active">BULL RACING</a></li>
+                    <li><a href="../faisca/index.html" class="">FAÍSCA</a></li>
+                </ul>
+            </li>
+            <li><a href="../../about/index.html" class="">ABOUT</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    
+    <header class="simcompi-hero" style="background-image: linear-gradient(rgba(12, 13, 13, 0.7), rgba(40, 1, 21, 0.7)), url('../../static/images/backgrounds/bull-banner-horizontal.jpg');">
+        <img src="../../static/images/brand/bullracing-logo.png" alt="BULL RACING Logo" class="logo-image" style="max-width: 300px;">
+    </header>
+
+    <section class="simcompi-intro">
+        <p>Bull Racing is the first Formula SAE team in Piauí, formed by students from the Universidade Federal do Piauí (UFPI). The project brings together students from Mechanical Engineering, Electrical Engineering, Materials Engineering, Production Engineering and even Journalism, who work together to develop a high-performance racing car.</p>
+        <br>
+        <p>The team participates annually in the Formula SAE Brazil competition, where they seek to improve their knowledge in automotive engineering, project management and technological innovation. With dedication and a spirit of collaboration, Bull Racing represents Piauí on the national stage, proving that talent and perseverance can take innovation even further.</p>
+        <div class="subscribe-btn-container">
+            <a href="https://instagram.com/bullracing_fsae/" class="btn btn-primary" target="_blank" rel="noopener">Visit the Instagram</a>
+        </div>
+    </section>
+
+    <section class="logos-wrapper">
+        <h2><span>Sponsors and Supporters</span></h2>
+        <h3>Diamond</h3>
+        <div class="logos-container">
+            <img src="../../static/images/extension/bull/bosch-logo.png" alt="Bosch">
+        </div>
+        <h3>Gold</h3>
+        <div class="logos-container">
+            <img src="../../static/images/extension/bull/dremell-logo.png" alt="Dremel">
+            <img src="../../static/images/extension/bull/oig-logo.jpg" alt="One Internet Group">
+            <img src="../../static/images/extension/bull/sia-logo.svg" alt="Sia Abrasives">
+        </div>
+        <h3>Silver</h3>
+        <div class="logos-container">
+            <img src="../../static/images/extension/bull/vmachado-logo.png" alt="V Machado">
+        </div>
+        <h3>Bronze</h3>
+        <div class="logos-container">
+            <img src="../../static/images/extension/bull/autosuprir-logo.jpg" alt="Autosuprir Auto Peças">
+        </div>
+    </section>
+
+
+    <footer>
+    <div class="container footer-content">
+        <p>© Laboratório de Métodos de Modelagem Computacional - LAMEC, 2026.</p>
+    </div>
+</footer>
+
+    <a href="#" id="backToTop" class="back-to-top-float" aria-label="Voltar ao topo">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="../../static/main.js"></script>
+    
+</body>
+</html>
